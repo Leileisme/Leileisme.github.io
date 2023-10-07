@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My 8bit-Clock</title>
+
+  <!-- 我的CSS -->
+  <link rel="stylesheet" href="./clock.css">
+
+</head>
+
+
+<body>
+
+  <div id="content"></div>
+
+
+  <div id="clock">
+    <!-- <img src="./clock參考/06.png" alt=""> -->
+    <table id="BGtable"></table> <!-- 底色 -->
+    <table id="hourHand"></table> <!-- 時針 -->
+    <table id="minuteHand"></table> <!-- 分針 -->
+    <div id="secondHand"></div> <!-- 秒針 -->
+  </div>
+
+
+
+  <!-- 對照格數用 -->
+  <!--  給自己看的格子位置 -->
+  <!-- <div id="div01">
+    <table id="table01"></table>
+  </div> -->
+
+  <script>
+
+
+
+    // 我的底色
+    const BGtable = document.getElementById('BGtable')
+    for (let i = 30; i >= 1; i--) {
+      const tr = document.createElement('tr')
+      tr.classList.add('BKtr')
+      tr.id = `BKtr_${i}`
+      BGtable.prepend(tr)
+      for (let j = 30; j >= 1; j--) {
+        const td = document.createElement('td')
+        td.classList.add('BKtd')
+        td.classList.add(`BKcolor_${j}`)
+        // let a = 1
+        // td.id = `BKtd_${j}`
+        td.innerText = `${j}`
+        tr.prepend(td)
+      }
+    }
+
+    // 時針
+    const hourHand = document.getElementById('hourHand')
+    for (let i = 5; i >= 1; i--) {
+      const tr_hour = document.createElement('tr')
+      tr_hour.classList.add('tr_hour')
+      hourHand.prepend(tr_hour)
+      for (let j = 1; j >= 1; j--) {
+        const td_hour = document.createElement('td')
+        td_hour.classList.add('td_hour')
+        tr_hour.prepend(td_hour)
+      }
+    }
+
+    // 分針
+    const minuteHand = document.getElementById('minuteHand')
+    for (let i = 9; i >= 1; i--) {
+      const tr_Minute = document.createElement('tr')
+      tr_Minute.classList.add('tr_Minute')
+      minuteHand.prepend(tr_Minute)
+      for (let j = 1; j >= 1; j--) {
+        const td_Minute = document.createElement('td')
+        td_Minute.classList.add('td_Minuter')
+        tr_Minute.prepend(td_Minute)
+      }
+    }
+
+    // 讓指針動起來
+    const secondHand = document.getElementById('secondHand')
+    const clock = () => {
+      const date = new Date()
+      const hour = date.getHours()
+      const minute = date.getMinutes()
+      const second = date.getSeconds()
+      hourHand.style.transform = `rotate(${hour * 30 + 180}deg)`
+      minuteHand.style.transform = `rotate(${minute * 6 + 180}deg)`
+      secondHand.style.transform = `rotate(${second * 6 + 180}deg)`
+    }
+
+    setInterval(clock, 1000)
+    clock()
+
+
+    // 背景格
+    const content = document.getElementById('content')
+
+    for (let i = 42; i >= 1; i--) {
+      const tr_content = document.createElement('tr')
+      tr_content.classList.add('tr_content')
+      content.prepend(tr_content)
+      for (let j = 85; j >= 1; j--) {
+        const td_content = document.createElement('td')
+        td_content.classList.add('td_content')
+        tr_content.prepend(td_content)
+      }
+    }
+
+
+
+    // 對照格數用
+    // 給自己看的格子位置
+    // const table01 = document.getElementById('table01')
+
+    // for (let i = 30; i >= 1; i--) {
+    //   const tr01 = document.createElement('tr')
+    //   tr01.classList.add('tr01')
+    //   table01.prepend(tr01)
+    //   for (j = 0; j < 1; j++) {
+    //     const td01 = document.createElement('td')
+    //     td01.classList.add('td01')
+    //     td01.innerText = `${i}`
+    //     tr01.prepend(td01)
+    //   }
+    // }
+
+
+
+  </script>
+</body>
+
+</html>

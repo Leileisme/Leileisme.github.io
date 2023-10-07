@@ -1,0 +1,950 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* width: 1920px; */
+	/* border: 1px solid red; */
+
+	/* background-image: url(./img01.png); */
+
+	/* background: rgb(255, 238, 208); */
+}
+
+/* 背景色 */
+#content {
+	box-sizing: border-box;
+	/* border: 1px solid red; */
+	width: 1890px;
+	height: 940px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tr_content {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+	color: blue;
+	margin: 0;
+	font-size: 0;
+}
+
+.td_content {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: rgb(255, 238, 208);
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	border: 0.05px solid rgb(218, 218, 218);
+	color: black;
+	font-size: 0.001px;
+}
+
+/* 時鐘背景色 */
+#clock {
+	/* border: 1px solid red; */
+	/* width: 670px; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-51.8%, -47.4%);
+}
+
+#BGtable {
+	position: relative;
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+.BKtr {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+	color: blue;
+	/* margin: 0;
+	padding: 0; */
+}
+
+.BKtd {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	/* background: rgb(255, 238, 208); */
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	border: 0.05px solid rgb(218, 218, 218);
+	color: black;
+	/* font-size: 0.001px; */
+}
+
+/* 參考圖像 */
+#clock img {
+	width: 100%;
+	position: absolute;
+	opacity: 0.2;
+}
+
+/* 時針 */
+
+#hourHand {
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+	position: absolute;
+	top: 50%;
+	left: 49.7%;
+	transform-origin: 50% 11%;
+}
+
+.tr_hour {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+}
+
+.td_hour {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: #000;
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	/* border: 0.05px solid rgb(218, 218, 218); */
+	font-size: 0.001px;
+}
+
+/* 分針 */
+
+#minuteHand {
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+	position: absolute;
+	top: 50%;
+	left: 49.7%;
+	transform-origin: 50% 6%;
+}
+
+.tr_Minute {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+}
+
+.td_Minuter {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: #000;
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	/* border: 0.05px solid rgb(218, 218, 218); */
+	font-size: 0.001px;
+}
+
+/* 秒針 */
+
+#secondHand {
+	position: absolute;
+	top: 50%;
+	left: 51%;
+	width: 5px;
+	height: 196px;
+	background-color: #a00;
+	transform-origin: 41% 6%;
+}
+
+/* 時鐘填色 */
+
+/* 邊框 */
+#BKtr_2 .BKcolor_11,
+#BKtr_2 .BKcolor_12,
+#BKtr_2 .BKcolor_19,
+#BKtr_2 .BKcolor_20,
+#BKtr_3 .BKcolor_7,
+#BKtr_3 .BKcolor_8,
+#BKtr_3 .BKcolor_9,
+#BKtr_3 .BKcolor_10,
+#BKtr_3 .BKcolor_11,
+#BKtr_3 .BKcolor_12,
+#BKtr_3 .BKcolor_13,
+#BKtr_3 .BKcolor_18,
+#BKtr_3 .BKcolor_19,
+#BKtr_3 .BKcolor_20,
+#BKtr_3 .BKcolor_21,
+#BKtr_3 .BKcolor_22,
+#BKtr_3 .BKcolor_23,
+#BKtr_3 .BKcolor_24,
+#BKtr_4 .BKcolor_7,
+#BKtr_4 .BKcolor_8,
+#BKtr_4 .BKcolor_9,
+#BKtr_4 .BKcolor_10,
+#BKtr_4 .BKcolor_11,
+#BKtr_4 .BKcolor_12,
+#BKtr_4 .BKcolor_13,
+#BKtr_4 .BKcolor_17,
+#BKtr_4 .BKcolor_18,
+#BKtr_4 .BKcolor_19,
+#BKtr_4 .BKcolor_20,
+#BKtr_4 .BKcolor_21,
+#BKtr_4 .BKcolor_22,
+#BKtr_4 .BKcolor_23,
+#BKtr_4 .BKcolor_24,
+#BKtr_5 .BKcolor_5,
+#BKtr_5 .BKcolor_6,
+#BKtr_5 .BKcolor_25,
+#BKtr_5 .BKcolor_26,
+#BKtr_6 .BKcolor_5,
+#BKtr_6 .BKcolor_6,
+#BKtr_6 .BKcolor_25,
+#BKtr_6 .BKcolor_26,
+#BKtr_7 .BKcolor_4,
+#BKtr_7 .BKcolor_27,
+#BKtr_8 .BKcolor_2,
+#BKtr_8 .BKcolor_3,
+#BKtr_8 .BKcolor_28,
+#BKtr_8 .BKcolor_29,
+#BKtr_9 .BKcolor_2,
+#BKtr_9 .BKcolor_3,
+#BKtr_9 .BKcolor_28,
+#BKtr_9 .BKcolor_29,
+#BKtr_10 .BKcolor_2,
+#BKtr_10 .BKcolor_3,
+#BKtr_10 .BKcolor_28,
+#BKtr_10 .BKcolor_29,
+#BKtr_11 .BKcolor_2,
+#BKtr_11 .BKcolor_3,
+#BKtr_11 .BKcolor_28,
+#BKtr_11 .BKcolor_29,
+#BKtr_12 .BKcolor_2,
+#BKtr_12 .BKcolor_3,
+#BKtr_12 .BKcolor_28,
+#BKtr_12 .BKcolor_29,
+#BKtr_13 .BKcolor_2,
+#BKtr_13 .BKcolor_3,
+#BKtr_13 .BKcolor_28,
+#BKtr_13 .BKcolor_29,
+#BKtr_14 .BKcolor_2,
+#BKtr_14 .BKcolor_3,
+#BKtr_14 .BKcolor_28,
+#BKtr_14 .BKcolor_29,
+#BKtr_15 .BKcolor_2,
+#BKtr_15 .BKcolor_3,
+#BKtr_15 .BKcolor_28,
+#BKtr_15 .BKcolor_29,
+#BKtr_16 .BKcolor_2,
+#BKtr_16 .BKcolor_3,
+#BKtr_16 .BKcolor_28,
+#BKtr_16 .BKcolor_29,
+#BKtr_17 .BKcolor_2,
+#BKtr_17 .BKcolor_3,
+#BKtr_17 .BKcolor_28,
+#BKtr_17 .BKcolor_29,
+#BKtr_18 .BKcolor_2,
+#BKtr_18 .BKcolor_3,
+#BKtr_18 .BKcolor_28,
+#BKtr_18 .BKcolor_29,
+#BKtr_19 .BKcolor_2,
+#BKtr_19 .BKcolor_3,
+#BKtr_19 .BKcolor_28,
+#BKtr_19 .BKcolor_29,
+#BKtr_20 .BKcolor_2,
+#BKtr_20 .BKcolor_3,
+#BKtr_20 .BKcolor_28,
+#BKtr_20 .BKcolor_29,
+#BKtr_21 .BKcolor_2,
+#BKtr_21 .BKcolor_3,
+#BKtr_21 .BKcolor_28,
+#BKtr_21 .BKcolor_29,
+#BKtr_22 .BKcolor_2,
+#BKtr_22 .BKcolor_3,
+#BKtr_22 .BKcolor_28,
+#BKtr_22 .BKcolor_29,
+#BKtr_23 .BKcolor_2,
+#BKtr_23 .BKcolor_3,
+#BKtr_23 .BKcolor_28,
+#BKtr_23 .BKcolor_29,
+#BKtr_24 .BKcolor_2,
+#BKtr_24 .BKcolor_3,
+#BKtr_24 .BKcolor_28,
+#BKtr_24 .BKcolor_29,
+#BKtr_25 .BKcolor_4,
+#BKtr_25 .BKcolor_27,
+#BKtr_26 .BKcolor_4,
+#BKtr_26 .BKcolor_27,
+#BKtr_27 .BKcolor_5,
+#BKtr_27 .BKcolor_6,
+#BKtr_27 .BKcolor_25,
+#BKtr_27 .BKcolor_26,
+#BKtr_28 .BKcolor_7,
+#BKtr_28 .BKcolor_8,
+#BKtr_28 .BKcolor_9,
+#BKtr_28 .BKcolor_10,
+#BKtr_28 .BKcolor_11,
+#BKtr_28 .BKcolor_12,
+#BKtr_28 .BKcolor_13,
+#BKtr_28 .BKcolor_14,
+#BKtr_28 .BKcolor_15,
+#BKtr_28 .BKcolor_16,
+#BKtr_28 .BKcolor_17,
+#BKtr_28 .BKcolor_18,
+#BKtr_28 .BKcolor_19,
+#BKtr_28 .BKcolor_20,
+#BKtr_28 .BKcolor_21,
+#BKtr_28 .BKcolor_22,
+#BKtr_28 .BKcolor_23,
+#BKtr_28 .BKcolor_24,
+#BKtr_29 .BKcolor_7,
+#BKtr_29 .BKcolor_8,
+#BKtr_29 .BKcolor_9,
+#BKtr_29 .BKcolor_10,
+#BKtr_29 .BKcolor_11,
+#BKtr_29 .BKcolor_12,
+#BKtr_29 .BKcolor_13,
+#BKtr_29 .BKcolor_14,
+#BKtr_29 .BKcolor_15,
+#BKtr_29 .BKcolor_16,
+#BKtr_29 .BKcolor_17,
+#BKtr_29 .BKcolor_18,
+#BKtr_29 .BKcolor_19,
+#BKtr_29 .BKcolor_20,
+#BKtr_29 .BKcolor_21,
+#BKtr_29 .BKcolor_22,
+#BKtr_29 .BKcolor_23,
+#BKtr_29 .BKcolor_24 {
+	background: #000;
+}
+
+#BKtr_2 .BKcolor_13,
+#BKtr_2 .BKcolor_14,
+#BKtr_2 .BKcolor_15,
+#BKtr_2 .BKcolor_18,
+#BKtr_2 .BKcolor_19,
+#BKtr_3 .BKcolor_14,
+#BKtr_3 .BKcolor_15,
+#BKtr_4 .BKcolor_14,
+#BKtr_4 .BKcolor_15,
+#BKtr_4 .BKcolor_16,
+#BKtr_5 .BKcolor_7,
+#BKtr_5 .BKcolor_8,
+#BKtr_5 .BKcolor_9,
+#BKtr_5 .BKcolor_10,
+#BKtr_5 .BKcolor_11,
+#BKtr_5 .BKcolor_12,
+#BKtr_5 .BKcolor_13,
+#BKtr_5 .BKcolor_14,
+#BKtr_5 .BKcolor_15,
+#BKtr_5 .BKcolor_16,
+#BKtr_5 .BKcolor_17,
+#BKtr_5 .BKcolor_18,
+#BKtr_5 .BKcolor_19,
+#BKtr_5 .BKcolor_20,
+#BKtr_5 .BKcolor_21,
+#BKtr_5 .BKcolor_22,
+#BKtr_5 .BKcolor_23,
+#BKtr_5 .BKcolor_24,
+#BKtr_6 .BKcolor_7,
+#BKtr_6 .BKcolor_8,
+#BKtr_6 .BKcolor_9,
+#BKtr_6 .BKcolor_24,
+#BKtr_6 .BKcolor_25,
+#BKtr_6 .BKcolor_26,
+#BKtr_7 .BKcolor_5,
+#BKtr_7 .BKcolor_6,
+#BKtr_7 .BKcolor_8,
+#BKtr_7 .BKcolor_9,
+#BKtr_7 .BKcolor_24,
+#BKtr_7 .BKcolor_25,
+#BKtr_7 .BKcolor_26,
+#BKtr_8 .BKcolor_4,
+#BKtr_8 .BKcolor_7,
+#BKtr_8 .BKcolor_25,
+#BKtr_8 .BKcolor_26,
+#BKtr_8 .BKcolor_27,
+#BKtr_9 .BKcolor_4,
+#BKtr_9 .BKcolor_7,
+#BKtr_9 .BKcolor_25,
+#BKtr_9 .BKcolor_26,
+#BKtr_9 .BKcolor_27,
+#BKtr_10 .BKcolor_5,
+#BKtr_10 .BKcolor_6,
+#BKtr_10 .BKcolor_27,
+#BKtr_11 .BKcolor_5,
+#BKtr_11 .BKcolor_6,
+#BKtr_11 .BKcolor_27,
+#BKtr_12 .BKcolor_5,
+#BKtr_12 .BKcolor_6,
+#BKtr_12 .BKcolor_27,
+#BKtr_13 .BKcolor_5,
+#BKtr_13 .BKcolor_6,
+#BKtr_13 .BKcolor_27,
+#BKtr_14 .BKcolor_4,
+#BKtr_14 .BKcolor_5,
+#BKtr_14 .BKcolor_6,
+#BKtr_14 .BKcolor_27,
+#BKtr_15 .BKcolor_4,
+#BKtr_15 .BKcolor_5,
+#BKtr_15 .BKcolor_6,
+#BKtr_15 .BKcolor_27,
+#BKtr_16 .BKcolor_4,
+#BKtr_16 .BKcolor_5,
+#BKtr_16 .BKcolor_6,
+#BKtr_16 .BKcolor_27,
+#BKtr_17 .BKcolor_4,
+#BKtr_17 .BKcolor_5,
+#BKtr_17 .BKcolor_6,
+#BKtr_17 .BKcolor_27,
+#BKtr_18 .BKcolor_4,
+#BKtr_18 .BKcolor_5,
+#BKtr_18 .BKcolor_6,
+#BKtr_18 .BKcolor_27,
+#BKtr_19 .BKcolor_4,
+#BKtr_19 .BKcolor_5,
+#BKtr_19 .BKcolor_6,
+#BKtr_19 .BKcolor_27,
+#BKtr_20 .BKcolor_4,
+#BKtr_20 .BKcolor_5,
+#BKtr_20 .BKcolor_6,
+#BKtr_20 .BKcolor_27,
+#BKtr_21 .BKcolor_4,
+#BKtr_21 .BKcolor_5,
+#BKtr_21 .BKcolor_6,
+#BKtr_21 .BKcolor_27,
+#BKtr_22 .BKcolor_4,
+#BKtr_22 .BKcolor_5,
+#BKtr_22 .BKcolor_6,
+#BKtr_22 .BKcolor_27,
+#BKtr_23 .BKcolor_4,
+#BKtr_23 .BKcolor_5,
+#BKtr_23 .BKcolor_6,
+#BKtr_23 .BKcolor_27,
+#BKtr_24 .BKcolor_4,
+#BKtr_24 .BKcolor_5,
+#BKtr_24 .BKcolor_6,
+#BKtr_24 .BKcolor_7,
+#BKtr_24 .BKcolor_25,
+#BKtr_24 .BKcolor_26,
+#BKtr_24 .BKcolor_27,
+#BKtr_24 .BKcolor_4,
+#BKtr_24 .BKcolor_5,
+#BKtr_24 .BKcolor_6,
+#BKtr_24 .BKcolor_7,
+#BKtr_24 .BKcolor_24,
+#BKtr_24 .BKcolor_25,
+#BKtr_24 .BKcolor_26,
+#BKtr_25 .BKcolor_5,
+#BKtr_25 .BKcolor_6,
+#BKtr_25 .BKcolor_7,
+#BKtr_25 .BKcolor_8,
+#BKtr_25 .BKcolor_9,
+#BKtr_25 .BKcolor_24,
+#BKtr_25 .BKcolor_25,
+#BKtr_25 .BKcolor_26,
+#BKtr_26 .BKcolor_5,
+#BKtr_26 .BKcolor_6,
+#BKtr_26 .BKcolor_7,
+#BKtr_26 .BKcolor_8,
+#BKtr_26 .BKcolor_9,
+#BKtr_26 .BKcolor_24,
+#BKtr_26 .BKcolor_25,
+#BKtr_26 .BKcolor_26,
+#BKtr_27 .BKcolor_7,
+#BKtr_27 .BKcolor_8,
+#BKtr_27 .BKcolor_9,
+#BKtr_27 .BKcolor_10,
+#BKtr_27 .BKcolor_11,
+#BKtr_27 .BKcolor_12,
+#BKtr_27 .BKcolor_13,
+#BKtr_27 .BKcolor_14,
+#BKtr_27 .BKcolor_15,
+#BKtr_27 .BKcolor_16,
+#BKtr_27 .BKcolor_17,
+#BKtr_27 .BKcolor_18,
+#BKtr_27 .BKcolor_19,
+#BKtr_27 .BKcolor_20,
+#BKtr_27 .BKcolor_21,
+#BKtr_27 .BKcolor_22,
+#BKtr_27 .BKcolor_23,
+#BKtr_27 .BKcolor_24 {
+	background: red;
+}
+
+#BKtr_2 .BKcolor_16,
+#BKtr_2 .BKcolor_17,
+#BKtr_3 .BKcolor_16,
+#BKtr_3 .BKcolor_17,
+#BKtr_7 .BKcolor_7,
+#BKtr_8 .BKcolor_5,
+#BKtr_8 .BKcolor_6,
+#BKtr_9 .BKcolor_5,
+#BKtr_9 .BKcolor_6,
+#BKtr_10 .BKcolor_4,
+#BKtr_11 .BKcolor_4,
+#BKtr_12 .BKcolor_4,
+#BKtr_13 .BKcolor_4 {
+	background-color: yellow;
+}
+
+#BKtr_6 .BKcolor_10,
+#BKtr_6 .BKcolor_11,
+#BKtr_6 .BKcolor_12,
+#BKtr_6 .BKcolor_13,
+#BKtr_6 .BKcolor_14,
+#BKtr_6 .BKcolor_15,
+#BKtr_6 .BKcolor_16,
+#BKtr_6 .BKcolor_17,
+#BKtr_6 .BKcolor_18,
+#BKtr_6 .BKcolor_19,
+#BKtr_6 .BKcolor_20,
+#BKtr_6 .BKcolor_21,
+#BKtr_6 .BKcolor_22,
+#BKtr_6 .BKcolor_23,
+#BKtr_7 .BKcolor_10,
+#BKtr_7 .BKcolor_11,
+#BKtr_7 .BKcolor_12,
+#BKtr_7 .BKcolor_13,
+#BKtr_7 .BKcolor_14,
+#BKtr_7 .BKcolor_15,
+#BKtr_7 .BKcolor_16,
+#BKtr_7 .BKcolor_17,
+#BKtr_7 .BKcolor_18,
+#BKtr_7 .BKcolor_19,
+#BKtr_7 .BKcolor_20,
+#BKtr_7 .BKcolor_21,
+#BKtr_7 .BKcolor_22,
+#BKtr_7 .BKcolor_23,
+#BKtr_8 .BKcolor_8,
+#BKtr_8 .BKcolor_9,
+#BKtr_8 .BKcolor_23,
+#BKtr_8 .BKcolor_24,
+#BKtr_9 .BKcolor_8,
+#BKtr_9 .BKcolor_9,
+#BKtr_9 .BKcolor_23,
+#BKtr_9 .BKcolor_24,
+#BKtr_10 .BKcolor_7,
+#BKtr_10 .BKcolor_25,
+#BKtr_10 .BKcolor_26,
+#BKtr_11 .BKcolor_7,
+#BKtr_11 .BKcolor_25,
+#BKtr_11 .BKcolor_26,
+#BKtr_12 .BKcolor_7,
+#BKtr_12 .BKcolor_25,
+#BKtr_12 .BKcolor_26,
+#BKtr_13 .BKcolor_7,
+#BKtr_13 .BKcolor_25,
+#BKtr_13 .BKcolor_26,
+#BKtr_14 .BKcolor_7,
+#BKtr_14 .BKcolor_25,
+#BKtr_14 .BKcolor_26,
+#BKtr_15 .BKcolor_7,
+#BKtr_15 .BKcolor_25,
+#BKtr_15 .BKcolor_26,
+#BKtr_16 .BKcolor_7,
+#BKtr_16 .BKcolor_25,
+#BKtr_16 .BKcolor_26,
+#BKtr_17 .BKcolor_7,
+#BKtr_17 .BKcolor_25,
+#BKtr_17 .BKcolor_26,
+#BKtr_18 .BKcolor_7,
+#BKtr_18 .BKcolor_25,
+#BKtr_18 .BKcolor_26,
+#BKtr_19 .BKcolor_7,
+#BKtr_19 .BKcolor_25,
+#BKtr_19 .BKcolor_26,
+#BKtr_20 .BKcolor_7,
+#BKtr_20 .BKcolor_25,
+#BKtr_20 .BKcolor_26,
+#BKtr_21 .BKcolor_7,
+#BKtr_21 .BKcolor_25,
+#BKtr_21 .BKcolor_26,
+#BKtr_22 .BKcolor_7,
+#BKtr_22 .BKcolor_25,
+#BKtr_22 .BKcolor_26,
+#BKtr_23 .BKcolor_7,
+#BKtr_23 .BKcolor_25,
+#BKtr_23 .BKcolor_26,
+#BKtr_24 .BKcolor_8,
+#BKtr_24 .BKcolor_9,
+#BKtr_24 .BKcolor_24,
+#BKtr_24 .BKcolor_25,
+#BKtr_25 .BKcolor_10,
+#BKtr_25 .BKcolor_11,
+#BKtr_25 .BKcolor_12,
+#BKtr_25 .BKcolor_13,
+#BKtr_25 .BKcolor_14,
+#BKtr_25 .BKcolor_15,
+#BKtr_25 .BKcolor_16,
+#BKtr_25 .BKcolor_17,
+#BKtr_25 .BKcolor_18,
+#BKtr_25 .BKcolor_19,
+#BKtr_25 .BKcolor_20,
+#BKtr_25 .BKcolor_21,
+#BKtr_25 .BKcolor_22,
+#BKtr_25 .BKcolor_23,
+#BKtr_26 .BKcolor_10,
+#BKtr_26 .BKcolor_11,
+#BKtr_26 .BKcolor_12,
+#BKtr_26 .BKcolor_13,
+#BKtr_26 .BKcolor_14,
+#BKtr_26 .BKcolor_15,
+#BKtr_26 .BKcolor_16,
+#BKtr_26 .BKcolor_17,
+#BKtr_26 .BKcolor_18,
+#BKtr_26 .BKcolor_19,
+#BKtr_26 .BKcolor_20,
+#BKtr_26 .BKcolor_21,
+#BKtr_26 .BKcolor_22,
+#BKtr_26 .BKcolor_23 {
+	background: rgb(70, 156, 255);
+}
+
+#BKtr_8 .BKcolor_10,
+#BKtr_8 .BKcolor_13,
+#BKtr_8 .BKcolor_14,
+#BKtr_8 .BKcolor_15,
+#BKtr_8 .BKcolor_17,
+#BKtr_8 .BKcolor_18,
+#BKtr_8 .BKcolor_19,
+#BKtr_8 .BKcolor_22,
+#BKtr_9 .BKcolor_10,
+#BKtr_9 .BKcolor_13,
+#BKtr_9 .BKcolor_14,
+#BKtr_9 .BKcolor_15,
+#BKtr_9 .BKcolor_16,
+#BKtr_9 .BKcolor_17,
+#BKtr_9 .BKcolor_18,
+#BKtr_9 .BKcolor_19,
+#BKtr_9 .BKcolor_22,
+#BKtr_10 .BKcolor_8,
+#BKtr_10 .BKcolor_9,
+#BKtr_10 .BKcolor_10,
+#BKtr_10 .BKcolor_11,
+#BKtr_10 .BKcolor_12,
+#BKtr_10 .BKcolor_13,
+#BKtr_10 .BKcolor_14,
+#BKtr_10 .BKcolor_15,
+#BKtr_10 .BKcolor_16,
+#BKtr_10 .BKcolor_17,
+#BKtr_10 .BKcolor_18,
+#BKtr_10 .BKcolor_19,
+#BKtr_10 .BKcolor_20,
+#BKtr_10 .BKcolor_21,
+#BKtr_10 .BKcolor_22,
+#BKtr_10 .BKcolor_23,
+#BKtr_10 .BKcolor_24,
+#BKtr_11 .BKcolor_10,
+#BKtr_11 .BKcolor_11,
+#BKtr_11 .BKcolor_12,
+#BKtr_11 .BKcolor_13,
+#BKtr_11 .BKcolor_14,
+#BKtr_11 .BKcolor_15,
+#BKtr_11 .BKcolor_16,
+#BKtr_11 .BKcolor_17,
+#BKtr_11 .BKcolor_18,
+#BKtr_11 .BKcolor_19,
+#BKtr_11 .BKcolor_20,
+#BKtr_11 .BKcolor_21,
+#BKtr_11 .BKcolor_22,
+#BKtr_12 .BKcolor_10,
+#BKtr_12 .BKcolor_11,
+#BKtr_12 .BKcolor_12,
+#BKtr_12 .BKcolor_13,
+#BKtr_12 .BKcolor_14,
+#BKtr_12 .BKcolor_15,
+#BKtr_12 .BKcolor_16,
+#BKtr_12 .BKcolor_17,
+#BKtr_12 .BKcolor_18,
+#BKtr_12 .BKcolor_19,
+#BKtr_12 .BKcolor_20,
+#BKtr_12 .BKcolor_21,
+#BKtr_12 .BKcolor_22,
+#BKtr_13 .BKcolor_8,
+#BKtr_13 .BKcolor_9,
+#BKtr_13 .BKcolor_10,
+#BKtr_13 .BKcolor_11,
+#BKtr_13 .BKcolor_12,
+#BKtr_13 .BKcolor_13,
+#BKtr_13 .BKcolor_14,
+#BKtr_13 .BKcolor_15,
+#BKtr_13 .BKcolor_16,
+#BKtr_13 .BKcolor_17,
+#BKtr_13 .BKcolor_18,
+#BKtr_13 .BKcolor_19,
+#BKtr_13 .BKcolor_20,
+#BKtr_13 .BKcolor_21,
+#BKtr_13 .BKcolor_22,
+#BKtr_13 .BKcolor_23,
+#BKtr_13 .BKcolor_24,
+#BKtr_14 .BKcolor_8,
+#BKtr_14 .BKcolor_9,
+#BKtr_14 .BKcolor_10,
+#BKtr_14 .BKcolor_11,
+#BKtr_14 .BKcolor_12,
+#BKtr_14 .BKcolor_13,
+#BKtr_14 .BKcolor_14,
+#BKtr_14 .BKcolor_15,
+#BKtr_14 .BKcolor_16,
+#BKtr_14 .BKcolor_17,
+#BKtr_14 .BKcolor_18,
+#BKtr_14 .BKcolor_19,
+#BKtr_14 .BKcolor_20,
+#BKtr_14 .BKcolor_21,
+#BKtr_14 .BKcolor_22,
+#BKtr_14 .BKcolor_23,
+#BKtr_14 .BKcolor_24,
+#BKtr_15 .BKcolor_8,
+#BKtr_15 .BKcolor_9,
+#BKtr_15 .BKcolor_10,
+#BKtr_15 .BKcolor_11,
+#BKtr_15 .BKcolor_12,
+#BKtr_15 .BKcolor_13,
+#BKtr_15 .BKcolor_14,
+#BKtr_15 .BKcolor_15,
+#BKtr_15 .BKcolor_16,
+#BKtr_15 .BKcolor_17,
+#BKtr_15 .BKcolor_18,
+#BKtr_15 .BKcolor_19,
+#BKtr_15 .BKcolor_20,
+#BKtr_15 .BKcolor_21,
+#BKtr_15 .BKcolor_22,
+#BKtr_15 .BKcolor_23,
+#BKtr_15 .BKcolor_24,
+#BKtr_16 .BKcolor_10,
+#BKtr_16 .BKcolor_11,
+#BKtr_16 .BKcolor_12,
+#BKtr_16 .BKcolor_13,
+#BKtr_16 .BKcolor_14,
+#BKtr_16 .BKcolor_15,
+#BKtr_16 .BKcolor_16,
+#BKtr_16 .BKcolor_17,
+#BKtr_16 .BKcolor_18,
+#BKtr_16 .BKcolor_19,
+#BKtr_16 .BKcolor_20,
+#BKtr_16 .BKcolor_21,
+#BKtr_16 .BKcolor_22,
+#BKtr_17 .BKcolor_10,
+#BKtr_17 .BKcolor_11,
+#BKtr_17 .BKcolor_12,
+#BKtr_17 .BKcolor_13,
+#BKtr_17 .BKcolor_14,
+#BKtr_17 .BKcolor_15,
+#BKtr_17 .BKcolor_16,
+#BKtr_17 .BKcolor_17,
+#BKtr_17 .BKcolor_18,
+#BKtr_17 .BKcolor_19,
+#BKtr_17 .BKcolor_20,
+#BKtr_17 .BKcolor_21,
+#BKtr_17 .BKcolor_22,
+#BKtr_18 .BKcolor_8,
+#BKtr_18 .BKcolor_9,
+#BKtr_18 .BKcolor_10,
+#BKtr_18 .BKcolor_11,
+#BKtr_18 .BKcolor_12,
+#BKtr_18 .BKcolor_13,
+#BKtr_18 .BKcolor_14,
+#BKtr_18 .BKcolor_15,
+#BKtr_18 .BKcolor_16,
+#BKtr_18 .BKcolor_17,
+#BKtr_18 .BKcolor_18,
+#BKtr_18 .BKcolor_19,
+#BKtr_18 .BKcolor_20,
+#BKtr_18 .BKcolor_21,
+#BKtr_18 .BKcolor_22,
+#BKtr_18 .BKcolor_23,
+#BKtr_18 .BKcolor_24,
+#BKtr_19 .BKcolor_8,
+#BKtr_19 .BKcolor_9,
+#BKtr_19 .BKcolor_10,
+#BKtr_19 .BKcolor_11,
+#BKtr_19 .BKcolor_12,
+#BKtr_19 .BKcolor_13,
+#BKtr_19 .BKcolor_14,
+#BKtr_19 .BKcolor_15,
+#BKtr_19 .BKcolor_16,
+#BKtr_19 .BKcolor_17,
+#BKtr_19 .BKcolor_18,
+#BKtr_19 .BKcolor_19,
+#BKtr_19 .BKcolor_20,
+#BKtr_19 .BKcolor_21,
+#BKtr_19 .BKcolor_22,
+#BKtr_19 .BKcolor_23,
+#BKtr_19 .BKcolor_24,
+#BKtr_20 .BKcolor_10,
+#BKtr_20 .BKcolor_11,
+#BKtr_20 .BKcolor_12,
+#BKtr_20 .BKcolor_13,
+#BKtr_20 .BKcolor_14,
+#BKtr_20 .BKcolor_15,
+#BKtr_20 .BKcolor_16,
+#BKtr_20 .BKcolor_17,
+#BKtr_20 .BKcolor_18,
+#BKtr_20 .BKcolor_19,
+#BKtr_20 .BKcolor_20,
+#BKtr_20 .BKcolor_21,
+#BKtr_20 .BKcolor_22,
+#BKtr_21 .BKcolor_10,
+#BKtr_21 .BKcolor_11,
+#BKtr_21 .BKcolor_12,
+#BKtr_21 .BKcolor_13,
+#BKtr_21 .BKcolor_14,
+#BKtr_21 .BKcolor_15,
+#BKtr_21 .BKcolor_16,
+#BKtr_21 .BKcolor_17,
+#BKtr_21 .BKcolor_18,
+#BKtr_21 .BKcolor_19,
+#BKtr_21 .BKcolor_20,
+#BKtr_21 .BKcolor_21,
+#BKtr_21 .BKcolor_22,
+#BKtr_22 .BKcolor_8,
+#BKtr_22 .BKcolor_9,
+#BKtr_22 .BKcolor_10,
+#BKtr_22 .BKcolor_11,
+#BKtr_22 .BKcolor_12,
+#BKtr_22 .BKcolor_13,
+#BKtr_22 .BKcolor_14,
+#BKtr_22 .BKcolor_15,
+#BKtr_22 .BKcolor_16,
+#BKtr_22 .BKcolor_17,
+#BKtr_22 .BKcolor_18,
+#BKtr_22 .BKcolor_19,
+#BKtr_22 .BKcolor_20,
+#BKtr_22 .BKcolor_21,
+#BKtr_22 .BKcolor_22,
+#BKtr_22 .BKcolor_23,
+#BKtr_22 .BKcolor_24,
+#BKtr_23 .BKcolor_8,
+#BKtr_23 .BKcolor_9,
+#BKtr_23 .BKcolor_10,
+#BKtr_23 .BKcolor_11,
+#BKtr_23 .BKcolor_12,
+#BKtr_23 .BKcolor_13,
+#BKtr_23 .BKcolor_14,
+#BKtr_23 .BKcolor_15,
+#BKtr_23 .BKcolor_16,
+#BKtr_23 .BKcolor_17,
+#BKtr_23 .BKcolor_18,
+#BKtr_23 .BKcolor_19,
+#BKtr_23 .BKcolor_20,
+#BKtr_23 .BKcolor_21,
+#BKtr_23 .BKcolor_22,
+#BKtr_23 .BKcolor_23,
+#BKtr_23 .BKcolor_24,
+#BKtr_24 .BKcolor_10,
+#BKtr_24 .BKcolor_13,
+#BKtr_24 .BKcolor_14,
+#BKtr_24 .BKcolor_15,
+#BKtr_24 .BKcolor_17,
+#BKtr_24 .BKcolor_18,
+#BKtr_24 .BKcolor_19,
+#BKtr_24 .BKcolor_22,
+#BKtr_24 .BKcolor_23,
+#BKtr_24 .BKcolor_24 {
+	background: #fff;
+}
+
+#BKtr_8 .BKcolor_11,
+#BKtr_8 .BKcolor_12,
+#BKtr_8 .BKcolor_16,
+#BKtr_8 .BKcolor_20,
+#BKtr_8 .BKcolor_21,
+#BKtr_9 .BKcolor_11,
+#BKtr_9 .BKcolor_12,
+#BKtr_9 .BKcolor_20,
+#BKtr_9 .BKcolor_21,
+#BKtr_11 .BKcolor_8,
+#BKtr_11 .BKcolor_9,
+#BKtr_11 .BKcolor_23,
+#BKtr_11 .BKcolor_24,
+#BKtr_12 .BKcolor_8,
+#BKtr_12 .BKcolor_9,
+#BKtr_12 .BKcolor_23,
+#BKtr_12 .BKcolor_24,
+#BKtr_16 .BKcolor_8,
+#BKtr_16 .BKcolor_9,
+#BKtr_16 .BKcolor_23,
+#BKtr_16 .BKcolor_24,
+#BKtr_17 .BKcolor_8,
+#BKtr_17 .BKcolor_9,
+#BKtr_17 .BKcolor_23,
+#BKtr_17 .BKcolor_24,
+#BKtr_20 .BKcolor_8,
+#BKtr_20 .BKcolor_9,
+#BKtr_20 .BKcolor_23,
+#BKtr_20 .BKcolor_24,
+#BKtr_21 .BKcolor_8,
+#BKtr_21 .BKcolor_9,
+#BKtr_21 .BKcolor_23,
+#BKtr_21 .BKcolor_24,
+#BKtr_24 .BKcolor_11,
+#BKtr_24 .BKcolor_12,
+#BKtr_24 .BKcolor_16,
+#BKtr_24 .BKcolor_20,
+#BKtr_24 .BKcolor_21 {
+	background-color: #000;
+}
+
+/* 為何無效? */
+/* #BKtr_2 [class^='BKcolor_']:not(.BKcolor_13) {
+	background: yellowgreen;
+} */
+
+/* 比對用 */
+
+#div01 {
+	border: 1px solid red;
+	width: 10px;
+	position: absolute;
+	top: 50%;
+	left: calc(50% - 170px);
+	transform: translate(-50%, -50%);
+}
+
+.table01 {
+	box-sizing: border-box;
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+.tr01 {
+	box-sizing: border-box;
+	list-style: none;
+	border: none;
+	font-size: 0;
+	border-collapse: collapse;
+}
+
+.td01 {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 10px;
+	height: 8.4px;
+	background: #d8d8d8;
+	/* margin-left: 0.2px;
+	margin-bottom: 0.2px; */
+	border: 0.1px solid rgb(255, 186, 186);
+	color: black;
+	font-size: 0.001px;
+}
