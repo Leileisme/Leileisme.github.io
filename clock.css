@@ -14,12 +14,14 @@ body {
 #content {
 	box-sizing: border-box;
 	/* border: 1px solid red; */
-	width: 1890px;
-	height: 940px;
-	position: absolute;
-	top: 50%;
+	/* width: 100%;
+	height: 100%; */
+	width: 1960px;
+	height: 960px;
+	position: fixed;
+	/* top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
 }
 
 .tr_content {
@@ -35,8 +37,8 @@ body {
 .td_content {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 22px;
-	height: 22px;
+	width: 17px;
+	height: 17px;
 	background: rgb(255, 238, 208);
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
@@ -45,17 +47,17 @@ body {
 	font-size: 0.001px;
 }
 
-/* 時鐘背景色 */
-#clock {
+/* 馬力歐 */
+#mario {
 	/* border: 1px solid red; */
 	/* width: 670px; */
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-51.8%, -47.4%);
+	bottom: 14%;
+	left: 14.9%;
+	/* transform: translate(0, -47.3%); */
 }
 
-#BGtable {
+#table_mario {
 	position: relative;
 	list-style: none;
 	border: none;
@@ -64,7 +66,7 @@ body {
 	font-size: 0;
 }
 
-.BKtr {
+.tr_mario {
 	list-style: none;
 	border: none;
 	height: 10px;
@@ -74,15 +76,263 @@ body {
 	padding: 0; */
 }
 
-.BKtd {
+.td_mario {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 22px;
-	height: 22px;
-	/* background: rgb(255, 238, 208); */
+	width: 17px;
+	height: 17px;
+	/* background: rgb(218, 25, 25); */
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
+	/* border: 0.05px solid rgb(218, 218, 218); */
+	/* font-size: 0.001px; */
+}
+
+#A {
+	width: 260px;
+	opacity: 0.4;
+	position: absolute;
+	left: 3.5px;
+	z-index: 1;
+}
+
+#div_m {
+	position: absolute;
+	top: 30%;
+	left: 22%;
+}
+
+.tr_mario {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+}
+
+/* 馬力歐色 */
+
+#tr_mario_1 .td_mario_4,
+#tr_mario_1 .td_mario_5,
+#tr_mario_1 .td_mario_6,
+#tr_mario_1 .td_mario_7,
+#tr_mario_1 .td_mario_8,
+#tr_mario_1 .td_mario_9,
+#tr_mario_2 .td_mario_3,
+#tr_mario_2 .td_mario_4,
+#tr_mario_2 .td_mario_5,
+#tr_mario_2 .td_mario_6,
+#tr_mario_2 .td_mario_7,
+#tr_mario_2 .td_mario_8,
+#tr_mario_2 .td_mario_9,
+#tr_mario_2 .td_mario_10,
+#tr_mario_2 .td_mario_11,
+#tr_mario_2 .td_mario_12,
+#tr_mario_2 .td_mario_13,
+#tr_mario_8 .td_mario_6,
+#tr_mario_9 .td_mario_6,
+#tr_mario_9 .td_mario_9,
+#tr_mario_10 .td_mario_6,
+#tr_mario_10 .td_mario_7,
+#tr_mario_10 .td_mario_8,
+#tr_mario_10 .td_mario_9,
+#tr_mario_11 .td_mario_5,
+#tr_mario_11 .td_mario_7,
+#tr_mario_11 .td_mario_8,
+#tr_mario_11 .td_mario_10,
+#tr_mario_12 .td_mario_5,
+#tr_mario_12 .td_mario_6,
+#tr_mario_12 .td_mario_7,
+#tr_mario_12 .td_mario_8,
+#tr_mario_12 .td_mario_9,
+#tr_mario_12 .td_mario_10,
+#tr_mario_13 .td_mario_3,
+#tr_mario_13 .td_mario_4,
+#tr_mario_13 .td_mario_5,
+#tr_mario_13 .td_mario_6,
+#tr_mario_13 .td_mario_7,
+#tr_mario_13 .td_mario_8,
+#tr_mario_13 .td_mario_9,
+#tr_mario_13 .td_mario_10,
+#tr_mario_13 .td_mario_11,
+#tr_mario_13 .td_mario_12,
+#tr_mario_14 .td_mario_3,
+#tr_mario_14 .td_mario_4,
+#tr_mario_14 .td_mario_5,
+#tr_mario_14 .td_mario_6,
+#tr_mario_14 .td_mario_9,
+#tr_mario_14 .td_mario_10,
+#tr_mario_14 .td_mario_11,
+#tr_mario_14 .td_mario_12 {
+	background: #f00;
 	border: 0.05px solid rgb(218, 218, 218);
+}
+
+#tr_mario_3 .td_mario_3,
+#tr_mario_3 .td_mario_4,
+#tr_mario_3 .td_mario_5,
+#tr_mario_3 .td_mario_6,
+#tr_mario_3 .td_mario_9,
+#tr_mario_4 .td_mario_2,
+#tr_mario_4 .td_mario_4,
+#tr_mario_4 .td_mario_5,
+#tr_mario_4 .td_mario_9,
+#tr_mario_5 .td_mario_2,
+#tr_mario_5 .td_mario_4,
+#tr_mario_5 .td_mario_5,
+#tr_mario_5 .td_mario_6,
+#tr_mario_5 .td_mario_10,
+#tr_mario_6 .td_mario_2,
+#tr_mario_6 .td_mario_3,
+#tr_mario_6 .td_mario_4,
+#tr_mario_6 .td_mario_9,
+#tr_mario_6 .td_mario_10,
+#tr_mario_6 .td_mario_11,
+#tr_mario_6 .td_mario_12,
+#tr_mario_6 .td_mario_13,
+#tr_mario_8 .td_mario_3,
+#tr_mario_8 .td_mario_4,
+#tr_mario_8 .td_mario_5,
+#tr_mario_8 .td_mario_7,
+#tr_mario_8 .td_mario_8,
+#tr_mario_8 .td_mario_9,
+#tr_mario_9 .td_mario_2,
+#tr_mario_9 .td_mario_3,
+#tr_mario_9 .td_mario_4,
+#tr_mario_9 .td_mario_5,
+#tr_mario_9 .td_mario_7,
+#tr_mario_9 .td_mario_8,
+#tr_mario_9 .td_mario_10,
+#tr_mario_9 .td_mario_11,
+#tr_mario_9 .td_mario_12,
+#tr_mario_9 .td_mario_13,
+#tr_mario_10 .td_mario_1,
+#tr_mario_10 .td_mario_2,
+#tr_mario_10 .td_mario_3,
+#tr_mario_10 .td_mario_4,
+#tr_mario_10 .td_mario_5,
+#tr_mario_10 .td_mario_10,
+#tr_mario_10 .td_mario_11,
+#tr_mario_10 .td_mario_12,
+#tr_mario_10 .td_mario_13,
+#tr_mario_10 .td_mario_14,
+#tr_mario_11 .td_mario_3,
+#tr_mario_11 .td_mario_4,
+#tr_mario_11 .td_mario_11,
+#tr_mario_11 .td_mario_12,
+#tr_mario_15 .td_mario_2,
+#tr_mario_15 .td_mario_3,
+#tr_mario_15 .td_mario_4,
+#tr_mario_15 .td_mario_5,
+#tr_mario_15 .td_mario_10,
+#tr_mario_15 .td_mario_11,
+#tr_mario_15 .td_mario_12,
+#tr_mario_15 .td_mario_13,
+#tr_mario_16 .td_mario_1,
+#tr_mario_16 .td_mario_2,
+#tr_mario_16 .td_mario_3,
+#tr_mario_16 .td_mario_4,
+#tr_mario_16 .td_mario_5,
+#tr_mario_16 .td_mario_10,
+#tr_mario_16 .td_mario_11,
+#tr_mario_16 .td_mario_12,
+#tr_mario_16 .td_mario_13,
+#tr_mario_16 .td_mario_14 {
+	background: rgb(107, 69, 11);
+	border: 0.05px solid rgb(218, 218, 218);
+}
+
+#tr_mario_3 .td_mario_7,
+#tr_mario_3 .td_mario_8,
+#tr_mario_3 .td_mario_10,
+#tr_mario_4 .td_mario_3,
+#tr_mario_4 .td_mario_6,
+#tr_mario_4 .td_mario_7,
+#tr_mario_4 .td_mario_8,
+#tr_mario_4 .td_mario_10,
+#tr_mario_4 .td_mario_11,
+#tr_mario_4 .td_mario_12,
+#tr_mario_4 .td_mario_13,
+#tr_mario_5 .td_mario_3,
+#tr_mario_5 .td_mario_7,
+#tr_mario_5 .td_mario_8,
+#tr_mario_5 .td_mario_9,
+#tr_mario_5 .td_mario_11,
+#tr_mario_5 .td_mario_12,
+#tr_mario_5 .td_mario_13,
+#tr_mario_5 .td_mario_14,
+#tr_mario_6 .td_mario_5,
+#tr_mario_6 .td_mario_6,
+#tr_mario_6 .td_mario_7,
+#tr_mario_6 .td_mario_8,
+#tr_mario_7 .td_mario_4,
+#tr_mario_7 .td_mario_5,
+#tr_mario_7 .td_mario_6,
+#tr_mario_7 .td_mario_7,
+#tr_mario_7 .td_mario_8,
+#tr_mario_7 .td_mario_9,
+#tr_mario_7 .td_mario_10,
+#tr_mario_7 .td_mario_11,
+#tr_mario_7 .td_mario_12,
+#tr_mario_11 .td_mario_1,
+#tr_mario_11 .td_mario_2,
+#tr_mario_11 .td_mario_6,
+#tr_mario_11 .td_mario_9,
+#tr_mario_11 .td_mario_13,
+#tr_mario_11 .td_mario_14,
+#tr_mario_12 .td_mario_1,
+#tr_mario_12 .td_mario_2,
+#tr_mario_12 .td_mario_3,
+#tr_mario_12 .td_mario_4,
+#tr_mario_12 .td_mario_11,
+#tr_mario_12 .td_mario_12,
+#tr_mario_12 .td_mario_13,
+#tr_mario_12 .td_mario_14,
+#tr_mario_13 .td_mario_1,
+#tr_mario_13 .td_mario_2,
+#tr_mario_13 .td_mario_13,
+#tr_mario_13 .td_mario_14 {
+	background: rgb(255, 166, 0);
+	border: 0.05px solid rgb(218, 218, 218);
+}
+
+/* 時鐘背景色 */
+#clock {
+	/* border: 1px solid red; */
+	/* width: 670px; */
+	position: absolute;
+	bottom: 30%;
+	left: 64.4%;
+	/* transform: translate(0, -47.3%); */
+}
+
+#table_clock {
+	position: relative;
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+.tr_clock {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+	color: blue;
+	/* margin: 0;
+	padding: 0; */
+}
+
+.td_clock {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	/* background: rgb(218, 25, 25); */
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	/* border: 0.05px solid rgb(218, 218, 218); */
 	color: black;
 	/* font-size: 0.001px; */
 }
@@ -104,7 +354,7 @@ body {
 	font-size: 0;
 	position: absolute;
 	top: 50%;
-	left: 49.7%;
+	left: 50%;
 	transform-origin: 50% 11%;
 }
 
@@ -118,12 +368,12 @@ body {
 .td_hour {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 22px;
-	height: 22px;
+	width: 17px;
+	height: 17px;
 	background: #000;
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
-	/* border: 0.05px solid rgb(218, 218, 218); */
+	border: 0.05px solid rgb(218, 218, 218);
 	font-size: 0.001px;
 }
 
@@ -137,7 +387,7 @@ body {
 	font-size: 0;
 	position: absolute;
 	top: 50%;
-	left: 49.7%;
+	left: 50%;
 	transform-origin: 50% 6%;
 }
 
@@ -151,12 +401,12 @@ body {
 .td_Minuter {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 22px;
-	height: 22px;
+	width: 17px;
+	height: 17px;
 	background: #000;
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
-	/* border: 0.05px solid rgb(218, 218, 218); */
+	border: 0.05px solid rgb(218, 218, 218);
 	font-size: 0.001px;
 }
 
@@ -175,734 +425,1032 @@ body {
 /* 時鐘填色 */
 
 /* 邊框 */
-#BKtr_2 .BKcolor_11,
-#BKtr_2 .BKcolor_12,
-#BKtr_2 .BKcolor_19,
-#BKtr_2 .BKcolor_20,
-#BKtr_3 .BKcolor_7,
-#BKtr_3 .BKcolor_8,
-#BKtr_3 .BKcolor_9,
-#BKtr_3 .BKcolor_10,
-#BKtr_3 .BKcolor_11,
-#BKtr_3 .BKcolor_12,
-#BKtr_3 .BKcolor_13,
-#BKtr_3 .BKcolor_18,
-#BKtr_3 .BKcolor_19,
-#BKtr_3 .BKcolor_20,
-#BKtr_3 .BKcolor_21,
-#BKtr_3 .BKcolor_22,
-#BKtr_3 .BKcolor_23,
-#BKtr_3 .BKcolor_24,
-#BKtr_4 .BKcolor_7,
-#BKtr_4 .BKcolor_8,
-#BKtr_4 .BKcolor_9,
-#BKtr_4 .BKcolor_10,
-#BKtr_4 .BKcolor_11,
-#BKtr_4 .BKcolor_12,
-#BKtr_4 .BKcolor_13,
-#BKtr_4 .BKcolor_17,
-#BKtr_4 .BKcolor_18,
-#BKtr_4 .BKcolor_19,
-#BKtr_4 .BKcolor_20,
-#BKtr_4 .BKcolor_21,
-#BKtr_4 .BKcolor_22,
-#BKtr_4 .BKcolor_23,
-#BKtr_4 .BKcolor_24,
-#BKtr_5 .BKcolor_5,
-#BKtr_5 .BKcolor_6,
-#BKtr_5 .BKcolor_25,
-#BKtr_5 .BKcolor_26,
-#BKtr_6 .BKcolor_5,
-#BKtr_6 .BKcolor_6,
-#BKtr_6 .BKcolor_25,
-#BKtr_6 .BKcolor_26,
-#BKtr_7 .BKcolor_4,
-#BKtr_7 .BKcolor_27,
-#BKtr_8 .BKcolor_2,
-#BKtr_8 .BKcolor_3,
-#BKtr_8 .BKcolor_28,
-#BKtr_8 .BKcolor_29,
-#BKtr_9 .BKcolor_2,
-#BKtr_9 .BKcolor_3,
-#BKtr_9 .BKcolor_28,
-#BKtr_9 .BKcolor_29,
-#BKtr_10 .BKcolor_2,
-#BKtr_10 .BKcolor_3,
-#BKtr_10 .BKcolor_28,
-#BKtr_10 .BKcolor_29,
-#BKtr_11 .BKcolor_2,
-#BKtr_11 .BKcolor_3,
-#BKtr_11 .BKcolor_28,
-#BKtr_11 .BKcolor_29,
-#BKtr_12 .BKcolor_2,
-#BKtr_12 .BKcolor_3,
-#BKtr_12 .BKcolor_28,
-#BKtr_12 .BKcolor_29,
-#BKtr_13 .BKcolor_2,
-#BKtr_13 .BKcolor_3,
-#BKtr_13 .BKcolor_28,
-#BKtr_13 .BKcolor_29,
-#BKtr_14 .BKcolor_2,
-#BKtr_14 .BKcolor_3,
-#BKtr_14 .BKcolor_28,
-#BKtr_14 .BKcolor_29,
-#BKtr_15 .BKcolor_2,
-#BKtr_15 .BKcolor_3,
-#BKtr_15 .BKcolor_28,
-#BKtr_15 .BKcolor_29,
-#BKtr_16 .BKcolor_2,
-#BKtr_16 .BKcolor_3,
-#BKtr_16 .BKcolor_28,
-#BKtr_16 .BKcolor_29,
-#BKtr_17 .BKcolor_2,
-#BKtr_17 .BKcolor_3,
-#BKtr_17 .BKcolor_28,
-#BKtr_17 .BKcolor_29,
-#BKtr_18 .BKcolor_2,
-#BKtr_18 .BKcolor_3,
-#BKtr_18 .BKcolor_28,
-#BKtr_18 .BKcolor_29,
-#BKtr_19 .BKcolor_2,
-#BKtr_19 .BKcolor_3,
-#BKtr_19 .BKcolor_28,
-#BKtr_19 .BKcolor_29,
-#BKtr_20 .BKcolor_2,
-#BKtr_20 .BKcolor_3,
-#BKtr_20 .BKcolor_28,
-#BKtr_20 .BKcolor_29,
-#BKtr_21 .BKcolor_2,
-#BKtr_21 .BKcolor_3,
-#BKtr_21 .BKcolor_28,
-#BKtr_21 .BKcolor_29,
-#BKtr_22 .BKcolor_2,
-#BKtr_22 .BKcolor_3,
-#BKtr_22 .BKcolor_28,
-#BKtr_22 .BKcolor_29,
-#BKtr_23 .BKcolor_2,
-#BKtr_23 .BKcolor_3,
-#BKtr_23 .BKcolor_28,
-#BKtr_23 .BKcolor_29,
-#BKtr_24 .BKcolor_2,
-#BKtr_24 .BKcolor_3,
-#BKtr_24 .BKcolor_28,
-#BKtr_24 .BKcolor_29,
-#BKtr_25 .BKcolor_4,
-#BKtr_25 .BKcolor_27,
-#BKtr_26 .BKcolor_4,
-#BKtr_26 .BKcolor_27,
-#BKtr_27 .BKcolor_5,
-#BKtr_27 .BKcolor_6,
-#BKtr_27 .BKcolor_25,
-#BKtr_27 .BKcolor_26,
-#BKtr_28 .BKcolor_7,
-#BKtr_28 .BKcolor_8,
-#BKtr_28 .BKcolor_9,
-#BKtr_28 .BKcolor_10,
-#BKtr_28 .BKcolor_11,
-#BKtr_28 .BKcolor_12,
-#BKtr_28 .BKcolor_13,
-#BKtr_28 .BKcolor_14,
-#BKtr_28 .BKcolor_15,
-#BKtr_28 .BKcolor_16,
-#BKtr_28 .BKcolor_17,
-#BKtr_28 .BKcolor_18,
-#BKtr_28 .BKcolor_19,
-#BKtr_28 .BKcolor_20,
-#BKtr_28 .BKcolor_21,
-#BKtr_28 .BKcolor_22,
-#BKtr_28 .BKcolor_23,
-#BKtr_28 .BKcolor_24,
-#BKtr_29 .BKcolor_7,
-#BKtr_29 .BKcolor_8,
-#BKtr_29 .BKcolor_9,
-#BKtr_29 .BKcolor_10,
-#BKtr_29 .BKcolor_11,
-#BKtr_29 .BKcolor_12,
-#BKtr_29 .BKcolor_13,
-#BKtr_29 .BKcolor_14,
-#BKtr_29 .BKcolor_15,
-#BKtr_29 .BKcolor_16,
-#BKtr_29 .BKcolor_17,
-#BKtr_29 .BKcolor_18,
-#BKtr_29 .BKcolor_19,
-#BKtr_29 .BKcolor_20,
-#BKtr_29 .BKcolor_21,
-#BKtr_29 .BKcolor_22,
-#BKtr_29 .BKcolor_23,
-#BKtr_29 .BKcolor_24 {
+#tr_clock_2 .td_clock_11,
+#tr_clock_2 .td_clock_12,
+#tr_clock_2 .td_clock_19,
+#tr_clock_2 .td_clock_20,
+#tr_clock_3 .td_clock_7,
+#tr_clock_3 .td_clock_8,
+#tr_clock_3 .td_clock_9,
+#tr_clock_3 .td_clock_10,
+#tr_clock_3 .td_clock_11,
+#tr_clock_3 .td_clock_12,
+#tr_clock_3 .td_clock_13,
+#tr_clock_3 .td_clock_18,
+#tr_clock_3 .td_clock_19,
+#tr_clock_3 .td_clock_20,
+#tr_clock_3 .td_clock_21,
+#tr_clock_3 .td_clock_22,
+#tr_clock_3 .td_clock_23,
+#tr_clock_3 .td_clock_24,
+#tr_clock_4 .td_clock_7,
+#tr_clock_4 .td_clock_8,
+#tr_clock_4 .td_clock_9,
+#tr_clock_4 .td_clock_10,
+#tr_clock_4 .td_clock_11,
+#tr_clock_4 .td_clock_12,
+#tr_clock_4 .td_clock_13,
+#tr_clock_4 .td_clock_17,
+#tr_clock_4 .td_clock_18,
+#tr_clock_4 .td_clock_19,
+#tr_clock_4 .td_clock_20,
+#tr_clock_4 .td_clock_21,
+#tr_clock_4 .td_clock_22,
+#tr_clock_4 .td_clock_23,
+#tr_clock_4 .td_clock_24,
+#tr_clock_5 .td_clock_5,
+#tr_clock_5 .td_clock_6,
+#tr_clock_5 .td_clock_25,
+#tr_clock_5 .td_clock_26,
+#tr_clock_6 .td_clock_5,
+#tr_clock_6 .td_clock_6,
+#tr_clock_6 .td_clock_25,
+#tr_clock_6 .td_clock_26,
+#tr_clock_7 .td_clock_4,
+#tr_clock_7 .td_clock_27,
+#tr_clock_8 .td_clock_2,
+#tr_clock_8 .td_clock_3,
+#tr_clock_8 .td_clock_28,
+#tr_clock_8 .td_clock_29,
+#tr_clock_9 .td_clock_2,
+#tr_clock_9 .td_clock_3,
+#tr_clock_9 .td_clock_28,
+#tr_clock_9 .td_clock_29,
+#tr_clock_10 .td_clock_2,
+#tr_clock_10 .td_clock_3,
+#tr_clock_10 .td_clock_28,
+#tr_clock_10 .td_clock_29,
+#tr_clock_11 .td_clock_2,
+#tr_clock_11 .td_clock_3,
+#tr_clock_11 .td_clock_28,
+#tr_clock_11 .td_clock_29,
+#tr_clock_12 .td_clock_2,
+#tr_clock_12 .td_clock_3,
+#tr_clock_12 .td_clock_28,
+#tr_clock_12 .td_clock_29,
+#tr_clock_13 .td_clock_2,
+#tr_clock_13 .td_clock_3,
+#tr_clock_13 .td_clock_28,
+#tr_clock_13 .td_clock_29,
+#tr_clock_14 .td_clock_2,
+#tr_clock_14 .td_clock_3,
+#tr_clock_14 .td_clock_28,
+#tr_clock_14 .td_clock_29,
+#tr_clock_15 .td_clock_2,
+#tr_clock_15 .td_clock_3,
+#tr_clock_15 .td_clock_28,
+#tr_clock_15 .td_clock_29,
+#tr_clock_16 .td_clock_2,
+#tr_clock_16 .td_clock_3,
+#tr_clock_16 .td_clock_28,
+#tr_clock_16 .td_clock_29,
+#tr_clock_17 .td_clock_2,
+#tr_clock_17 .td_clock_3,
+#tr_clock_17 .td_clock_28,
+#tr_clock_17 .td_clock_29,
+#tr_clock_18 .td_clock_2,
+#tr_clock_18 .td_clock_3,
+#tr_clock_18 .td_clock_28,
+#tr_clock_18 .td_clock_29,
+#tr_clock_19 .td_clock_2,
+#tr_clock_19 .td_clock_3,
+#tr_clock_19 .td_clock_28,
+#tr_clock_19 .td_clock_29,
+#tr_clock_20 .td_clock_2,
+#tr_clock_20 .td_clock_3,
+#tr_clock_20 .td_clock_28,
+#tr_clock_20 .td_clock_29,
+#tr_clock_21 .td_clock_2,
+#tr_clock_21 .td_clock_3,
+#tr_clock_21 .td_clock_28,
+#tr_clock_21 .td_clock_29,
+#tr_clock_22 .td_clock_2,
+#tr_clock_22 .td_clock_3,
+#tr_clock_22 .td_clock_28,
+#tr_clock_22 .td_clock_29,
+#tr_clock_23 .td_clock_2,
+#tr_clock_23 .td_clock_3,
+#tr_clock_23 .td_clock_28,
+#tr_clock_23 .td_clock_29,
+#tr_clock_24 .td_clock_2,
+#tr_clock_24 .td_clock_3,
+#tr_clock_24 .td_clock_28,
+#tr_clock_24 .td_clock_29,
+#tr_clock_25 .td_clock_4,
+#tr_clock_25 .td_clock_27,
+#tr_clock_26 .td_clock_4,
+#tr_clock_26 .td_clock_27,
+#tr_clock_27 .td_clock_5,
+#tr_clock_27 .td_clock_6,
+#tr_clock_27 .td_clock_25,
+#tr_clock_27 .td_clock_26,
+#tr_clock_28 .td_clock_7,
+#tr_clock_28 .td_clock_8,
+#tr_clock_28 .td_clock_9,
+#tr_clock_28 .td_clock_10,
+#tr_clock_28 .td_clock_11,
+#tr_clock_28 .td_clock_12,
+#tr_clock_28 .td_clock_13,
+#tr_clock_28 .td_clock_14,
+#tr_clock_28 .td_clock_15,
+#tr_clock_28 .td_clock_16,
+#tr_clock_28 .td_clock_17,
+#tr_clock_28 .td_clock_18,
+#tr_clock_28 .td_clock_19,
+#tr_clock_28 .td_clock_20,
+#tr_clock_28 .td_clock_21,
+#tr_clock_28 .td_clock_22,
+#tr_clock_28 .td_clock_23,
+#tr_clock_28 .td_clock_24,
+#tr_clock_29 .td_clock_7,
+#tr_clock_29 .td_clock_8,
+#tr_clock_29 .td_clock_9,
+#tr_clock_29 .td_clock_10,
+#tr_clock_29 .td_clock_11,
+#tr_clock_29 .td_clock_12,
+#tr_clock_29 .td_clock_13,
+#tr_clock_29 .td_clock_14,
+#tr_clock_29 .td_clock_15,
+#tr_clock_29 .td_clock_16,
+#tr_clock_29 .td_clock_17,
+#tr_clock_29 .td_clock_18,
+#tr_clock_29 .td_clock_19,
+#tr_clock_29 .td_clock_20,
+#tr_clock_29 .td_clock_21,
+#tr_clock_29 .td_clock_22,
+#tr_clock_29 .td_clock_23,
+#tr_clock_29 .td_clock_24 {
 	background: #000;
+	border: 0.05px solid rgb(218, 218, 218);
 }
 
-#BKtr_2 .BKcolor_13,
-#BKtr_2 .BKcolor_14,
-#BKtr_2 .BKcolor_15,
-#BKtr_2 .BKcolor_18,
-#BKtr_2 .BKcolor_19,
-#BKtr_3 .BKcolor_14,
-#BKtr_3 .BKcolor_15,
-#BKtr_4 .BKcolor_14,
-#BKtr_4 .BKcolor_15,
-#BKtr_4 .BKcolor_16,
-#BKtr_5 .BKcolor_7,
-#BKtr_5 .BKcolor_8,
-#BKtr_5 .BKcolor_9,
-#BKtr_5 .BKcolor_10,
-#BKtr_5 .BKcolor_11,
-#BKtr_5 .BKcolor_12,
-#BKtr_5 .BKcolor_13,
-#BKtr_5 .BKcolor_14,
-#BKtr_5 .BKcolor_15,
-#BKtr_5 .BKcolor_16,
-#BKtr_5 .BKcolor_17,
-#BKtr_5 .BKcolor_18,
-#BKtr_5 .BKcolor_19,
-#BKtr_5 .BKcolor_20,
-#BKtr_5 .BKcolor_21,
-#BKtr_5 .BKcolor_22,
-#BKtr_5 .BKcolor_23,
-#BKtr_5 .BKcolor_24,
-#BKtr_6 .BKcolor_7,
-#BKtr_6 .BKcolor_8,
-#BKtr_6 .BKcolor_9,
-#BKtr_6 .BKcolor_24,
-#BKtr_6 .BKcolor_25,
-#BKtr_6 .BKcolor_26,
-#BKtr_7 .BKcolor_5,
-#BKtr_7 .BKcolor_6,
-#BKtr_7 .BKcolor_8,
-#BKtr_7 .BKcolor_9,
-#BKtr_7 .BKcolor_24,
-#BKtr_7 .BKcolor_25,
-#BKtr_7 .BKcolor_26,
-#BKtr_8 .BKcolor_4,
-#BKtr_8 .BKcolor_7,
-#BKtr_8 .BKcolor_25,
-#BKtr_8 .BKcolor_26,
-#BKtr_8 .BKcolor_27,
-#BKtr_9 .BKcolor_4,
-#BKtr_9 .BKcolor_7,
-#BKtr_9 .BKcolor_25,
-#BKtr_9 .BKcolor_26,
-#BKtr_9 .BKcolor_27,
-#BKtr_10 .BKcolor_5,
-#BKtr_10 .BKcolor_6,
-#BKtr_10 .BKcolor_27,
-#BKtr_11 .BKcolor_5,
-#BKtr_11 .BKcolor_6,
-#BKtr_11 .BKcolor_27,
-#BKtr_12 .BKcolor_5,
-#BKtr_12 .BKcolor_6,
-#BKtr_12 .BKcolor_27,
-#BKtr_13 .BKcolor_5,
-#BKtr_13 .BKcolor_6,
-#BKtr_13 .BKcolor_27,
-#BKtr_14 .BKcolor_4,
-#BKtr_14 .BKcolor_5,
-#BKtr_14 .BKcolor_6,
-#BKtr_14 .BKcolor_27,
-#BKtr_15 .BKcolor_4,
-#BKtr_15 .BKcolor_5,
-#BKtr_15 .BKcolor_6,
-#BKtr_15 .BKcolor_27,
-#BKtr_16 .BKcolor_4,
-#BKtr_16 .BKcolor_5,
-#BKtr_16 .BKcolor_6,
-#BKtr_16 .BKcolor_27,
-#BKtr_17 .BKcolor_4,
-#BKtr_17 .BKcolor_5,
-#BKtr_17 .BKcolor_6,
-#BKtr_17 .BKcolor_27,
-#BKtr_18 .BKcolor_4,
-#BKtr_18 .BKcolor_5,
-#BKtr_18 .BKcolor_6,
-#BKtr_18 .BKcolor_27,
-#BKtr_19 .BKcolor_4,
-#BKtr_19 .BKcolor_5,
-#BKtr_19 .BKcolor_6,
-#BKtr_19 .BKcolor_27,
-#BKtr_20 .BKcolor_4,
-#BKtr_20 .BKcolor_5,
-#BKtr_20 .BKcolor_6,
-#BKtr_20 .BKcolor_27,
-#BKtr_21 .BKcolor_4,
-#BKtr_21 .BKcolor_5,
-#BKtr_21 .BKcolor_6,
-#BKtr_21 .BKcolor_27,
-#BKtr_22 .BKcolor_4,
-#BKtr_22 .BKcolor_5,
-#BKtr_22 .BKcolor_6,
-#BKtr_22 .BKcolor_27,
-#BKtr_23 .BKcolor_4,
-#BKtr_23 .BKcolor_5,
-#BKtr_23 .BKcolor_6,
-#BKtr_23 .BKcolor_27,
-#BKtr_24 .BKcolor_4,
-#BKtr_24 .BKcolor_5,
-#BKtr_24 .BKcolor_6,
-#BKtr_24 .BKcolor_7,
-#BKtr_24 .BKcolor_25,
-#BKtr_24 .BKcolor_26,
-#BKtr_24 .BKcolor_27,
-#BKtr_24 .BKcolor_4,
-#BKtr_24 .BKcolor_5,
-#BKtr_24 .BKcolor_6,
-#BKtr_24 .BKcolor_7,
-#BKtr_24 .BKcolor_24,
-#BKtr_24 .BKcolor_25,
-#BKtr_24 .BKcolor_26,
-#BKtr_25 .BKcolor_5,
-#BKtr_25 .BKcolor_6,
-#BKtr_25 .BKcolor_7,
-#BKtr_25 .BKcolor_8,
-#BKtr_25 .BKcolor_9,
-#BKtr_25 .BKcolor_24,
-#BKtr_25 .BKcolor_25,
-#BKtr_25 .BKcolor_26,
-#BKtr_26 .BKcolor_5,
-#BKtr_26 .BKcolor_6,
-#BKtr_26 .BKcolor_7,
-#BKtr_26 .BKcolor_8,
-#BKtr_26 .BKcolor_9,
-#BKtr_26 .BKcolor_24,
-#BKtr_26 .BKcolor_25,
-#BKtr_26 .BKcolor_26,
-#BKtr_27 .BKcolor_7,
-#BKtr_27 .BKcolor_8,
-#BKtr_27 .BKcolor_9,
-#BKtr_27 .BKcolor_10,
-#BKtr_27 .BKcolor_11,
-#BKtr_27 .BKcolor_12,
-#BKtr_27 .BKcolor_13,
-#BKtr_27 .BKcolor_14,
-#BKtr_27 .BKcolor_15,
-#BKtr_27 .BKcolor_16,
-#BKtr_27 .BKcolor_17,
-#BKtr_27 .BKcolor_18,
-#BKtr_27 .BKcolor_19,
-#BKtr_27 .BKcolor_20,
-#BKtr_27 .BKcolor_21,
-#BKtr_27 .BKcolor_22,
-#BKtr_27 .BKcolor_23,
-#BKtr_27 .BKcolor_24 {
+#tr_clock_2 .td_clock_13,
+#tr_clock_2 .td_clock_14,
+#tr_clock_2 .td_clock_15,
+#tr_clock_2 .td_clock_18,
+#tr_clock_2 .td_clock_19,
+#tr_clock_3 .td_clock_14,
+#tr_clock_3 .td_clock_15,
+#tr_clock_4 .td_clock_14,
+#tr_clock_4 .td_clock_15,
+#tr_clock_4 .td_clock_16,
+#tr_clock_5 .td_clock_7,
+#tr_clock_5 .td_clock_8,
+#tr_clock_5 .td_clock_9,
+#tr_clock_5 .td_clock_10,
+#tr_clock_5 .td_clock_11,
+#tr_clock_5 .td_clock_12,
+#tr_clock_5 .td_clock_13,
+#tr_clock_5 .td_clock_14,
+#tr_clock_5 .td_clock_15,
+#tr_clock_5 .td_clock_16,
+#tr_clock_5 .td_clock_17,
+#tr_clock_5 .td_clock_18,
+#tr_clock_5 .td_clock_19,
+#tr_clock_5 .td_clock_20,
+#tr_clock_5 .td_clock_21,
+#tr_clock_5 .td_clock_22,
+#tr_clock_5 .td_clock_23,
+#tr_clock_5 .td_clock_24,
+#tr_clock_6 .td_clock_7,
+#tr_clock_6 .td_clock_8,
+#tr_clock_6 .td_clock_9,
+#tr_clock_6 .td_clock_24,
+#tr_clock_6 .td_clock_25,
+#tr_clock_6 .td_clock_26,
+#tr_clock_7 .td_clock_5,
+#tr_clock_7 .td_clock_6,
+#tr_clock_7 .td_clock_8,
+#tr_clock_7 .td_clock_9,
+#tr_clock_7 .td_clock_24,
+#tr_clock_7 .td_clock_25,
+#tr_clock_7 .td_clock_26,
+#tr_clock_8 .td_clock_4,
+#tr_clock_8 .td_clock_7,
+#tr_clock_8 .td_clock_25,
+#tr_clock_8 .td_clock_26,
+#tr_clock_8 .td_clock_27,
+#tr_clock_9 .td_clock_4,
+#tr_clock_9 .td_clock_7,
+#tr_clock_9 .td_clock_25,
+#tr_clock_9 .td_clock_26,
+#tr_clock_9 .td_clock_27,
+#tr_clock_10 .td_clock_5,
+#tr_clock_10 .td_clock_6,
+#tr_clock_10 .td_clock_27,
+#tr_clock_11 .td_clock_5,
+#tr_clock_11 .td_clock_6,
+#tr_clock_11 .td_clock_27,
+#tr_clock_12 .td_clock_5,
+#tr_clock_12 .td_clock_6,
+#tr_clock_12 .td_clock_27,
+#tr_clock_13 .td_clock_5,
+#tr_clock_13 .td_clock_6,
+#tr_clock_13 .td_clock_27,
+#tr_clock_14 .td_clock_4,
+#tr_clock_14 .td_clock_5,
+#tr_clock_14 .td_clock_6,
+#tr_clock_14 .td_clock_27,
+#tr_clock_15 .td_clock_4,
+#tr_clock_15 .td_clock_5,
+#tr_clock_15 .td_clock_6,
+#tr_clock_15 .td_clock_27,
+#tr_clock_16 .td_clock_4,
+#tr_clock_16 .td_clock_5,
+#tr_clock_16 .td_clock_6,
+#tr_clock_16 .td_clock_27,
+#tr_clock_17 .td_clock_4,
+#tr_clock_17 .td_clock_5,
+#tr_clock_17 .td_clock_6,
+#tr_clock_17 .td_clock_27,
+#tr_clock_18 .td_clock_4,
+#tr_clock_18 .td_clock_5,
+#tr_clock_18 .td_clock_6,
+#tr_clock_18 .td_clock_27,
+#tr_clock_19 .td_clock_4,
+#tr_clock_19 .td_clock_5,
+#tr_clock_19 .td_clock_6,
+#tr_clock_19 .td_clock_27,
+#tr_clock_20 .td_clock_4,
+#tr_clock_20 .td_clock_5,
+#tr_clock_20 .td_clock_6,
+#tr_clock_20 .td_clock_27,
+#tr_clock_21 .td_clock_4,
+#tr_clock_21 .td_clock_5,
+#tr_clock_21 .td_clock_6,
+#tr_clock_21 .td_clock_27,
+#tr_clock_22 .td_clock_4,
+#tr_clock_22 .td_clock_5,
+#tr_clock_22 .td_clock_6,
+#tr_clock_22 .td_clock_27,
+#tr_clock_23 .td_clock_4,
+#tr_clock_23 .td_clock_5,
+#tr_clock_23 .td_clock_6,
+#tr_clock_23 .td_clock_27,
+#tr_clock_24 .td_clock_4,
+#tr_clock_24 .td_clock_5,
+#tr_clock_24 .td_clock_6,
+#tr_clock_24 .td_clock_7,
+#tr_clock_24 .td_clock_25,
+#tr_clock_24 .td_clock_26,
+#tr_clock_24 .td_clock_27,
+#tr_clock_24 .td_clock_4,
+#tr_clock_24 .td_clock_5,
+#tr_clock_24 .td_clock_6,
+#tr_clock_24 .td_clock_7,
+#tr_clock_24 .td_clock_24,
+#tr_clock_24 .td_clock_25,
+#tr_clock_24 .td_clock_26,
+#tr_clock_25 .td_clock_5,
+#tr_clock_25 .td_clock_6,
+#tr_clock_25 .td_clock_7,
+#tr_clock_25 .td_clock_8,
+#tr_clock_25 .td_clock_9,
+#tr_clock_25 .td_clock_24,
+#tr_clock_25 .td_clock_25,
+#tr_clock_25 .td_clock_26,
+#tr_clock_26 .td_clock_5,
+#tr_clock_26 .td_clock_6,
+#tr_clock_26 .td_clock_7,
+#tr_clock_26 .td_clock_8,
+#tr_clock_26 .td_clock_9,
+#tr_clock_26 .td_clock_24,
+#tr_clock_26 .td_clock_25,
+#tr_clock_26 .td_clock_26,
+#tr_clock_27 .td_clock_7,
+#tr_clock_27 .td_clock_8,
+#tr_clock_27 .td_clock_9,
+#tr_clock_27 .td_clock_10,
+#tr_clock_27 .td_clock_11,
+#tr_clock_27 .td_clock_12,
+#tr_clock_27 .td_clock_13,
+#tr_clock_27 .td_clock_14,
+#tr_clock_27 .td_clock_15,
+#tr_clock_27 .td_clock_16,
+#tr_clock_27 .td_clock_17,
+#tr_clock_27 .td_clock_18,
+#tr_clock_27 .td_clock_19,
+#tr_clock_27 .td_clock_20,
+#tr_clock_27 .td_clock_21,
+#tr_clock_27 .td_clock_22,
+#tr_clock_27 .td_clock_23,
+#tr_clock_27 .td_clock_24 {
 	background: red;
+	border: 0.05px solid rgb(218, 218, 218);
 }
 
-#BKtr_2 .BKcolor_16,
-#BKtr_2 .BKcolor_17,
-#BKtr_3 .BKcolor_16,
-#BKtr_3 .BKcolor_17,
-#BKtr_7 .BKcolor_7,
-#BKtr_8 .BKcolor_5,
-#BKtr_8 .BKcolor_6,
-#BKtr_9 .BKcolor_5,
-#BKtr_9 .BKcolor_6,
-#BKtr_10 .BKcolor_4,
-#BKtr_11 .BKcolor_4,
-#BKtr_12 .BKcolor_4,
-#BKtr_13 .BKcolor_4 {
+#tr_clock_2 .td_clock_16,
+#tr_clock_2 .td_clock_17,
+#tr_clock_3 .td_clock_16,
+#tr_clock_3 .td_clock_17,
+#tr_clock_7 .td_clock_7,
+#tr_clock_8 .td_clock_5,
+#tr_clock_8 .td_clock_6,
+#tr_clock_9 .td_clock_5,
+#tr_clock_9 .td_clock_6,
+#tr_clock_10 .td_clock_4,
+#tr_clock_11 .td_clock_4,
+#tr_clock_12 .td_clock_4,
+#tr_clock_13 .td_clock_4 {
 	background-color: yellow;
+	border: 0.05px solid rgb(218, 218, 218);
 }
 
-#BKtr_6 .BKcolor_10,
-#BKtr_6 .BKcolor_11,
-#BKtr_6 .BKcolor_12,
-#BKtr_6 .BKcolor_13,
-#BKtr_6 .BKcolor_14,
-#BKtr_6 .BKcolor_15,
-#BKtr_6 .BKcolor_16,
-#BKtr_6 .BKcolor_17,
-#BKtr_6 .BKcolor_18,
-#BKtr_6 .BKcolor_19,
-#BKtr_6 .BKcolor_20,
-#BKtr_6 .BKcolor_21,
-#BKtr_6 .BKcolor_22,
-#BKtr_6 .BKcolor_23,
-#BKtr_7 .BKcolor_10,
-#BKtr_7 .BKcolor_11,
-#BKtr_7 .BKcolor_12,
-#BKtr_7 .BKcolor_13,
-#BKtr_7 .BKcolor_14,
-#BKtr_7 .BKcolor_15,
-#BKtr_7 .BKcolor_16,
-#BKtr_7 .BKcolor_17,
-#BKtr_7 .BKcolor_18,
-#BKtr_7 .BKcolor_19,
-#BKtr_7 .BKcolor_20,
-#BKtr_7 .BKcolor_21,
-#BKtr_7 .BKcolor_22,
-#BKtr_7 .BKcolor_23,
-#BKtr_8 .BKcolor_8,
-#BKtr_8 .BKcolor_9,
-#BKtr_8 .BKcolor_23,
-#BKtr_8 .BKcolor_24,
-#BKtr_9 .BKcolor_8,
-#BKtr_9 .BKcolor_9,
-#BKtr_9 .BKcolor_23,
-#BKtr_9 .BKcolor_24,
-#BKtr_10 .BKcolor_7,
-#BKtr_10 .BKcolor_25,
-#BKtr_10 .BKcolor_26,
-#BKtr_11 .BKcolor_7,
-#BKtr_11 .BKcolor_25,
-#BKtr_11 .BKcolor_26,
-#BKtr_12 .BKcolor_7,
-#BKtr_12 .BKcolor_25,
-#BKtr_12 .BKcolor_26,
-#BKtr_13 .BKcolor_7,
-#BKtr_13 .BKcolor_25,
-#BKtr_13 .BKcolor_26,
-#BKtr_14 .BKcolor_7,
-#BKtr_14 .BKcolor_25,
-#BKtr_14 .BKcolor_26,
-#BKtr_15 .BKcolor_7,
-#BKtr_15 .BKcolor_25,
-#BKtr_15 .BKcolor_26,
-#BKtr_16 .BKcolor_7,
-#BKtr_16 .BKcolor_25,
-#BKtr_16 .BKcolor_26,
-#BKtr_17 .BKcolor_7,
-#BKtr_17 .BKcolor_25,
-#BKtr_17 .BKcolor_26,
-#BKtr_18 .BKcolor_7,
-#BKtr_18 .BKcolor_25,
-#BKtr_18 .BKcolor_26,
-#BKtr_19 .BKcolor_7,
-#BKtr_19 .BKcolor_25,
-#BKtr_19 .BKcolor_26,
-#BKtr_20 .BKcolor_7,
-#BKtr_20 .BKcolor_25,
-#BKtr_20 .BKcolor_26,
-#BKtr_21 .BKcolor_7,
-#BKtr_21 .BKcolor_25,
-#BKtr_21 .BKcolor_26,
-#BKtr_22 .BKcolor_7,
-#BKtr_22 .BKcolor_25,
-#BKtr_22 .BKcolor_26,
-#BKtr_23 .BKcolor_7,
-#BKtr_23 .BKcolor_25,
-#BKtr_23 .BKcolor_26,
-#BKtr_24 .BKcolor_8,
-#BKtr_24 .BKcolor_9,
-#BKtr_24 .BKcolor_24,
-#BKtr_24 .BKcolor_25,
-#BKtr_25 .BKcolor_10,
-#BKtr_25 .BKcolor_11,
-#BKtr_25 .BKcolor_12,
-#BKtr_25 .BKcolor_13,
-#BKtr_25 .BKcolor_14,
-#BKtr_25 .BKcolor_15,
-#BKtr_25 .BKcolor_16,
-#BKtr_25 .BKcolor_17,
-#BKtr_25 .BKcolor_18,
-#BKtr_25 .BKcolor_19,
-#BKtr_25 .BKcolor_20,
-#BKtr_25 .BKcolor_21,
-#BKtr_25 .BKcolor_22,
-#BKtr_25 .BKcolor_23,
-#BKtr_26 .BKcolor_10,
-#BKtr_26 .BKcolor_11,
-#BKtr_26 .BKcolor_12,
-#BKtr_26 .BKcolor_13,
-#BKtr_26 .BKcolor_14,
-#BKtr_26 .BKcolor_15,
-#BKtr_26 .BKcolor_16,
-#BKtr_26 .BKcolor_17,
-#BKtr_26 .BKcolor_18,
-#BKtr_26 .BKcolor_19,
-#BKtr_26 .BKcolor_20,
-#BKtr_26 .BKcolor_21,
-#BKtr_26 .BKcolor_22,
-#BKtr_26 .BKcolor_23 {
+#tr_clock_6 .td_clock_10,
+#tr_clock_6 .td_clock_11,
+#tr_clock_6 .td_clock_12,
+#tr_clock_6 .td_clock_13,
+#tr_clock_6 .td_clock_14,
+#tr_clock_6 .td_clock_15,
+#tr_clock_6 .td_clock_16,
+#tr_clock_6 .td_clock_17,
+#tr_clock_6 .td_clock_18,
+#tr_clock_6 .td_clock_19,
+#tr_clock_6 .td_clock_20,
+#tr_clock_6 .td_clock_21,
+#tr_clock_6 .td_clock_22,
+#tr_clock_6 .td_clock_23,
+#tr_clock_7 .td_clock_10,
+#tr_clock_7 .td_clock_11,
+#tr_clock_7 .td_clock_12,
+#tr_clock_7 .td_clock_13,
+#tr_clock_7 .td_clock_14,
+#tr_clock_7 .td_clock_15,
+#tr_clock_7 .td_clock_16,
+#tr_clock_7 .td_clock_17,
+#tr_clock_7 .td_clock_18,
+#tr_clock_7 .td_clock_19,
+#tr_clock_7 .td_clock_20,
+#tr_clock_7 .td_clock_21,
+#tr_clock_7 .td_clock_22,
+#tr_clock_7 .td_clock_23,
+#tr_clock_8 .td_clock_8,
+#tr_clock_8 .td_clock_9,
+#tr_clock_8 .td_clock_23,
+#tr_clock_8 .td_clock_24,
+#tr_clock_9 .td_clock_8,
+#tr_clock_9 .td_clock_9,
+#tr_clock_9 .td_clock_23,
+#tr_clock_9 .td_clock_24,
+#tr_clock_10 .td_clock_7,
+#tr_clock_10 .td_clock_25,
+#tr_clock_10 .td_clock_26,
+#tr_clock_11 .td_clock_7,
+#tr_clock_11 .td_clock_25,
+#tr_clock_11 .td_clock_26,
+#tr_clock_12 .td_clock_7,
+#tr_clock_12 .td_clock_25,
+#tr_clock_12 .td_clock_26,
+#tr_clock_13 .td_clock_7,
+#tr_clock_13 .td_clock_25,
+#tr_clock_13 .td_clock_26,
+#tr_clock_14 .td_clock_7,
+#tr_clock_14 .td_clock_25,
+#tr_clock_14 .td_clock_26,
+#tr_clock_15 .td_clock_7,
+#tr_clock_15 .td_clock_25,
+#tr_clock_15 .td_clock_26,
+#tr_clock_16 .td_clock_7,
+#tr_clock_16 .td_clock_25,
+#tr_clock_16 .td_clock_26,
+#tr_clock_17 .td_clock_7,
+#tr_clock_17 .td_clock_25,
+#tr_clock_17 .td_clock_26,
+#tr_clock_18 .td_clock_7,
+#tr_clock_18 .td_clock_25,
+#tr_clock_18 .td_clock_26,
+#tr_clock_19 .td_clock_7,
+#tr_clock_19 .td_clock_25,
+#tr_clock_19 .td_clock_26,
+#tr_clock_20 .td_clock_7,
+#tr_clock_20 .td_clock_25,
+#tr_clock_20 .td_clock_26,
+#tr_clock_21 .td_clock_7,
+#tr_clock_21 .td_clock_25,
+#tr_clock_21 .td_clock_26,
+#tr_clock_22 .td_clock_7,
+#tr_clock_22 .td_clock_25,
+#tr_clock_22 .td_clock_26,
+#tr_clock_23 .td_clock_7,
+#tr_clock_23 .td_clock_25,
+#tr_clock_23 .td_clock_26,
+#tr_clock_24 .td_clock_8,
+#tr_clock_24 .td_clock_9,
+#tr_clock_24 .td_clock_24,
+#tr_clock_24 .td_clock_25,
+#tr_clock_25 .td_clock_10,
+#tr_clock_25 .td_clock_11,
+#tr_clock_25 .td_clock_12,
+#tr_clock_25 .td_clock_13,
+#tr_clock_25 .td_clock_14,
+#tr_clock_25 .td_clock_15,
+#tr_clock_25 .td_clock_16,
+#tr_clock_25 .td_clock_17,
+#tr_clock_25 .td_clock_18,
+#tr_clock_25 .td_clock_19,
+#tr_clock_25 .td_clock_20,
+#tr_clock_25 .td_clock_21,
+#tr_clock_25 .td_clock_22,
+#tr_clock_25 .td_clock_23,
+#tr_clock_26 .td_clock_10,
+#tr_clock_26 .td_clock_11,
+#tr_clock_26 .td_clock_12,
+#tr_clock_26 .td_clock_13,
+#tr_clock_26 .td_clock_14,
+#tr_clock_26 .td_clock_15,
+#tr_clock_26 .td_clock_16,
+#tr_clock_26 .td_clock_17,
+#tr_clock_26 .td_clock_18,
+#tr_clock_26 .td_clock_19,
+#tr_clock_26 .td_clock_20,
+#tr_clock_26 .td_clock_21,
+#tr_clock_26 .td_clock_22,
+#tr_clock_26 .td_clock_23 {
 	background: rgb(70, 156, 255);
+	border: 0.05px solid rgb(218, 218, 218);
 }
 
-#BKtr_8 .BKcolor_10,
-#BKtr_8 .BKcolor_13,
-#BKtr_8 .BKcolor_14,
-#BKtr_8 .BKcolor_15,
-#BKtr_8 .BKcolor_17,
-#BKtr_8 .BKcolor_18,
-#BKtr_8 .BKcolor_19,
-#BKtr_8 .BKcolor_22,
-#BKtr_9 .BKcolor_10,
-#BKtr_9 .BKcolor_13,
-#BKtr_9 .BKcolor_14,
-#BKtr_9 .BKcolor_15,
-#BKtr_9 .BKcolor_16,
-#BKtr_9 .BKcolor_17,
-#BKtr_9 .BKcolor_18,
-#BKtr_9 .BKcolor_19,
-#BKtr_9 .BKcolor_22,
-#BKtr_10 .BKcolor_8,
-#BKtr_10 .BKcolor_9,
-#BKtr_10 .BKcolor_10,
-#BKtr_10 .BKcolor_11,
-#BKtr_10 .BKcolor_12,
-#BKtr_10 .BKcolor_13,
-#BKtr_10 .BKcolor_14,
-#BKtr_10 .BKcolor_15,
-#BKtr_10 .BKcolor_16,
-#BKtr_10 .BKcolor_17,
-#BKtr_10 .BKcolor_18,
-#BKtr_10 .BKcolor_19,
-#BKtr_10 .BKcolor_20,
-#BKtr_10 .BKcolor_21,
-#BKtr_10 .BKcolor_22,
-#BKtr_10 .BKcolor_23,
-#BKtr_10 .BKcolor_24,
-#BKtr_11 .BKcolor_10,
-#BKtr_11 .BKcolor_11,
-#BKtr_11 .BKcolor_12,
-#BKtr_11 .BKcolor_13,
-#BKtr_11 .BKcolor_14,
-#BKtr_11 .BKcolor_15,
-#BKtr_11 .BKcolor_16,
-#BKtr_11 .BKcolor_17,
-#BKtr_11 .BKcolor_18,
-#BKtr_11 .BKcolor_19,
-#BKtr_11 .BKcolor_20,
-#BKtr_11 .BKcolor_21,
-#BKtr_11 .BKcolor_22,
-#BKtr_12 .BKcolor_10,
-#BKtr_12 .BKcolor_11,
-#BKtr_12 .BKcolor_12,
-#BKtr_12 .BKcolor_13,
-#BKtr_12 .BKcolor_14,
-#BKtr_12 .BKcolor_15,
-#BKtr_12 .BKcolor_16,
-#BKtr_12 .BKcolor_17,
-#BKtr_12 .BKcolor_18,
-#BKtr_12 .BKcolor_19,
-#BKtr_12 .BKcolor_20,
-#BKtr_12 .BKcolor_21,
-#BKtr_12 .BKcolor_22,
-#BKtr_13 .BKcolor_8,
-#BKtr_13 .BKcolor_9,
-#BKtr_13 .BKcolor_10,
-#BKtr_13 .BKcolor_11,
-#BKtr_13 .BKcolor_12,
-#BKtr_13 .BKcolor_13,
-#BKtr_13 .BKcolor_14,
-#BKtr_13 .BKcolor_15,
-#BKtr_13 .BKcolor_16,
-#BKtr_13 .BKcolor_17,
-#BKtr_13 .BKcolor_18,
-#BKtr_13 .BKcolor_19,
-#BKtr_13 .BKcolor_20,
-#BKtr_13 .BKcolor_21,
-#BKtr_13 .BKcolor_22,
-#BKtr_13 .BKcolor_23,
-#BKtr_13 .BKcolor_24,
-#BKtr_14 .BKcolor_8,
-#BKtr_14 .BKcolor_9,
-#BKtr_14 .BKcolor_10,
-#BKtr_14 .BKcolor_11,
-#BKtr_14 .BKcolor_12,
-#BKtr_14 .BKcolor_13,
-#BKtr_14 .BKcolor_14,
-#BKtr_14 .BKcolor_15,
-#BKtr_14 .BKcolor_16,
-#BKtr_14 .BKcolor_17,
-#BKtr_14 .BKcolor_18,
-#BKtr_14 .BKcolor_19,
-#BKtr_14 .BKcolor_20,
-#BKtr_14 .BKcolor_21,
-#BKtr_14 .BKcolor_22,
-#BKtr_14 .BKcolor_23,
-#BKtr_14 .BKcolor_24,
-#BKtr_15 .BKcolor_8,
-#BKtr_15 .BKcolor_9,
-#BKtr_15 .BKcolor_10,
-#BKtr_15 .BKcolor_11,
-#BKtr_15 .BKcolor_12,
-#BKtr_15 .BKcolor_13,
-#BKtr_15 .BKcolor_14,
-#BKtr_15 .BKcolor_15,
-#BKtr_15 .BKcolor_16,
-#BKtr_15 .BKcolor_17,
-#BKtr_15 .BKcolor_18,
-#BKtr_15 .BKcolor_19,
-#BKtr_15 .BKcolor_20,
-#BKtr_15 .BKcolor_21,
-#BKtr_15 .BKcolor_22,
-#BKtr_15 .BKcolor_23,
-#BKtr_15 .BKcolor_24,
-#BKtr_16 .BKcolor_10,
-#BKtr_16 .BKcolor_11,
-#BKtr_16 .BKcolor_12,
-#BKtr_16 .BKcolor_13,
-#BKtr_16 .BKcolor_14,
-#BKtr_16 .BKcolor_15,
-#BKtr_16 .BKcolor_16,
-#BKtr_16 .BKcolor_17,
-#BKtr_16 .BKcolor_18,
-#BKtr_16 .BKcolor_19,
-#BKtr_16 .BKcolor_20,
-#BKtr_16 .BKcolor_21,
-#BKtr_16 .BKcolor_22,
-#BKtr_17 .BKcolor_10,
-#BKtr_17 .BKcolor_11,
-#BKtr_17 .BKcolor_12,
-#BKtr_17 .BKcolor_13,
-#BKtr_17 .BKcolor_14,
-#BKtr_17 .BKcolor_15,
-#BKtr_17 .BKcolor_16,
-#BKtr_17 .BKcolor_17,
-#BKtr_17 .BKcolor_18,
-#BKtr_17 .BKcolor_19,
-#BKtr_17 .BKcolor_20,
-#BKtr_17 .BKcolor_21,
-#BKtr_17 .BKcolor_22,
-#BKtr_18 .BKcolor_8,
-#BKtr_18 .BKcolor_9,
-#BKtr_18 .BKcolor_10,
-#BKtr_18 .BKcolor_11,
-#BKtr_18 .BKcolor_12,
-#BKtr_18 .BKcolor_13,
-#BKtr_18 .BKcolor_14,
-#BKtr_18 .BKcolor_15,
-#BKtr_18 .BKcolor_16,
-#BKtr_18 .BKcolor_17,
-#BKtr_18 .BKcolor_18,
-#BKtr_18 .BKcolor_19,
-#BKtr_18 .BKcolor_20,
-#BKtr_18 .BKcolor_21,
-#BKtr_18 .BKcolor_22,
-#BKtr_18 .BKcolor_23,
-#BKtr_18 .BKcolor_24,
-#BKtr_19 .BKcolor_8,
-#BKtr_19 .BKcolor_9,
-#BKtr_19 .BKcolor_10,
-#BKtr_19 .BKcolor_11,
-#BKtr_19 .BKcolor_12,
-#BKtr_19 .BKcolor_13,
-#BKtr_19 .BKcolor_14,
-#BKtr_19 .BKcolor_15,
-#BKtr_19 .BKcolor_16,
-#BKtr_19 .BKcolor_17,
-#BKtr_19 .BKcolor_18,
-#BKtr_19 .BKcolor_19,
-#BKtr_19 .BKcolor_20,
-#BKtr_19 .BKcolor_21,
-#BKtr_19 .BKcolor_22,
-#BKtr_19 .BKcolor_23,
-#BKtr_19 .BKcolor_24,
-#BKtr_20 .BKcolor_10,
-#BKtr_20 .BKcolor_11,
-#BKtr_20 .BKcolor_12,
-#BKtr_20 .BKcolor_13,
-#BKtr_20 .BKcolor_14,
-#BKtr_20 .BKcolor_15,
-#BKtr_20 .BKcolor_16,
-#BKtr_20 .BKcolor_17,
-#BKtr_20 .BKcolor_18,
-#BKtr_20 .BKcolor_19,
-#BKtr_20 .BKcolor_20,
-#BKtr_20 .BKcolor_21,
-#BKtr_20 .BKcolor_22,
-#BKtr_21 .BKcolor_10,
-#BKtr_21 .BKcolor_11,
-#BKtr_21 .BKcolor_12,
-#BKtr_21 .BKcolor_13,
-#BKtr_21 .BKcolor_14,
-#BKtr_21 .BKcolor_15,
-#BKtr_21 .BKcolor_16,
-#BKtr_21 .BKcolor_17,
-#BKtr_21 .BKcolor_18,
-#BKtr_21 .BKcolor_19,
-#BKtr_21 .BKcolor_20,
-#BKtr_21 .BKcolor_21,
-#BKtr_21 .BKcolor_22,
-#BKtr_22 .BKcolor_8,
-#BKtr_22 .BKcolor_9,
-#BKtr_22 .BKcolor_10,
-#BKtr_22 .BKcolor_11,
-#BKtr_22 .BKcolor_12,
-#BKtr_22 .BKcolor_13,
-#BKtr_22 .BKcolor_14,
-#BKtr_22 .BKcolor_15,
-#BKtr_22 .BKcolor_16,
-#BKtr_22 .BKcolor_17,
-#BKtr_22 .BKcolor_18,
-#BKtr_22 .BKcolor_19,
-#BKtr_22 .BKcolor_20,
-#BKtr_22 .BKcolor_21,
-#BKtr_22 .BKcolor_22,
-#BKtr_22 .BKcolor_23,
-#BKtr_22 .BKcolor_24,
-#BKtr_23 .BKcolor_8,
-#BKtr_23 .BKcolor_9,
-#BKtr_23 .BKcolor_10,
-#BKtr_23 .BKcolor_11,
-#BKtr_23 .BKcolor_12,
-#BKtr_23 .BKcolor_13,
-#BKtr_23 .BKcolor_14,
-#BKtr_23 .BKcolor_15,
-#BKtr_23 .BKcolor_16,
-#BKtr_23 .BKcolor_17,
-#BKtr_23 .BKcolor_18,
-#BKtr_23 .BKcolor_19,
-#BKtr_23 .BKcolor_20,
-#BKtr_23 .BKcolor_21,
-#BKtr_23 .BKcolor_22,
-#BKtr_23 .BKcolor_23,
-#BKtr_23 .BKcolor_24,
-#BKtr_24 .BKcolor_10,
-#BKtr_24 .BKcolor_13,
-#BKtr_24 .BKcolor_14,
-#BKtr_24 .BKcolor_15,
-#BKtr_24 .BKcolor_17,
-#BKtr_24 .BKcolor_18,
-#BKtr_24 .BKcolor_19,
-#BKtr_24 .BKcolor_22,
-#BKtr_24 .BKcolor_23,
-#BKtr_24 .BKcolor_24 {
+#tr_clock_8 .td_clock_10,
+#tr_clock_8 .td_clock_13,
+#tr_clock_8 .td_clock_14,
+#tr_clock_8 .td_clock_15,
+#tr_clock_8 .td_clock_17,
+#tr_clock_8 .td_clock_18,
+#tr_clock_8 .td_clock_19,
+#tr_clock_8 .td_clock_22,
+#tr_clock_9 .td_clock_10,
+#tr_clock_9 .td_clock_13,
+#tr_clock_9 .td_clock_14,
+#tr_clock_9 .td_clock_15,
+#tr_clock_9 .td_clock_16,
+#tr_clock_9 .td_clock_17,
+#tr_clock_9 .td_clock_18,
+#tr_clock_9 .td_clock_19,
+#tr_clock_9 .td_clock_22,
+#tr_clock_10 .td_clock_8,
+#tr_clock_10 .td_clock_9,
+#tr_clock_10 .td_clock_10,
+#tr_clock_10 .td_clock_11,
+#tr_clock_10 .td_clock_12,
+#tr_clock_10 .td_clock_13,
+#tr_clock_10 .td_clock_14,
+#tr_clock_10 .td_clock_15,
+#tr_clock_10 .td_clock_16,
+#tr_clock_10 .td_clock_17,
+#tr_clock_10 .td_clock_18,
+#tr_clock_10 .td_clock_19,
+#tr_clock_10 .td_clock_20,
+#tr_clock_10 .td_clock_21,
+#tr_clock_10 .td_clock_22,
+#tr_clock_10 .td_clock_23,
+#tr_clock_10 .td_clock_24,
+#tr_clock_11 .td_clock_10,
+#tr_clock_11 .td_clock_11,
+#tr_clock_11 .td_clock_12,
+#tr_clock_11 .td_clock_13,
+#tr_clock_11 .td_clock_14,
+#tr_clock_11 .td_clock_15,
+#tr_clock_11 .td_clock_16,
+#tr_clock_11 .td_clock_17,
+#tr_clock_11 .td_clock_18,
+#tr_clock_11 .td_clock_19,
+#tr_clock_11 .td_clock_20,
+#tr_clock_11 .td_clock_21,
+#tr_clock_11 .td_clock_22,
+#tr_clock_12 .td_clock_10,
+#tr_clock_12 .td_clock_11,
+#tr_clock_12 .td_clock_12,
+#tr_clock_12 .td_clock_13,
+#tr_clock_12 .td_clock_14,
+#tr_clock_12 .td_clock_15,
+#tr_clock_12 .td_clock_16,
+#tr_clock_12 .td_clock_17,
+#tr_clock_12 .td_clock_18,
+#tr_clock_12 .td_clock_19,
+#tr_clock_12 .td_clock_20,
+#tr_clock_12 .td_clock_21,
+#tr_clock_12 .td_clock_22,
+#tr_clock_13 .td_clock_8,
+#tr_clock_13 .td_clock_9,
+#tr_clock_13 .td_clock_10,
+#tr_clock_13 .td_clock_11,
+#tr_clock_13 .td_clock_12,
+#tr_clock_13 .td_clock_13,
+#tr_clock_13 .td_clock_14,
+#tr_clock_13 .td_clock_15,
+#tr_clock_13 .td_clock_16,
+#tr_clock_13 .td_clock_17,
+#tr_clock_13 .td_clock_18,
+#tr_clock_13 .td_clock_19,
+#tr_clock_13 .td_clock_20,
+#tr_clock_13 .td_clock_21,
+#tr_clock_13 .td_clock_22,
+#tr_clock_13 .td_clock_23,
+#tr_clock_13 .td_clock_24,
+#tr_clock_14 .td_clock_8,
+#tr_clock_14 .td_clock_9,
+#tr_clock_14 .td_clock_10,
+#tr_clock_14 .td_clock_11,
+#tr_clock_14 .td_clock_12,
+#tr_clock_14 .td_clock_13,
+#tr_clock_14 .td_clock_14,
+#tr_clock_14 .td_clock_15,
+#tr_clock_14 .td_clock_16,
+#tr_clock_14 .td_clock_17,
+#tr_clock_14 .td_clock_18,
+#tr_clock_14 .td_clock_19,
+#tr_clock_14 .td_clock_20,
+#tr_clock_14 .td_clock_21,
+#tr_clock_14 .td_clock_22,
+#tr_clock_14 .td_clock_23,
+#tr_clock_14 .td_clock_24,
+#tr_clock_15 .td_clock_8,
+#tr_clock_15 .td_clock_9,
+#tr_clock_15 .td_clock_10,
+#tr_clock_15 .td_clock_11,
+#tr_clock_15 .td_clock_12,
+#tr_clock_15 .td_clock_13,
+#tr_clock_15 .td_clock_14,
+#tr_clock_15 .td_clock_15,
+#tr_clock_15 .td_clock_16,
+#tr_clock_15 .td_clock_17,
+#tr_clock_15 .td_clock_18,
+#tr_clock_15 .td_clock_19,
+#tr_clock_15 .td_clock_20,
+#tr_clock_15 .td_clock_21,
+#tr_clock_15 .td_clock_22,
+#tr_clock_15 .td_clock_23,
+#tr_clock_15 .td_clock_24,
+#tr_clock_16 .td_clock_10,
+#tr_clock_16 .td_clock_11,
+#tr_clock_16 .td_clock_12,
+#tr_clock_16 .td_clock_13,
+#tr_clock_16 .td_clock_14,
+#tr_clock_16 .td_clock_15,
+#tr_clock_16 .td_clock_16,
+#tr_clock_16 .td_clock_17,
+#tr_clock_16 .td_clock_18,
+#tr_clock_16 .td_clock_19,
+#tr_clock_16 .td_clock_20,
+#tr_clock_16 .td_clock_21,
+#tr_clock_16 .td_clock_22,
+#tr_clock_17 .td_clock_10,
+#tr_clock_17 .td_clock_11,
+#tr_clock_17 .td_clock_12,
+#tr_clock_17 .td_clock_13,
+#tr_clock_17 .td_clock_14,
+#tr_clock_17 .td_clock_15,
+#tr_clock_17 .td_clock_16,
+#tr_clock_17 .td_clock_17,
+#tr_clock_17 .td_clock_18,
+#tr_clock_17 .td_clock_19,
+#tr_clock_17 .td_clock_20,
+#tr_clock_17 .td_clock_21,
+#tr_clock_17 .td_clock_22,
+#tr_clock_18 .td_clock_8,
+#tr_clock_18 .td_clock_9,
+#tr_clock_18 .td_clock_10,
+#tr_clock_18 .td_clock_11,
+#tr_clock_18 .td_clock_12,
+#tr_clock_18 .td_clock_13,
+#tr_clock_18 .td_clock_14,
+#tr_clock_18 .td_clock_15,
+#tr_clock_18 .td_clock_16,
+#tr_clock_18 .td_clock_17,
+#tr_clock_18 .td_clock_18,
+#tr_clock_18 .td_clock_19,
+#tr_clock_18 .td_clock_20,
+#tr_clock_18 .td_clock_21,
+#tr_clock_18 .td_clock_22,
+#tr_clock_18 .td_clock_23,
+#tr_clock_18 .td_clock_24,
+#tr_clock_19 .td_clock_8,
+#tr_clock_19 .td_clock_9,
+#tr_clock_19 .td_clock_10,
+#tr_clock_19 .td_clock_11,
+#tr_clock_19 .td_clock_12,
+#tr_clock_19 .td_clock_13,
+#tr_clock_19 .td_clock_14,
+#tr_clock_19 .td_clock_15,
+#tr_clock_19 .td_clock_16,
+#tr_clock_19 .td_clock_17,
+#tr_clock_19 .td_clock_18,
+#tr_clock_19 .td_clock_19,
+#tr_clock_19 .td_clock_20,
+#tr_clock_19 .td_clock_21,
+#tr_clock_19 .td_clock_22,
+#tr_clock_19 .td_clock_23,
+#tr_clock_19 .td_clock_24,
+#tr_clock_20 .td_clock_10,
+#tr_clock_20 .td_clock_11,
+#tr_clock_20 .td_clock_12,
+#tr_clock_20 .td_clock_13,
+#tr_clock_20 .td_clock_14,
+#tr_clock_20 .td_clock_15,
+#tr_clock_20 .td_clock_16,
+#tr_clock_20 .td_clock_17,
+#tr_clock_20 .td_clock_18,
+#tr_clock_20 .td_clock_19,
+#tr_clock_20 .td_clock_20,
+#tr_clock_20 .td_clock_21,
+#tr_clock_20 .td_clock_22,
+#tr_clock_21 .td_clock_10,
+#tr_clock_21 .td_clock_11,
+#tr_clock_21 .td_clock_12,
+#tr_clock_21 .td_clock_13,
+#tr_clock_21 .td_clock_14,
+#tr_clock_21 .td_clock_15,
+#tr_clock_21 .td_clock_16,
+#tr_clock_21 .td_clock_17,
+#tr_clock_21 .td_clock_18,
+#tr_clock_21 .td_clock_19,
+#tr_clock_21 .td_clock_20,
+#tr_clock_21 .td_clock_21,
+#tr_clock_21 .td_clock_22,
+#tr_clock_22 .td_clock_8,
+#tr_clock_22 .td_clock_9,
+#tr_clock_22 .td_clock_10,
+#tr_clock_22 .td_clock_11,
+#tr_clock_22 .td_clock_12,
+#tr_clock_22 .td_clock_13,
+#tr_clock_22 .td_clock_14,
+#tr_clock_22 .td_clock_15,
+#tr_clock_22 .td_clock_16,
+#tr_clock_22 .td_clock_17,
+#tr_clock_22 .td_clock_18,
+#tr_clock_22 .td_clock_19,
+#tr_clock_22 .td_clock_20,
+#tr_clock_22 .td_clock_21,
+#tr_clock_22 .td_clock_22,
+#tr_clock_22 .td_clock_23,
+#tr_clock_22 .td_clock_24,
+#tr_clock_23 .td_clock_8,
+#tr_clock_23 .td_clock_9,
+#tr_clock_23 .td_clock_10,
+#tr_clock_23 .td_clock_11,
+#tr_clock_23 .td_clock_12,
+#tr_clock_23 .td_clock_13,
+#tr_clock_23 .td_clock_14,
+#tr_clock_23 .td_clock_15,
+#tr_clock_23 .td_clock_16,
+#tr_clock_23 .td_clock_17,
+#tr_clock_23 .td_clock_18,
+#tr_clock_23 .td_clock_19,
+#tr_clock_23 .td_clock_20,
+#tr_clock_23 .td_clock_21,
+#tr_clock_23 .td_clock_22,
+#tr_clock_23 .td_clock_23,
+#tr_clock_23 .td_clock_24,
+#tr_clock_24 .td_clock_10,
+#tr_clock_24 .td_clock_13,
+#tr_clock_24 .td_clock_14,
+#tr_clock_24 .td_clock_15,
+#tr_clock_24 .td_clock_17,
+#tr_clock_24 .td_clock_18,
+#tr_clock_24 .td_clock_19,
+#tr_clock_24 .td_clock_22,
+#tr_clock_24 .td_clock_23,
+#tr_clock_24 .td_clock_24 {
 	background: #fff;
+	border: 0.05px solid rgb(218, 218, 218);
 }
 
-#BKtr_8 .BKcolor_11,
-#BKtr_8 .BKcolor_12,
-#BKtr_8 .BKcolor_16,
-#BKtr_8 .BKcolor_20,
-#BKtr_8 .BKcolor_21,
-#BKtr_9 .BKcolor_11,
-#BKtr_9 .BKcolor_12,
-#BKtr_9 .BKcolor_20,
-#BKtr_9 .BKcolor_21,
-#BKtr_11 .BKcolor_8,
-#BKtr_11 .BKcolor_9,
-#BKtr_11 .BKcolor_23,
-#BKtr_11 .BKcolor_24,
-#BKtr_12 .BKcolor_8,
-#BKtr_12 .BKcolor_9,
-#BKtr_12 .BKcolor_23,
-#BKtr_12 .BKcolor_24,
-#BKtr_16 .BKcolor_8,
-#BKtr_16 .BKcolor_9,
-#BKtr_16 .BKcolor_23,
-#BKtr_16 .BKcolor_24,
-#BKtr_17 .BKcolor_8,
-#BKtr_17 .BKcolor_9,
-#BKtr_17 .BKcolor_23,
-#BKtr_17 .BKcolor_24,
-#BKtr_20 .BKcolor_8,
-#BKtr_20 .BKcolor_9,
-#BKtr_20 .BKcolor_23,
-#BKtr_20 .BKcolor_24,
-#BKtr_21 .BKcolor_8,
-#BKtr_21 .BKcolor_9,
-#BKtr_21 .BKcolor_23,
-#BKtr_21 .BKcolor_24,
-#BKtr_24 .BKcolor_11,
-#BKtr_24 .BKcolor_12,
-#BKtr_24 .BKcolor_16,
-#BKtr_24 .BKcolor_20,
-#BKtr_24 .BKcolor_21 {
+#tr_clock_8 .td_clock_11,
+#tr_clock_8 .td_clock_12,
+#tr_clock_8 .td_clock_16,
+#tr_clock_8 .td_clock_20,
+#tr_clock_8 .td_clock_21,
+#tr_clock_9 .td_clock_11,
+#tr_clock_9 .td_clock_12,
+#tr_clock_9 .td_clock_20,
+#tr_clock_9 .td_clock_21,
+#tr_clock_11 .td_clock_8,
+#tr_clock_11 .td_clock_9,
+#tr_clock_11 .td_clock_23,
+#tr_clock_11 .td_clock_24,
+#tr_clock_12 .td_clock_8,
+#tr_clock_12 .td_clock_9,
+#tr_clock_12 .td_clock_23,
+#tr_clock_12 .td_clock_24,
+#tr_clock_16 .td_clock_8,
+#tr_clock_16 .td_clock_9,
+#tr_clock_16 .td_clock_23,
+#tr_clock_16 .td_clock_24,
+#tr_clock_17 .td_clock_8,
+#tr_clock_17 .td_clock_9,
+#tr_clock_17 .td_clock_23,
+#tr_clock_17 .td_clock_24,
+#tr_clock_20 .td_clock_8,
+#tr_clock_20 .td_clock_9,
+#tr_clock_20 .td_clock_23,
+#tr_clock_20 .td_clock_24,
+#tr_clock_21 .td_clock_8,
+#tr_clock_21 .td_clock_9,
+#tr_clock_21 .td_clock_23,
+#tr_clock_21 .td_clock_24,
+#tr_clock_24 .td_clock_11,
+#tr_clock_24 .td_clock_12,
+#tr_clock_24 .td_clock_16,
+#tr_clock_24 .td_clock_20,
+#tr_clock_24 .td_clock_21 {
 	background-color: #000;
+	border: 0.05px solid rgb(218, 218, 218);
+}
+
+/* 天上石頭 */
+
+#upStone_img {
+	position: absolute;
+	bottom: 20%;
+	left: 4.8%;
+	/* z-index: 2; */
+	width: 126px;
+	opacity: 0;
+}
+
+.upStone {
+	position: absolute;
+	bottom: 53.4%;
+}
+
+#upStone_1 {
+	position: absolute;
+	left: 241px;
+}
+
+#upStone_2 {
+	position: absolute;
+	/* left: calc(207 + 327 + 327px); */
+	left: calc(241px + 120 * 2px);
+}
+
+.table_upStone {
+	position: relative;
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+.tr_upStone {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+	color: blue;
+	/* margin: 0;
+		padding: 0; */
+}
+
+.td_upStone {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: rgb(182, 52, 0);
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	border: 0.05px solid rgb(161, 161, 161);
+	color: black;
+	font-size: 1px;
+}
+
+#tr_upStone_1 .td_upStone_1,
+#tr_upStone_1 .td_upStone_4,
+#tr_upStone_2 .td_upStone_1,
+#tr_upStone_2 .td_upStone_4,
+#tr_upStone_3 .td_upStone_1,
+#tr_upStone_3 .td_upStone_6,
+#tr_upStone_4 .td_upStone_1,
+#tr_upStone_4 .td_upStone_4,
+#tr_upStone_5 .td_upStone_1,
+#tr_upStone_5 .td_upStone_6,
+#tr_upStone_6 .td_upStone_1,
+#tr_upStone_6 .td_upStone_6 {
+	border-left: 6px solid #000;
+}
+
+#tr_upStone_1 .td_upStone_7,
+#tr_upStone_2 .td_upStone_7,
+#tr_upStone_3 .td_upStone_2,
+#tr_upStone_4 .td_upStone_7,
+#tr_upStone_5 .td_upStone_2,
+#tr_upStone_6 .td_upStone_2 {
+	border-right: 6px solid #000;
+}
+
+#tr_upStone_2 .td_upStone_1,
+#tr_upStone_2 .td_upStone_2,
+#tr_upStone_2 .td_upStone_3,
+#tr_upStone_2 .td_upStone_4,
+#tr_upStone_2 .td_upStone_5,
+#tr_upStone_2 .td_upStone_6,
+#tr_upStone_2 .td_upStone_7,
+#tr_upStone_6 .td_upStone_1,
+#tr_upStone_6 .td_upStone_2,
+#tr_upStone_6 .td_upStone_3,
+#tr_upStone_6 .td_upStone_4,
+#tr_upStone_6 .td_upStone_5,
+#tr_upStone_6 .td_upStone_6,
+#tr_upStone_6 .td_upStone_7 {
+	border-bottom: 6px solid #000;
+}
+
+#tr_upStone_4 .td_upStone_1,
+#tr_upStone_4 .td_upStone_2,
+#tr_upStone_4 .td_upStone_3,
+#tr_upStone_4 .td_upStone_4,
+#tr_upStone_4 .td_upStone_5,
+#tr_upStone_4 .td_upStone_6,
+#tr_upStone_4 .td_upStone_7,
+#tr_upStone_5 .td_upStone_1,
+#tr_upStone_5 .td_upStone_2,
+#tr_upStone_5 .td_upStone_3,
+#tr_upStone_5 .td_upStone_4,
+#tr_upStone_5 .td_upStone_5,
+#tr_upStone_5 .td_upStone_6,
+#tr_upStone_5 .td_upStone_7 {
+	border-top: 6px solid #000;
+}
+
+/* 地上石頭 */
+
+#stone img {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	z-index: 1;
+	width: 130px;
+	opacity: 0;
+}
+
+.stone {
+	position: absolute;
+	bottom: 3.3%;
+}
+
+#stone_1 {
+	position: absolute;
+	left: 0;
+}
+
+#stone_2 {
+	position: absolute;
+	left: 120.3px;
+}
+
+#stone_3 {
+	position: absolute;
+	left: calc(120.3 * 2px);
+}
+
+#stone_4 {
+	position: absolute;
+	left: calc(120.3 * 3px);
+}
+
+#stone_5 {
+	position: absolute;
+	left: calc(120.3 * 4px);
+}
+
+#stone_6 {
+	position: absolute;
+	left: calc(120.3 * 5px);
+}
+
+#stone_7 {
+	position: absolute;
+	left: calc(120.3 * 6px);
+}
+
+#stone_8 {
+	position: absolute;
+	left: calc(120.3 * 7px);
+}
+
+#stone_9 {
+	position: absolute;
+	left: calc(120.3 * 8px);
+}
+
+#stone_10 {
+	position: absolute;
+	left: calc(120.3 * 9px);
+}
+
+#stone_11 {
+	position: absolute;
+	left: calc(120.3 * 10px);
+}
+
+#stone_12 {
+	position: absolute;
+	left: calc(120.3 * 11px);
+}
+
+#stone_13 {
+	position: absolute;
+	left: calc(120.3 * 12px);
+}
+
+#stone_14 {
+	position: absolute;
+	left: calc(120.3 * 13px);
+}
+
+#stone_15 {
+	position: absolute;
+	left: calc(120.3 * 14px);
+}
+
+#stone_16 {
+	position: absolute;
+	left: calc(120.3 * 15px);
+}
+
+.table_stone {
+	position: relative;
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+.tr_stone {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+	color: blue;
+	/* margin: 0;
+	padding: 0; */
+}
+
+.td_stone {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: rgb(182, 52, 0);
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	border: 0.05px solid rgb(161, 161, 161);
+	color: black;
+	font-size: 1px;
+}
+
+#tr_stone_1 .td_stone_3,
+#tr_stone_1 .td_stone_5,
+#tr_stone_2 .td_stone_3,
+#tr_stone_2 .td_stone_5,
+#tr_stone_3 .td_stone_3,
+#tr_stone_3 .td_stone_5,
+#tr_stone_4 .td_stone_1,
+#tr_stone_5 .td_stone_3,
+#tr_stone_5 .td_stone_5,
+#tr_stone_6 .td_stone_3,
+#tr_stone_6 .td_stone_5 {
+	border-left: 7px solid #000;
+}
+
+#tr_stone_2 .td_stone_3,
+#tr_stone_4 .td_stone_2,
+#tr_stone_4 .td_stone_4,
+#tr_stone_4 .td_stone_6,
+#tr_stone_5 .td_stone_3,
+#tr_stone_1 .td_stone_7,
+#tr_stone_2 .td_stone_7,
+#tr_stone_3 .td_stone_7,
+#tr_stone_5 .td_stone_7,
+#tr_stone_6 .td_stone_7 {
+	border-right: 7px solid #000;
+}
+
+#tr_stone_2 .td_stone_4,
+#tr_stone_3 .td_stone_1,
+#tr_stone_3 .td_stone_5,
+#tr_stone_3 .td_stone_7,
+#tr_stone_4 .td_stone_1,
+#tr_stone_4 .td_stone_3 {
+	border-bottom: 7px solid #000;
+}
+
+#tr_stone_2 .td_stone_3,
+#tr_stone_4 .td_stone_2,
+#tr_stone_4 .td_stone_6,
+#tr_stone_5 .td_stone_2,
+#tr_stone_5 .td_stone_5,
+#tr_stone_5 .td_stone_6,
+#tr_stone_5 .td_stone_7,
+#tr_stone_6 .td_stone_4 {
+	border-top: 7px solid #000;
 }
 
 /* 為何無效? */
-/* #BKtr_2 [class^='BKcolor_']:not(.BKcolor_13) {
+/* #tr_clock_2 [class^='td_clock_']:not(.td_clock_13) {
 	background: yellowgreen;
 } */
 

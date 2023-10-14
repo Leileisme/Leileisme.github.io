@@ -14,42 +14,158 @@
 
 <body>
 
-  <div id="content"></div>
+  <div id="content">
+
+    <div id="background_content"></div>
+
+    <div id="clock">
+      <!-- <img src="./clock參考/06.png" alt=""> -->
+      <table id="table_clock"></table> <!-- 底色 -->
+      <table id="hourHand"></table> <!-- 時針 -->
+      <table id="minuteHand"></table> <!-- 分針 -->
+      <div id="secondHand"></div> <!-- 秒針 -->
+    </div>
+    <!-- 對時鐘照格數用 -->
+    <!-- <div id="div01">
+    <table id="table01"></table>
+    </div> -->
 
 
-  <div id="clock">
-    <!-- <img src="./clock參考/06.png" alt=""> -->
-    <table id="BGtable"></table> <!-- 底色 -->
-    <table id="hourHand"></table> <!-- 時針 -->
-    <table id="minuteHand"></table> <!-- 分針 -->
-    <div id="secondHand"></div> <!-- 秒針 -->
+    <div id="mario">
+      <!-- <img src="./clock參考/馬力歐A.jpg" alt="" id="A"> -->
+      <table id="table_mario"></table>
+    </div>
+    <!-- 對照馬力歐格子用 -->
+    <!-- <div id="div_m">
+      <table id="table_m"></table>
+    </div> -->
+
+
+    <!-- 地上石頭 -->
+    <div id="stone_content">
+      <img src="./clock參考/stone.jpg" alt="" is>
+    </div>
+
+    <!-- 天上石頭 -->
+    <div id="upStone_content">
+    </div>
+    <img src="./clock參考/upStone.jpg" alt="" id="upStone_img">
+
+
   </div>
 
-
-
-  <!-- 對照格數用 -->
-  <!--  給自己看的格子位置 -->
-  <!-- <div id="div01">
-    <table id="table01"></table>
-  </div> -->
 
   <script>
 
 
+    // 馬力歐
+    const table_mario = document.getElementById('table_mario')
+    for (let i = 16; i >= 1; i--) {
+      const tr_mario = document.createElement('tr')
+      tr_mario.classList.add('tr_mario')
+      tr_mario.id = `tr_mario_${i}`
+      table_mario.prepend(tr_mario)
 
-    // 我的底色
-    const BGtable = document.getElementById('BGtable')
+      for (let j = 14; j >= 1; j--) {
+        const td_mario = document.createElement('tr')
+        td_mario.classList.add('td_mario')
+        td_mario.classList.add(`td_mario_${j}`)
+        tr_mario.prepend(td_mario)
+        // td_mario.innerText = j
+      }
+    }
+
+    // 對照馬力歐格子
+    // const table_m = document.getElementById('table_m')
+
+    // for (let i = 16; i >= 1; i--) {
+    //   const tr_m = document.createElement('tr')
+    //   table_m.prepend(tr_m)
+    //   for (let j = 1; j >= 1; j--) {
+    //     const td_m = document.createElement('td')
+    //     td_m.innerText = i
+    //     tr_m.prepend(td_m)
+    //   }
+    // }
+
+
+    // 地上石頭
+
+    const stone_content = document.getElementById('stone_content')
+
+    for (let i = 16; i >= 1; i--) {
+      const stone = document.createElement('div')
+      stone.classList.add('stone')
+      stone.id = `stone_${i}`
+      stone_content.prepend(stone)
+      for (let j = 1; j >= 1; j--) {
+        const table_stone = document.createElement('table')
+        table_stone.classList.add('table_stone')
+        table_stone.id = `table_stone_${j}`
+        stone.prepend(table_stone)
+        for (let k = 6; k >= 1; k--) {
+          const tr_stone = document.createElement('tr')
+          tr_stone.classList.add('tr_stone')
+          tr_stone.id = `tr_stone_${k}`
+          table_stone.prepend(tr_stone)
+          for (let l = 7; l >= 1; l--) {
+            const td_stone = document.createElement('td')
+            td_stone.classList.add('td_stone')
+            td_stone.classList.add(`td_stone_${l}`)
+            tr_stone.prepend(td_stone)
+            td_stone.innerText = l
+          }
+        }
+      }
+    }
+
+
+    // 天上的石頭
+    const upStone_content = document.getElementById('upStone_content')
+
+    for (let i = 2; i >= 1; i--) {
+      const upStone = document.createElement('div')
+      upStone.classList.add('upStone')
+      upStone.id = `upStone_${i}`
+      upStone_content.prepend(upStone)
+      for (let j = 1; j >= 1; j--) {
+        const table_upStone = document.createElement('table')
+        table_upStone.classList.add('table_upStone')
+        table_upStone.id = `table_upStone_${j}`
+        upStone.prepend(table_upStone)
+        for (let k = 6; k >= 1; k--) {
+          const tr_upStone = document.createElement('tr')
+          tr_upStone.classList.add('tr_upStone')
+          tr_upStone.id = `tr_upStone_${k}`
+          table_upStone.prepend(tr_upStone)
+          for (let l = 7; l >= 1; l--) {
+            const td_upStone = document.createElement('td')
+            td_upStone.classList.add('td_upStone')
+            td_upStone.classList.add(`td_upStone_${l}`)
+            tr_upStone.prepend(td_upStone)
+            td_upStone.innerText = l
+          }
+        }
+      }
+    }
+
+
+
+
+
+    // 時鐘色
+    const table_clock = document.getElementById('table_clock')
     for (let i = 30; i >= 1; i--) {
       const tr = document.createElement('tr')
-      tr.classList.add('BKtr')
-      tr.id = `BKtr_${i}`
-      BGtable.prepend(tr)
+      tr.classList.add('tr_clock')
+      tr.id = `tr_clock_${i}`
+      table_clock.prepend(tr)
       for (let j = 30; j >= 1; j--) {
         const td = document.createElement('td')
-        td.classList.add('BKtd')
-        td.classList.add(`BKcolor_${j}`)
+        td.classList.add('td_clock')
+        td.classList.add(`td_clock_${j}`)
         // let a = 1
-        // td.id = `BKtd_${j}`
+        // td.id = `td_clock_${j}`
         td.innerText = `${j}`
         tr.prepend(td)
       }
@@ -88,7 +204,7 @@
       const hour = date.getHours()
       const minute = date.getMinutes()
       const second = date.getSeconds()
-      hourHand.style.transform = `rotate(${hour * 30 + 180}deg)`
+      hourHand.style.transform = `rotate(${hour * 30 + 180 + minute * 0.5}deg)`
       minuteHand.style.transform = `rotate(${minute * 6 + 180}deg)`
       secondHand.style.transform = `rotate(${second * 6 + 180}deg)`
     }
@@ -98,13 +214,13 @@
 
 
     // 背景格
-    const content = document.getElementById('content')
+    const background_content = document.getElementById('background_content')
 
-    for (let i = 42; i >= 1; i--) {
+    for (let i = 57; i >= 1; i--) {
       const tr_content = document.createElement('tr')
       tr_content.classList.add('tr_content')
-      content.prepend(tr_content)
-      for (let j = 85; j >= 1; j--) {
+      background_content.prepend(tr_content)
+      for (let j = 112; j >= 1; j--) {
         const td_content = document.createElement('td')
         td_content.classList.add('td_content')
         tr_content.prepend(td_content)
