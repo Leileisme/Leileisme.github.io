@@ -1,4 +1,4 @@
-body {
+ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -14,8 +14,8 @@ body {
 #content {
 	box-sizing: border-box;
 	/* border: 1px solid red; */
-	/* width: 100%;
-	height: 100%; */
+	/* width: 92.9%;
+	height: 92.9%; */
 	width: 1960px;
 	height: 960px;
 	position: fixed;
@@ -37,9 +37,10 @@ body {
 .td_content {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 17px;
-	height: 17px;
+	width: 13px;
+	height: 13px;
 	background: rgb(255, 238, 208);
+	/* background: rgb(158, 208, 255); */
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
 	border: 0.05px solid rgb(218, 218, 218);
@@ -52,7 +53,7 @@ body {
 	/* border: 1px solid red; */
 	/* width: 670px; */
 	position: absolute;
-	bottom: 14%;
+	bottom: 10.8%;
 	left: 14.9%;
 	/* transform: translate(0, -47.3%); */
 }
@@ -79,8 +80,8 @@ body {
 .td_mario {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 17px;
-	height: 17px;
+	width: 13px;
+	height: 13px;
 	/* background: rgb(218, 25, 25); */
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
@@ -302,6 +303,8 @@ body {
 	position: absolute;
 	bottom: 30%;
 	left: 64.4%;
+	left: 8.8%;
+	bottom: 31.3%;
 	/* transform: translate(0, -47.3%); */
 }
 
@@ -327,8 +330,8 @@ body {
 .td_clock {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 17px;
-	height: 17px;
+	width: 13px;
+	height: 13px;
 	/* background: rgb(218, 25, 25); */
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
@@ -339,7 +342,7 @@ body {
 
 /* 參考圖像 */
 #clock img {
-	width: 100%;
+	width: 92.9%;
 	position: absolute;
 	opacity: 0.2;
 }
@@ -368,8 +371,8 @@ body {
 .td_hour {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 17px;
-	height: 17px;
+	width: 13px;
+	height: 13px;
 	background: #000;
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
@@ -401,8 +404,8 @@ body {
 .td_Minuter {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 17px;
-	height: 17px;
+	width: 13px;
+	height: 13px;
 	background: #000;
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
@@ -417,12 +420,17 @@ body {
 	top: 50%;
 	left: 51%;
 	width: 5px;
-	height: 196px;
+	height: 118px;
 	background-color: #a00;
 	transform-origin: 41% 6%;
 }
 
 /* 時鐘填色 */
+
+/* 為何無效? */
+/* #tr_clock_2 [class^='td_clock_']:not(.td_clock_13) {
+	background: yellowgreen;
+} */
 
 /* 邊框 */
 #tr_clock_2 .td_clock_11,
@@ -868,6 +876,7 @@ body {
 #tr_clock_26 .td_clock_23 {
 	background: rgb(70, 156, 255);
 	border: 0.05px solid rgb(218, 218, 218);
+	background: rgb(0, 170, 113);
 }
 
 #tr_clock_8 .td_clock_10,
@@ -1161,27 +1170,30 @@ body {
 
 #upStone_img {
 	position: absolute;
-	bottom: 20%;
-	left: 4.8%;
+	bottom: 53.4%;
+	left: 350px;
 	/* z-index: 2; */
-	width: 126px;
+	width: 160px;
 	opacity: 0;
 }
 
 .upStone {
 	position: absolute;
-	bottom: 53.4%;
+	bottom: 46.5%;
+	/* bottom: 90%; */
 }
 
 #upStone_1 {
 	position: absolute;
-	left: 241px;
+	/* left: 290px; */
+	right: 150px;
 }
 
 #upStone_2 {
 	position: absolute;
 	/* left: calc(207 + 327 + 327px); */
-	left: calc(241px + 120 * 2px);
+	/* left: calc(290px + 119.4px); */
+	right: calc(150px + 119.4px);
 }
 
 .table_upStone {
@@ -1206,8 +1218,8 @@ body {
 .td_upStone {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 17px;
-	height: 17px;
+	width: 13px;
+	height: 13px;
 	background: rgb(182, 52, 0);
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
@@ -1217,26 +1229,29 @@ body {
 }
 
 #tr_upStone_1 .td_upStone_1,
-#tr_upStone_1 .td_upStone_4,
 #tr_upStone_2 .td_upStone_1,
-#tr_upStone_2 .td_upStone_4,
 #tr_upStone_3 .td_upStone_1,
-#tr_upStone_3 .td_upStone_6,
+#tr_upStone_3 .td_upStone_3,
 #tr_upStone_4 .td_upStone_1,
-#tr_upStone_4 .td_upStone_4,
 #tr_upStone_5 .td_upStone_1,
-#tr_upStone_5 .td_upStone_6,
 #tr_upStone_6 .td_upStone_1,
-#tr_upStone_6 .td_upStone_6 {
+#tr_upStone_6 .td_upStone_3,
+#tr_upStone_7 .td_upStone_1,
+#tr_upStone_7 .td_upStone_3 {
 	border-left: 6px solid #000;
 }
 
-#tr_upStone_1 .td_upStone_7,
-#tr_upStone_2 .td_upStone_7,
-#tr_upStone_3 .td_upStone_2,
-#tr_upStone_4 .td_upStone_7,
-#tr_upStone_5 .td_upStone_2,
-#tr_upStone_6 .td_upStone_2 {
+#tr_upStone_1 .td_upStone_5,
+#tr_upStone_1 .td_upStone_9,
+#tr_upStone_2 .td_upStone_5,
+#tr_upStone_2 .td_upStone_9,
+#tr_upStone_3 .td_upStone_7,
+#tr_upStone_4 .td_upStone_5,
+#tr_upStone_4 .td_upStone_9,
+#tr_upStone_5 .td_upStone_5,
+#tr_upStone_5 .td_upStone_9,
+#tr_upStone_6 .td_upStone_7,
+#tr_upStone_7 .td_upStone_7 {
 	border-right: 6px solid #000;
 }
 
@@ -1247,13 +1262,26 @@ body {
 #tr_upStone_2 .td_upStone_5,
 #tr_upStone_2 .td_upStone_6,
 #tr_upStone_2 .td_upStone_7,
-#tr_upStone_6 .td_upStone_1,
-#tr_upStone_6 .td_upStone_2,
-#tr_upStone_6 .td_upStone_3,
-#tr_upStone_6 .td_upStone_4,
-#tr_upStone_6 .td_upStone_5,
-#tr_upStone_6 .td_upStone_6,
-#tr_upStone_6 .td_upStone_7 {
+#tr_upStone_2 .td_upStone_8,
+#tr_upStone_2 .td_upStone_9,
+#tr_upStone_5 .td_upStone_1,
+#tr_upStone_5 .td_upStone_2,
+#tr_upStone_5 .td_upStone_3,
+#tr_upStone_5 .td_upStone_4,
+#tr_upStone_5 .td_upStone_5,
+#tr_upStone_5 .td_upStone_6,
+#tr_upStone_5 .td_upStone_7,
+#tr_upStone_5 .td_upStone_8,
+#tr_upStone_5 .td_upStone_9,
+#tr_upStone_7 .td_upStone_1,
+#tr_upStone_7 .td_upStone_2,
+#tr_upStone_7 .td_upStone_3,
+#tr_upStone_7 .td_upStone_4,
+#tr_upStone_7 .td_upStone_5,
+#tr_upStone_7 .td_upStone_6,
+#tr_upStone_7 .td_upStone_7,
+#tr_upStone_7 .td_upStone_8,
+#tr_upStone_7 .td_upStone_9 {
 	border-bottom: 6px solid #000;
 }
 
@@ -1264,235 +1292,7 @@ body {
 #tr_upStone_4 .td_upStone_5,
 #tr_upStone_4 .td_upStone_6,
 #tr_upStone_4 .td_upStone_7,
-#tr_upStone_5 .td_upStone_1,
-#tr_upStone_5 .td_upStone_2,
-#tr_upStone_5 .td_upStone_3,
-#tr_upStone_5 .td_upStone_4,
-#tr_upStone_5 .td_upStone_5,
-#tr_upStone_5 .td_upStone_6,
-#tr_upStone_5 .td_upStone_7 {
+#tr_upStone_4 .td_upStone_8,
+#tr_upStone_4 .td_upStone_9 {
 	border-top: 6px solid #000;
-}
-
-/* 地上石頭 */
-
-#stone img {
-	position: absolute;
-	bottom: 0%;
-	left: 0%;
-	z-index: 1;
-	width: 130px;
-	opacity: 0;
-}
-
-.stone {
-	position: absolute;
-	bottom: 3.3%;
-}
-
-#stone_1 {
-	position: absolute;
-	left: 0;
-}
-
-#stone_2 {
-	position: absolute;
-	left: 120.3px;
-}
-
-#stone_3 {
-	position: absolute;
-	left: calc(120.3 * 2px);
-}
-
-#stone_4 {
-	position: absolute;
-	left: calc(120.3 * 3px);
-}
-
-#stone_5 {
-	position: absolute;
-	left: calc(120.3 * 4px);
-}
-
-#stone_6 {
-	position: absolute;
-	left: calc(120.3 * 5px);
-}
-
-#stone_7 {
-	position: absolute;
-	left: calc(120.3 * 6px);
-}
-
-#stone_8 {
-	position: absolute;
-	left: calc(120.3 * 7px);
-}
-
-#stone_9 {
-	position: absolute;
-	left: calc(120.3 * 8px);
-}
-
-#stone_10 {
-	position: absolute;
-	left: calc(120.3 * 9px);
-}
-
-#stone_11 {
-	position: absolute;
-	left: calc(120.3 * 10px);
-}
-
-#stone_12 {
-	position: absolute;
-	left: calc(120.3 * 11px);
-}
-
-#stone_13 {
-	position: absolute;
-	left: calc(120.3 * 12px);
-}
-
-#stone_14 {
-	position: absolute;
-	left: calc(120.3 * 13px);
-}
-
-#stone_15 {
-	position: absolute;
-	left: calc(120.3 * 14px);
-}
-
-#stone_16 {
-	position: absolute;
-	left: calc(120.3 * 15px);
-}
-
-.table_stone {
-	position: relative;
-	list-style: none;
-	border: none;
-	table-layout: fixed;
-	border-collapse: collapse;
-	font-size: 0;
-}
-
-.tr_stone {
-	list-style: none;
-	border: none;
-	height: 10px;
-	box-sizing: border-box;
-	color: blue;
-	/* margin: 0;
-	padding: 0; */
-}
-
-.td_stone {
-	box-sizing: border-box;
-	display: inline-block;
-	width: 17px;
-	height: 17px;
-	background: rgb(182, 52, 0);
-	margin-left: 0.2px;
-	margin-bottom: 0.2px;
-	border: 0.05px solid rgb(161, 161, 161);
-	color: black;
-	font-size: 1px;
-}
-
-#tr_stone_1 .td_stone_3,
-#tr_stone_1 .td_stone_5,
-#tr_stone_2 .td_stone_3,
-#tr_stone_2 .td_stone_5,
-#tr_stone_3 .td_stone_3,
-#tr_stone_3 .td_stone_5,
-#tr_stone_4 .td_stone_1,
-#tr_stone_5 .td_stone_3,
-#tr_stone_5 .td_stone_5,
-#tr_stone_6 .td_stone_3,
-#tr_stone_6 .td_stone_5 {
-	border-left: 7px solid #000;
-}
-
-#tr_stone_2 .td_stone_3,
-#tr_stone_4 .td_stone_2,
-#tr_stone_4 .td_stone_4,
-#tr_stone_4 .td_stone_6,
-#tr_stone_5 .td_stone_3,
-#tr_stone_1 .td_stone_7,
-#tr_stone_2 .td_stone_7,
-#tr_stone_3 .td_stone_7,
-#tr_stone_5 .td_stone_7,
-#tr_stone_6 .td_stone_7 {
-	border-right: 7px solid #000;
-}
-
-#tr_stone_2 .td_stone_4,
-#tr_stone_3 .td_stone_1,
-#tr_stone_3 .td_stone_5,
-#tr_stone_3 .td_stone_7,
-#tr_stone_4 .td_stone_1,
-#tr_stone_4 .td_stone_3 {
-	border-bottom: 7px solid #000;
-}
-
-#tr_stone_2 .td_stone_3,
-#tr_stone_4 .td_stone_2,
-#tr_stone_4 .td_stone_6,
-#tr_stone_5 .td_stone_2,
-#tr_stone_5 .td_stone_5,
-#tr_stone_5 .td_stone_6,
-#tr_stone_5 .td_stone_7,
-#tr_stone_6 .td_stone_4 {
-	border-top: 7px solid #000;
-}
-
-/* 為何無效? */
-/* #tr_clock_2 [class^='td_clock_']:not(.td_clock_13) {
-	background: yellowgreen;
-} */
-
-/* 比對用 */
-
-#div01 {
-	border: 1px solid red;
-	width: 10px;
-	position: absolute;
-	top: 50%;
-	left: calc(50% - 170px);
-	transform: translate(-50%, -50%);
-}
-
-.table01 {
-	box-sizing: border-box;
-	list-style: none;
-	border: none;
-	table-layout: fixed;
-	border-collapse: collapse;
-	font-size: 0;
-}
-
-.tr01 {
-	box-sizing: border-box;
-	list-style: none;
-	border: none;
-	font-size: 0;
-	border-collapse: collapse;
-}
-
-.td01 {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	display: inline-block;
-	width: 10px;
-	height: 8.4px;
-	background: #d8d8d8;
-	/* margin-left: 0.2px;
-	margin-bottom: 0.2px; */
-	border: 0.1px solid rgb(255, 186, 186);
-	color: black;
-	font-size: 0.001px;
 }

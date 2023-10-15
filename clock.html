@@ -7,8 +7,10 @@
   <title>My 8bit-Clock</title>
 
   <!-- 我的CSS -->
-  <link rel="stylesheet" href="./clock.css">
-
+  <link rel="stylesheet" href="./CSS/clock.css">
+  <link rel="stylesheet" href="./CSS/clock_backgroung_stone.css">
+  <link rel="stylesheet" href="./CSS/reference.css">
+  <link rel="stylesheet" href="./CSS/number.css">
 </head>
 
 
@@ -16,6 +18,7 @@
 
   <div id="content">
 
+    <!-- 背景 -->
     <div id="background_content"></div>
 
     <div id="clock">
@@ -25,16 +28,20 @@
       <table id="minuteHand"></table> <!-- 分針 -->
       <div id="secondHand"></div> <!-- 秒針 -->
     </div>
+
+
     <!-- 對時鐘照格數用 -->
     <!-- <div id="div01">
     <table id="table01"></table>
     </div> -->
 
 
+    <!-- 馬力歐 -->
     <div id="mario">
       <!-- <img src="./clock參考/馬力歐A.jpg" alt="" id="A"> -->
       <table id="table_mario"></table>
     </div>
+
     <!-- 對照馬力歐格子用 -->
     <!-- <div id="div_m">
       <table id="table_m"></table>
@@ -42,212 +49,499 @@
 
 
     <!-- 地上石頭 -->
-    <div id="stone_content">
-      <img src="./clock參考/stone.jpg" alt="" is>
-    </div>
+    <div id="stone_content"></div>
 
     <!-- 天上石頭 -->
-    <div id="upStone_content">
-    </div>
+    <div id="upStone_content"></div>
     <img src="./clock參考/upStone.jpg" alt="" id="upStone_img">
 
-
-  </div>
-
-
-  <script>
-
-
-    // 馬力歐
-    const table_mario = document.getElementById('table_mario')
-    for (let i = 16; i >= 1; i--) {
-      const tr_mario = document.createElement('tr')
-      tr_mario.classList.add('tr_mario')
-      tr_mario.id = `tr_mario_${i}`
-      table_mario.prepend(tr_mario)
-
-      for (let j = 14; j >= 1; j--) {
-        const td_mario = document.createElement('tr')
-        td_mario.classList.add('td_mario')
-        td_mario.classList.add(`td_mario_${j}`)
-        tr_mario.prepend(td_mario)
-        // td_mario.innerText = j
-      }
-    }
-
-    // 對照馬力歐格子
-    // const table_m = document.getElementById('table_m')
-
-    // for (let i = 16; i >= 1; i--) {
-    //   const tr_m = document.createElement('tr')
-    //   table_m.prepend(tr_m)
-    //   for (let j = 1; j >= 1; j--) {
-    //     const td_m = document.createElement('td')
-    //     td_m.innerText = i
-    //     tr_m.prepend(td_m)
-    //   }
-    // }
+    <!-- 數字 -->
+    <!-- <table id="zero"></table>
+    <table id="one"></table>
+    <table id="two"></table>
+    <table id="three"></table>
+    <table id="four"></table>
+    <table id="five"></table>
+    <table id="six"></table>
+    <table id="seven"></table>
+    <table id="eight"></table>
+    <table id="nine"></table> -->
 
 
-    // 地上石頭
+    <!-- 數字時鐘 -->
+    <div id="time">
+      <div id="time_second_content"></div>
+      <div id="time_second_content2"></div>
 
-    const stone_content = document.getElementById('stone_content')
+    </div>
 
-    for (let i = 16; i >= 1; i--) {
-      const stone = document.createElement('div')
-      stone.classList.add('stone')
-      stone.id = `stone_${i}`
-      stone_content.prepend(stone)
-      for (let j = 1; j >= 1; j--) {
-        const table_stone = document.createElement('table')
-        table_stone.classList.add('table_stone')
-        table_stone.id = `table_stone_${j}`
-        stone.prepend(table_stone)
-        for (let k = 6; k >= 1; k--) {
-          const tr_stone = document.createElement('tr')
-          tr_stone.classList.add('tr_stone')
-          tr_stone.id = `tr_stone_${k}`
-          table_stone.prepend(tr_stone)
-          for (let l = 7; l >= 1; l--) {
-            const td_stone = document.createElement('td')
-            td_stone.classList.add('td_stone')
-            td_stone.classList.add(`td_stone_${l}`)
-            tr_stone.prepend(td_stone)
-            td_stone.innerText = l
+
+    <script>
+
+      // 數字
+
+
+
+
+
+      // zero[i] = document.getElementById(`zero_${i}`)
+      //   two[i] = document.getElementById(`two_${i}`)
+      //   three[i] = document.getElementById(`three_${i}`)
+      //   four[i] = document.getElementById(`four_${i}`)
+      //   five[i] = document.getElementById(`five_${i}`)
+      //   six[i] = document.getElementById(`six_${i}`)
+      //   seven[i] = document.getElementById(`seven_${i}`)
+      //   eight[i] = document.getElementById(`eight_${i}`)
+      //   nine[i] = document.getElementById(`nine_${i}`)
+
+
+      const zero = []
+      const one = []
+      const two = []
+      const three = []
+      const four = []
+      const five = []
+      const six = []
+      const seven = []
+      const eight = []
+      const nine = []
+
+      for (let i = 1; i <= 2; i++) {
+        zero[i] = document.createElement('table')
+        zero[i].classList.add('zero')
+        zero[i].id = `zero_${i}`
+
+        one[i] = document.createElement('table')
+        one[i].classList.add('one')
+        one[i].id = `one_${i}`
+
+        two[i] = document.createElement('table')
+        two[i].classList.add('two')
+        two[i].id = `(two_${i}`
+
+        three[i] = document.createElement('table')
+        three[i].classList.add('three')
+        three[i].id = `three_${i}`
+
+        four[i] = document.createElement('table')
+        four[i].classList.add('four')
+        four[i].id = `four_${i}`
+
+        five[i] = document.createElement('table')
+        five[i].classList.add('five')
+        five[i].id = `five_${i}`
+
+        six[i] = document.createElement('table')
+        six[i].classList.add('six')
+        six[i].id = `six_${i}`
+
+        seven[i] = document.createElement('table')
+        seven[i].classList.add('seven')
+        seven[i].id = `seven_${i}`
+
+        eight[i] = document.createElement('table')
+        eight[i].classList.add('eight')
+        eight[i].id = `eight_${i}`
+
+        nine[i] = document.createElement('table')
+        nine[i].classList.add('nine')
+        nine[i].id = `nine_${i}`
+
+        for (let j = 5; j >= 1; j--) {
+          const tr_zero = document.createElement('tr')
+          tr_zero.classList.add('tr_zero')
+          tr_zero.classList.add(`tr_zero_${j}`)
+          tr_zero.id = `tr_zero_${j}`
+          zero[i].prepend(tr_zero)
+
+          const tr_one = document.createElement('tr')
+          tr_one.classList.add('tr_one')
+          tr_one.classList.add(`tr_one_${j}`)
+          tr_one.id = `tr_one_${j}`
+          one[i].prepend(tr_one)
+
+          const tr_two = document.createElement('tr')
+          tr_two.classList.add('tr_two')
+          tr_two.classList.add(`tr_two_${j}`)
+          tr_two.id = `tr_two_${j}`
+          two[i].prepend(tr_two)
+
+          const tr_three = document.createElement('tr')
+          tr_three.classList.add('tr_three')
+          tr_three.classList.add(`tr_three_${j}`)
+          tr_three.id = `tr_three_${j}`
+          three[i].prepend(tr_three)
+
+          const tr_four = document.createElement('tr')
+          tr_four.classList.add('tr_four')
+          tr_four.classList.add(`tr_four_${j}`)
+          tr_four.id = `tr_four_${j}`
+          four[i].prepend(tr_four)
+
+          const tr_five = document.createElement('tr')
+          tr_five.classList.add('tr_five')
+          tr_five.classList.add(`tr_five_${j}`)
+          tr_five.id = `tr_five_${j}`
+          five[i].prepend(tr_five)
+
+          const tr_six = document.createElement('tr')
+          tr_six.classList.add('tr_six')
+          tr_six.classList.add(`tr_six_${j}`)
+          tr_six.id = `tr_six_${j}`
+          six[i].prepend(tr_six)
+
+          const tr_seven = document.createElement('tr')
+          tr_seven.classList.add('tr_seven')
+          tr_seven.classList.add(`tr_seven_${j}`)
+          tr_seven.id = `tr_seven_${j}`
+          seven[i].prepend(tr_seven)
+
+          const tr_eight = document.createElement('tr')
+          tr_eight.classList.add('tr_eight')
+          tr_eight.classList.add(`tr_eight_${j}`)
+          tr_eight.id = `tr_eight_${j}`
+          eight[i].prepend(tr_eight)
+
+          const tr_nine = document.createElement('tr')
+          tr_nine.classList.add('tr_nine')
+          tr_nine.classList.add(`tr_nine_${j}`)
+          tr_nine.id = `tr_nine_${j}`
+          nine[i].prepend(tr_nine)
+
+          for (let k = 4; k >= 1; k--) {
+            const td_zero = document.createElement('td')
+            td_zero.classList.add('td_zero')
+            td_zero.classList.add(`td_zero_${k}`)
+            td_zero.innerText = k
+            tr_zero.prepend(td_zero)
+
+            const td_one = document.createElement('td')
+            td_one.classList.add('td_one')
+            td_one.classList.add(`td_one_${k}`)
+            td_one.innerText = k
+            tr_one.prepend(td_one)
+
+            const td_two = document.createElement('td')
+            td_two.classList.add('td_two')
+            td_two.classList.add(`td_two_${k}`)
+            td_two.innerText = k
+            tr_two.prepend(td_two)
+
+            const td_three = document.createElement('td')
+            td_three.classList.add('td_three')
+            td_three.classList.add(`td_three_${k}`)
+            td_three.innerText = k
+            tr_three.prepend(td_three)
+
+            const td_four = document.createElement('td')
+            td_four.classList.add('td_four')
+            td_four.classList.add(`td_four_${k}`)
+            td_four.innerText = k
+            tr_four.prepend(td_four)
+
+            const td_five = document.createElement('td')
+            td_five.classList.add('td_five')
+            td_five.classList.add(`td_five_${k}`)
+            td_five.innerText = k
+            tr_five.prepend(td_five)
+
+            const td_six = document.createElement('td')
+            td_six.classList.add('td_six')
+            td_six.classList.add(`td_six_${k}`)
+            td_six.innerText = k
+            tr_six.prepend(td_six)
+
+            const td_seven = document.createElement('td')
+            td_seven.classList.add('td_seven')
+            td_seven.classList.add(`td_seven_${k}`)
+            td_seven.innerText = k
+            tr_seven.prepend(td_seven)
+
+            const td_eight = document.createElement('td')
+            td_eight.classList.add('td_eight')
+            td_eight.classList.add(`td_eight_${k}`)
+            td_eight.innerText = k
+            tr_eight.prepend(td_eight)
+
+            const td_nine = document.createElement('td')
+            td_nine.classList.add('td_nine')
+            td_nine.classList.add(`td_nine_${k}`)
+            td_nine.innerText = k
+            tr_nine.prepend(td_nine)
           }
         }
       }
-    }
 
 
-    // 天上的石頭
-    const upStone_content = document.getElementById('upStone_content')
+      // 數字時鐘動起來
 
-    for (let i = 2; i >= 1; i--) {
-      const upStone = document.createElement('div')
-      upStone.classList.add('upStone')
-      upStone.id = `upStone_${i}`
-      upStone_content.prepend(upStone)
-      for (let j = 1; j >= 1; j--) {
-        const table_upStone = document.createElement('table')
-        table_upStone.classList.add('table_upStone')
-        table_upStone.id = `table_upStone_${j}`
-        upStone.prepend(table_upStone)
-        for (let k = 6; k >= 1; k--) {
-          const tr_upStone = document.createElement('tr')
-          tr_upStone.classList.add('tr_upStone')
-          tr_upStone.id = `tr_upStone_${k}`
-          table_upStone.prepend(tr_upStone)
-          for (let l = 7; l >= 1; l--) {
-            const td_upStone = document.createElement('td')
-            td_upStone.classList.add('td_upStone')
-            td_upStone.classList.add(`td_upStone_${l}`)
-            tr_upStone.prepend(td_upStone)
-            td_upStone.innerText = l
-          }
-        }
-      }
-    }
+      const time_second_content = document.getElementById('time_second_content')
+      const time_second_content2 = document.getElementById('time_second_content2')
 
-
-
-
-
-    // 時鐘色
-    const table_clock = document.getElementById('table_clock')
-    for (let i = 30; i >= 1; i--) {
-      const tr = document.createElement('tr')
-      tr.classList.add('tr_clock')
-      tr.id = `tr_clock_${i}`
-      table_clock.prepend(tr)
-      for (let j = 30; j >= 1; j--) {
-        const td = document.createElement('td')
-        td.classList.add('td_clock')
-        td.classList.add(`td_clock_${j}`)
-        // let a = 1
-        // td.id = `td_clock_${j}`
-        td.innerText = `${j}`
-        tr.prepend(td)
-      }
-    }
-
-    // 時針
-    const hourHand = document.getElementById('hourHand')
-    for (let i = 5; i >= 1; i--) {
-      const tr_hour = document.createElement('tr')
-      tr_hour.classList.add('tr_hour')
-      hourHand.prepend(tr_hour)
-      for (let j = 1; j >= 1; j--) {
-        const td_hour = document.createElement('td')
-        td_hour.classList.add('td_hour')
-        tr_hour.prepend(td_hour)
-      }
-    }
-
-    // 分針
-    const minuteHand = document.getElementById('minuteHand')
-    for (let i = 9; i >= 1; i--) {
-      const tr_Minute = document.createElement('tr')
-      tr_Minute.classList.add('tr_Minute')
-      minuteHand.prepend(tr_Minute)
-      for (let j = 1; j >= 1; j--) {
-        const td_Minute = document.createElement('td')
-        td_Minute.classList.add('td_Minuter')
-        tr_Minute.prepend(td_Minute)
-      }
-    }
-
-    // 讓指針動起來
-    const secondHand = document.getElementById('secondHand')
-    const clock = () => {
       const date = new Date()
-      const hour = date.getHours()
-      const minute = date.getMinutes()
-      const second = date.getSeconds()
-      hourHand.style.transform = `rotate(${hour * 30 + 180 + minute * 0.5}deg)`
-      minuteHand.style.transform = `rotate(${minute * 6 + 180}deg)`
-      secondHand.style.transform = `rotate(${second * 6 + 180}deg)`
-    }
-
-    setInterval(clock, 1000)
-    clock()
+      const time_second = date.getSeconds()
+      const onces_second = time_second % 10
+      const tens_second = Math.floor(time_second / 10)
 
 
-    // 背景格
-    const background_content = document.getElementById('background_content')
-
-    for (let i = 57; i >= 1; i--) {
-      const tr_content = document.createElement('tr')
-      tr_content.classList.add('tr_content')
-      background_content.prepend(tr_content)
-      for (let j = 112; j >= 1; j--) {
-        const td_content = document.createElement('td')
-        td_content.classList.add('td_content')
-        tr_content.prepend(td_content)
+      const time_second_number = {
+        onces: {
+          0: zero[1],
+          1: one[1],
+          2: two[1],
+          3: three[1],
+          4: four[1],
+          5: five[1],
+          6: six[1],
+          7: seven[1],
+          8: eight[1],
+          9: nine[1]
+        }
+        ,
+        tens: {
+          0: zero[2],
+          1: one[2],
+          2: two[2],
+          3: three[2],
+          4: four[2],
+          5: five[2],
+          6: six[2],
+          7: seven[2],
+          8: eight[2],
+          9: nine[2]
+        }
       }
-    }
+
+
+      const time = () => {
+        if (time_second_number.onces[onces_second]) {
+          time_second_content.prepend(time_second_number.onces[onces_second])
+        }
+
+        if (time_second_number.tens[tens_second]) {
+          time_second_content2.prepend(time_second_number.tens[tens_second])
+        }
+      }
+
+      // 如果不是實際的 DOM 元素，後面 function 說不能逐秒更換
+      setInterval(time, 1000)
+      time()
 
 
 
-    // 對照格數用
-    // 給自己看的格子位置
-    // const table01 = document.getElementById('table01')
 
-    // for (let i = 30; i >= 1; i--) {
-    //   const tr01 = document.createElement('tr')
-    //   tr01.classList.add('tr01')
-    //   table01.prepend(tr01)
-    //   for (j = 0; j < 1; j++) {
-    //     const td01 = document.createElement('td')
-    //     td01.classList.add('td01')
-    //     td01.innerText = `${i}`
-    //     tr01.prepend(td01)
-    //   }
-    // }
+      // const images = {
+      //   tens: {
+      //     0: zeroTens,
+      //     1: oneTens,
+      //     // 添加更多十位数的图片
+      //   },
+      //   ones: {
+      //     0: zeroOnes,
+      //     1: oneOnes,
+      //     // 添加更多个位数的图片
+      //   },
+      // };
+
+      // const secondTime = () => {
+      //   const time_second = date.getSeconds();
+      //   const tens = Math.floor(time_second / 10);
+      //   const ones = time_second % 10;
+
+      //   if (images.tens[tens]) {
+      //     time_second_content.prepend(images.tens[tens]);
+      //   }
+      //   if (images.ones[ones]) {
+      //     time_second_content.prepend(images.ones[ones]);
+      //   }
+      // };
 
 
 
-  </script>
+      // 馬力歐
+      const table_mario = document.getElementById('table_mario')
+      for (let i = 16; i >= 1; i--) {
+        const tr_mario = document.createElement('tr')
+        tr_mario.classList.add('tr_mario')
+        tr_mario.id = `tr_mario_${i}`
+        table_mario.prepend(tr_mario)
+
+        for (let j = 14; j >= 1; j--) {
+          const td_mario = document.createElement('td')
+          td_mario.classList.add('td_mario')
+          td_mario.classList.add(`td_mario_${j}`)
+          tr_mario.prepend(td_mario)
+          // td_mario.innerText = j
+        }
+      }
+
+
+
+      // 天上的石頭
+      const upStone_content = document.getElementById('upStone_content')
+      for (let i = 2; i >= 1; i--) {
+        const upStone = document.createElement('div')
+        upStone.classList.add('upStone')
+        upStone.id = `upStone_${i}`
+        upStone_content.prepend(upStone)
+        for (let j = 1; j >= 1; j--) {
+          const table_upStone = document.createElement('table')
+          table_upStone.classList.add('table_upStone')
+          table_upStone.id = `table_upStone_${j}`
+          upStone.prepend(table_upStone)
+          for (let k = 7; k >= 1; k--) {
+            const tr_upStone = document.createElement('tr')
+            tr_upStone.classList.add('tr_upStone')
+            tr_upStone.id = `tr_upStone_${k}`
+            table_upStone.prepend(tr_upStone)
+            for (let l = 9; l >= 1; l--) {
+              const td_upStone = document.createElement('td')
+              td_upStone.classList.add('td_upStone')
+              td_upStone.classList.add(`td_upStone_${l}`)
+              tr_upStone.prepend(td_upStone)
+              td_upStone.innerText = l
+            }
+          }
+        }
+      }
+
+      // 地上石頭
+      const stone_content = document.getElementById('stone_content')
+      for (let i = 42; i >= 1; i--) {
+        const stone = document.createElement('div')
+        stone.classList.add('stone')
+        stone.id = `stone_${i}`
+        stone_content.prepend(stone)
+        for (let j = 1; j >= 1; j--) {
+          const table_stone = document.createElement('table')
+          table_stone.classList.add('table_stone')
+          table_stone.id = `table_stone_${j}`
+          stone.prepend(table_stone)
+          for (let k = 6; k >= 1; k--) {
+            const tr_stone = document.createElement('tr')
+            tr_stone.classList.add('tr_stone')
+            tr_stone.id = `tr_stone_${k}`
+            table_stone.prepend(tr_stone)
+            for (let l = 7; l >= 1; l--) {
+              const td_stone = document.createElement('td')
+              td_stone.classList.add('td_stone')
+              td_stone.classList.add(`td_stone_${l}`)
+              tr_stone.prepend(td_stone)
+              td_stone.innerText = l
+            }
+          }
+        }
+      }
+
+
+      // 時鐘色
+      const table_clock = document.getElementById('table_clock')
+      for (let i = 30; i >= 1; i--) {
+        const tr = document.createElement('tr')
+        tr.classList.add('tr_clock')
+        tr.id = `tr_clock_${i}`
+        table_clock.prepend(tr)
+        for (let j = 30; j >= 1; j--) {
+          const td = document.createElement('td')
+          td.classList.add('td_clock')
+          td.classList.add(`td_clock_${j}`)
+          // let a = 1
+          // td.id = `td_clock_${j}`
+          td.innerText = `${j}`
+          tr.prepend(td)
+        }
+      }
+
+      // 時針
+      const hourHand = document.getElementById('hourHand')
+      for (let i = 5; i >= 1; i--) {
+        const tr_hour = document.createElement('tr')
+        tr_hour.classList.add('tr_hour')
+        hourHand.prepend(tr_hour)
+        for (let j = 1; j >= 1; j--) {
+          const td_hour = document.createElement('td')
+          td_hour.classList.add('td_hour')
+          tr_hour.prepend(td_hour)
+        }
+      }
+
+      // 分針
+      const minuteHand = document.getElementById('minuteHand')
+      for (let i = 9; i >= 1; i--) {
+        const tr_Minute = document.createElement('tr')
+        tr_Minute.classList.add('tr_Minute')
+        minuteHand.prepend(tr_Minute)
+        for (let j = 1; j >= 1; j--) {
+          const td_Minute = document.createElement('td')
+          td_Minute.classList.add('td_Minuter')
+          tr_Minute.prepend(td_Minute)
+        }
+      }
+
+      // 讓指針動起來
+      const secondHand = document.getElementById('secondHand')
+      const clock = () => {
+        const date = new Date()
+        const hour = date.getHours()
+        const minute = date.getMinutes()
+        const second = date.getSeconds()
+        hourHand.style.transform = `rotate(${hour * 30 + 180 + minute * 0.5}deg)`
+        minuteHand.style.transform = `rotate(${minute * 6 + 180}deg)`
+        secondHand.style.transform = `rotate(${second * 6 + 180}deg)`
+      }
+
+      setInterval(clock, 1000)
+      clock()
+
+
+
+      // 背景格
+      const background_content = document.getElementById('background_content')
+      for (let i = 73; i >= 1; i--) {
+        const tr_content = document.createElement('tr')
+        tr_content.classList.add('tr_content')
+        background_content.prepend(tr_content)
+        for (let j = 148; j >= 1; j--) {
+          const td_content = document.createElement('td')
+          td_content.classList.add('td_content')
+          tr_content.prepend(td_content)
+        }
+      }
+
+
+
+      // 對照時鐘格子
+      // const table01 = document.getElementById('table01')
+
+      // for (let i = 30; i >= 1; i--) {
+      //   const tr01 = document.createElement('tr')
+      //   tr01.classList.add('tr01')
+      //   table01.prepend(tr01)
+      //   for (j = 0; j < 1; j++) {
+      //     const td01 = document.createElement('td')
+      //     td01.classList.add('td01')
+      //     td01.innerText = `${i}`
+      //     tr01.prepend(td01)
+      //   }
+      // }
+
+
+
+      // 對照馬力歐格子
+      // const table_m = document.getElementById('table_m')
+
+      // for (let i = 16; i >= 1; i--) {
+      //   const tr_m = document.createElement('tr')
+      //   table_m.prepend(tr_m)
+      //   for (let j = 1; j >= 1; j--) {
+      //     const td_m = document.createElement('td')
+      //     td_m.innerText = i
+      //     tr_m.prepend(td_m)
+      //   }
+      // }
+
+
+    </script>
 </body>
 
 </html>
