@@ -70,30 +70,19 @@
 
     <!-- 數字時鐘 -->
     <div id="time">
-      <div id="time_second_content"></div>
-      <div id="time_second_content2"></div>
-
+      <div id="ones_second_content"></div>
+      <div id="tens_second_content"></div>
+      <div id="ones_min_content"></div>
+      <div id="tens_min_content"></div>
+      <div id="ones_hour_content"></div>
+      <div id="tens_hour_content"></div>
+      <div id="colon_content"></div>
     </div>
 
 
     <script>
 
-      // 數字
-
-
-
-
-
-      // zero[i] = document.getElementById(`zero_${i}`)
-      //   two[i] = document.getElementById(`two_${i}`)
-      //   three[i] = document.getElementById(`three_${i}`)
-      //   four[i] = document.getElementById(`four_${i}`)
-      //   five[i] = document.getElementById(`five_${i}`)
-      //   six[i] = document.getElementById(`six_${i}`)
-      //   seven[i] = document.getElementById(`seven_${i}`)
-      //   eight[i] = document.getElementById(`eight_${i}`)
-      //   nine[i] = document.getElementById(`nine_${i}`)
-
+      // 刻數字
 
       const zero = []
       const one = []
@@ -106,7 +95,7 @@
       const eight = []
       const nine = []
 
-      for (let i = 1; i <= 2; i++) {
+      for (let i = 1; i <= 6; i++) {
         zero[i] = document.createElement('table')
         zero[i].classList.add('zero')
         zero[i].id = `zero_${i}`
@@ -273,19 +262,45 @@
       }
 
 
+
+      // 刻冒號
+
+      const colon_content = document.getElementById('colon_content')
+      for (let i = 1; i <= 2; i++) {
+        const colon = document.createElement('table')
+        colon.id = `colon_${i}`
+        colon.classList.add(`colon`)
+        colon.classList.add(`colon_${i}`)
+        colon_content.prepend(colon)
+        for (let j = 5; j >= 1; j--) {
+          const tr_colon = document.createElement('tr')
+          tr_colon.id = `tr_colon${j}`
+          tr_colon.classList.add(`tr_colon`)
+          tr_colon.classList.add(`tr_colon_${j}`)
+          colon.prepend(tr_colon)
+          for (let k = 1; k >= 1; k--) {
+            const td_colon = document.createElement('td')
+            td_colon.id = `td_colon_${k}`
+            td_colon.classList.add(`td_colon`)
+            td_colon.classList.add(`td_colon_${k}`)
+            tr_colon.prepend(td_colon)
+          }
+        }
+      }
+
+
       // 數字時鐘動起來
 
-      const time_second_content = document.getElementById('time_second_content')
-      const time_second_content2 = document.getElementById('time_second_content2')
+      const ones_second_content = document.getElementById('ones_second_content')
+      const tens_second_content = document.getElementById('tens_second_content')
+      const ones_min_content = document.getElementById('ones_min_content')
+      const tens_min_content = document.getElementById('tens_min_content')
+      const ones_hour_content = document.getElementById('ones_hour_content')
+      const tens_hour_content = document.getElementById('tens_hour_content')
 
-      const date = new Date()
-      const time_second = date.getSeconds()
-      const onces_second = time_second % 10
-      const tens_second = Math.floor(time_second / 10)
 
-
-      const time_second_number = {
-        onces: {
+      const time_number = {
+        ones_sec: {
           0: zero[1],
           1: one[1],
           2: two[1],
@@ -296,9 +311,8 @@
           7: seven[1],
           8: eight[1],
           9: nine[1]
-        }
-        ,
-        tens: {
+        },
+        tens_sec: {
           0: zero[2],
           1: one[2],
           2: two[2],
@@ -309,52 +323,108 @@
           7: seven[2],
           8: eight[2],
           9: nine[2]
+        },
+        ones_min: {
+          0: zero[3],
+          1: one[3],
+          2: two[3],
+          3: three[3],
+          4: four[3],
+          5: five[3],
+          6: six[3],
+          7: seven[3],
+          8: eight[3],
+          9: nine[3]
+        },
+        tens_min: {
+          0: zero[4],
+          1: one[4],
+          2: two[4],
+          3: three[4],
+          4: four[4],
+          5: five[4],
+          6: six[4],
+          7: seven[4],
+          8: eight[4],
+          9: nine[4]
+        },
+        ones_hour: {
+          0: zero[5],
+          1: one[5],
+          2: two[5],
+          3: three[5],
+          4: four[5],
+          5: five[5],
+          6: six[5],
+          7: seven[5],
+          8: eight[5],
+          9: nine[5]
+        },
+        tens_hour: {
+          0: zero[6],
+          1: one[6],
+          2: two[6],
+          3: three[6],
+          4: four[6],
+          5: five[6],
+          6: six[6],
+          7: seven[6],
+          8: eight[6],
+          9: nine[6]
         }
+      }
+
+
+      for (let i = 0; i <= 9; i++) {
+        ones_second_content.prepend(time_number.ones_sec[i])
+        tens_second_content.prepend(time_number.tens_sec[i])
+        ones_min_content.prepend(time_number.ones_min[i])
+        tens_min_content.prepend(time_number.tens_min[i])
+        ones_hour_content.prepend(time_number.ones_hour[i])
+        tens_hour_content.prepend(time_number.tens_hour[i])
       }
 
 
       const time = () => {
-        if (time_second_number.onces[onces_second]) {
-          time_second_content.prepend(time_second_number.onces[onces_second])
-        }
+        const date = new Date()
+        const second = date.getSeconds()
+        const time_ones_second = second % 10
+        const time_tens_second = Math.floor(second / 10)
 
-        if (time_second_number.tens[tens_second]) {
-          time_second_content2.prepend(time_second_number.tens[tens_second])
+
+        const min = date.getMinutes()
+        const time_ones_min = min % 10
+        const time_tens_min = Math.floor(min / 10)
+
+        const hour = date.getHours()
+        const time_ones_hour = hour % 10
+        const time_tens_hour = Math.floor(hour / 10)
+
+        // 這邊都是 0 - 9 所以 one 可以給 tens 用
+        for (let i in time_number.ones_sec) {
+          time_number.ones_sec[i].style.display = 'none'
+          time_number.tens_sec[i].style.display = 'none'
+          time_number.ones_min[i].style.display = 'none'
+          time_number.tens_min[i].style.display = 'none'
+          time_number.ones_hour[i].style.display = 'none'
+          time_number.tens_hour[i].style.display = 'none'
         }
+        time_number.ones_sec[time_ones_second].style.display = 'block'
+        time_number.tens_sec[time_tens_second].style.display = 'block'
+        time_number.ones_min[time_ones_min].style.display = 'block'
+        time_number.tens_min[time_tens_min].style.display = 'block'
+        time_number.ones_hour[time_ones_hour].style.display = 'block'
+        time_number.tens_hour[time_tens_hour].style.display = 'block'
       }
-
-      // 如果不是實際的 DOM 元素，後面 function 說不能逐秒更換
       setInterval(time, 1000)
       time()
 
+      // 如果不是實際的 DOM 元素，後面 function 說不能逐秒更換，F5 會更換
+      // 所以改成改 display 樣式
 
-
-
-      // const images = {
-      //   tens: {
-      //     0: zeroTens,
-      //     1: oneTens,
-      //     // 添加更多十位数的图片
-      //   },
-      //   ones: {
-      //     0: zeroOnes,
-      //     1: oneOnes,
-      //     // 添加更多个位数的图片
-      //   },
-      // };
-
-      // const secondTime = () => {
-      //   const time_second = date.getSeconds();
-      //   const tens = Math.floor(time_second / 10);
-      //   const ones = time_second % 10;
-
-      //   if (images.tens[tens]) {
-      //     time_second_content.prepend(images.tens[tens]);
-      //   }
-      //   if (images.ones[ones]) {
-      //     time_second_content.prepend(images.ones[ones]);
-      //   }
-      // };
+      // if (time_number.ones[time_ones_second]) {
+      // ones_second_content.prepend(time_number.ones[time_ones_second])
+      // }
 
 
 
@@ -379,7 +449,7 @@
 
       // 天上的石頭
       const upStone_content = document.getElementById('upStone_content')
-      for (let i = 2; i >= 1; i--) {
+      for (let i = 3; i >= 1; i--) {
         const upStone = document.createElement('div')
         upStone.classList.add('upStone')
         upStone.id = `upStone_${i}`

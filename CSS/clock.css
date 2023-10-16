@@ -1,4 +1,4 @@
- body {
+body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -1179,21 +1179,29 @@
 
 .upStone {
 	position: absolute;
-	bottom: 46.5%;
-	/* bottom: 90%; */
+	/* bottom: 46.5%; */
+	bottom: 43.67%;
 }
 
 #upStone_1 {
 	position: absolute;
 	/* left: 290px; */
-	right: 150px;
+	/* right: calc(150px); */
+	right: 588px;
 }
 
 #upStone_2 {
 	position: absolute;
 	/* left: calc(207 + 327 + 327px); */
 	/* left: calc(290px + 119.4px); */
-	right: calc(150px + 119.4px);
+	right: calc(588px + 119.4px);
+}
+
+#upStone_3 {
+	position: absolute;
+	/* left: calc(207 + 327 + 327px); */
+	/* left: calc(290px + 119.4px); */
+	right: calc(588px + 119.4 * 2px);
 }
 
 .table_upStone {
