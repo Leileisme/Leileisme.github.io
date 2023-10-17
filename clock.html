@@ -8,9 +8,11 @@
 
   <!-- 我的CSS -->
   <link rel="stylesheet" href="./CSS/clock.css">
-  <link rel="stylesheet" href="./CSS/clock_backgroung_stone.css">
+  <link rel="stylesheet" href="./CSS/upStone.css">
   <link rel="stylesheet" href="./CSS/reference.css">
   <link rel="stylesheet" href="./CSS/number.css">
+  <link rel="stylesheet" href="./CSS/downStone.css">
+  <link rel="stylesheet" href="./CSS/mario.css">
 </head>
 
 
@@ -39,8 +41,14 @@
     <!-- 馬力歐 -->
     <div id="mario">
       <!-- <img src="./clock參考/馬力歐A.jpg" alt="" id="A"> -->
-      <table id="table_mario"></table>
+      <table id="table_mario" class="mario "></table>
     </div>
+
+    <div id="mario_back">
+      <table id="table_mario_back" class="mario marioMove"></table>
+
+    </div>
+
 
     <!-- 對照馬力歐格子用 -->
     <!-- <div id="div_m">
@@ -70,7 +78,6 @@
     <script>
 
       // 刻數字
-
       const zero = []
       const one = []
       const two = []
@@ -81,7 +88,6 @@
       const seven = []
       const eight = []
       const nine = []
-
       for (let i = 1; i <= 6; i++) {
         zero[i] = document.createElement('table')
         zero[i].classList.add('zero')
@@ -250,7 +256,6 @@
 
 
       // 刻冒號
-
       const colon_content = document.getElementById('colon_content')
       for (let i = 1; i <= 2; i++) {
         const colon = document.createElement('table')
@@ -276,15 +281,12 @@
 
 
       // 數字時鐘動起來
-
       const ones_second_content = document.getElementById('ones_second_content')
       const tens_second_content = document.getElementById('tens_second_content')
       const ones_min_content = document.getElementById('ones_min_content')
       const tens_min_content = document.getElementById('tens_min_content')
       const ones_hour_content = document.getElementById('ones_hour_content')
       const tens_hour_content = document.getElementById('tens_hour_content')
-
-
       const time_number = {
         ones_sec: {
           0: zero[1],
@@ -431,6 +433,24 @@
           // td_mario.innerText = j
         }
       }
+
+
+      // 馬力歐back
+      const table_mario_back = document.getElementById('table_mario_back')
+      for (let i = 16; i >= 1; i--) {
+        const tr_mario_back = document.createElement('tr')
+        tr_mario_back.classList.add('tr_mario')
+        tr_mario_back.id = `tr_mario_${i}`
+        table_mario_back.prepend(tr_mario_back)
+
+        for (let j = 1; j <= 14; j++) {
+          const td_mario_back = document.createElement('td')
+          td_mario_back.classList.add('td_mario')
+          td_mario_back.classList.add(`td_mario_${j}`)
+          tr_mario_back.prepend(td_mario_back)
+        }
+      }
+
 
       // 天上的石頭
       const upStone_content = document.getElementById('upStone_content')
