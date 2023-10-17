@@ -491,13 +491,6 @@
 	border: 0.05px solid rgb(218, 218, 218);
 }
 
-<<<<<<< HEAD
-#time_second_content {
-	position: absolute;
-	top: 39.4px;
-	right: 98px;
-	width: 55.5px;
-=======
 .colon {
 	position: absolute;
 	/* top: 39.6px;
@@ -570,7 +563,6 @@
 	position: absolute;
 	width: 55.5px;
 	right: 0;
->>>>>>> main
 
 	/* border: 2px solid .f00; */
 
@@ -581,12 +573,6 @@
 	font-size: 0;
 }
 
-<<<<<<< HEAD
-#time_second_content2 {
-	position: absolute;
-	top: 38px;
-	right: 165px;
-=======
 #tens_second_content {
 	position: absolute;
 	right: 66px;
@@ -639,7 +625,6 @@
 	position: absolute;
 	right: 383px;
 
->>>>>>> main
 	width: 55.5px;
 	/* border: 2px solid #f00; */
 
