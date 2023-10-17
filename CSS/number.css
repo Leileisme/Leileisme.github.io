@@ -491,11 +491,86 @@
 	border: 0.05px solid rgb(218, 218, 218);
 }
 
+<<<<<<< HEAD
 #time_second_content {
 	position: absolute;
 	top: 39.4px;
 	right: 98px;
 	width: 55.5px;
+=======
+.colon {
+	position: absolute;
+	/* top: 39.6px;
+	left: calc(52.6px + 79.3 * 9px); */
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+.tr_colon {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+	color: blue;
+	/* margin: 0;
+	padding: 0; */
+}
+
+.td_colon {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	/* background: rgb(218, 25, 25); */
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	/* border: 0.05px solid rgb(218, 218, 218); */
+}
+
+.tr_colon_2 .td_colon_1,
+.tr_colon_4 .td_colon_1 {
+	/* background: .fff; */
+	background: #000;
+	border: 0.05px solid rgb(218, 218, 218);
+}
+
+#colon_content {
+	position: absolute;
+	right: 0;
+}
+
+#colon_1 {
+	position: absolute;
+	right: 135px;
+	/* width: 20px;
+	border: 2px solid #f00; */
+}
+
+#colon_2 {
+	position: absolute;
+	right: 294px;
+	/* width: 20px;
+	border: 2px solid #f00; */
+}
+
+#time {
+	/* width: 300px; */
+	position: absolute;
+	/* top: 39.4px; */
+	top: 343px;
+	/* right: 308px; */
+	right: 546px;
+	/* border: 2px solid #f00; */
+}
+
+#ones_second_content {
+	position: absolute;
+	width: 55.5px;
+	right: 0;
+>>>>>>> main
 
 	/* border: 2px solid .f00; */
 
@@ -506,10 +581,65 @@
 	font-size: 0;
 }
 
+<<<<<<< HEAD
 #time_second_content2 {
 	position: absolute;
 	top: 38px;
 	right: 165px;
+=======
+#tens_second_content {
+	position: absolute;
+	right: 66px;
+	width: 55.5px;
+	/* border: 2px solid #f00; */
+
+	list-style: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+#ones_min_content {
+	position: absolute;
+	right: 159px;
+	width: 55.5px;
+	/* border: 2px solid #f00; */
+
+	list-style: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+#tens_min_content {
+	position: absolute;
+	right: 225px;
+	width: 55.5px;
+	/* border: 2px solid #f00; */
+
+	list-style: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+#ones_hour_content {
+	position: absolute;
+	right: 317.5px;
+	width: 55.5px;
+	/* border: 2px solid #f00; */
+
+	list-style: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+#tens_hour_content {
+	position: absolute;
+	right: 383px;
+
+>>>>>>> main
 	width: 55.5px;
 	/* border: 2px solid #f00; */
 
