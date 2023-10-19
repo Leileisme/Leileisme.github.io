@@ -1,21 +1,58 @@
-/* 動畫 */
-@keyframes Move {
-	0% {
-		transform: translate(0, 0);
-	}
-	50% {
-		transform: translate(0, 30vh);
-	}
-	100% {
-		transform: translate(0);
-	}
+/* 水管 pipe */
+#pipe {
+	/* border: 1px solid red; */
+	/* width: 670px; */
+	position: absolute;
+	bottom: 10.8%;
+	left: 60%;
+	/* transform: translate(0, -47.3%); */
 }
 
-.marioMove {
-	animation-name: Move;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-out;
+.pipe {
+	position: relative;
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+.tr_pipe {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+	color: blue;
+	/* margin: 0;
+	padding: 0; */
+}
+
+.td_pipe {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	/* background: rgb(218, 25, 25); */
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	/* border: 0.05px solid rgb(218, 218, 218); */
+	/* font-size: 0.001px; */
+}
+
+#B {
+	position: absolute;
+	bottom: 1.4%;
+	left: 69.5%;
+	opacity: 0.5;
+	width: 10%;
+}
+
+/*  馬力歐back*/
+
+#table_mario_back {
+	position: absolute;
+	bottom: 23.2%;
+	left: 70%;
 }
 
 /* 馬力歐 */
@@ -24,7 +61,8 @@
 	/* width: 670px; */
 	position: absolute;
 	bottom: 10.8%;
-	left: 14.9%;
+	left: 70%;
+	opacity: 0;
 	/* transform: translate(0, -47.3%); */
 }
 
@@ -264,12 +302,4 @@
 #tr_mario_13 .td_mario_14 {
 	background: rgb(255, 166, 0);
 	border: 0.05px solid rgb(218, 218, 218);
-}
-
-/*  馬力歐back*/
-
-#table_mario_back {
-	position: absolute;
-	bottom: 10.8%;
-	right: 40%;
 }

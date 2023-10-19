@@ -1,0 +1,40 @@
+/* 動畫 */
+@keyframes marioMove {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(0, 21vh);
+	}
+	100% {
+		transform: translate(0, 50vh);
+	}
+}
+
+.marioMove {
+	animation-name: marioMove;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes clockMove {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(0, 21vh);
+	}
+	100% {
+		transform: translate(0, 21vh);
+	}
+}
+
+.clockMove {
+	animation-name: clockMove;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}

@@ -9,9 +9,10 @@
 	opacity: 0;
 }
 
-.upStone {
+#upStone_content {
+	width: 1000px;
 	position: absolute;
-	/* bottom: 46.5%; */
+	left: 14%;
 	bottom: 43.67%;
 }
 
@@ -19,21 +20,21 @@
 	position: absolute;
 	/* left: 290px; */
 	/* right: calc(150px); */
-	right: 588px;
+	/* right: 588px; */
 }
 
 #upStone_2 {
 	position: absolute;
 	/* left: calc(207 + 327 + 327px); */
 	/* left: calc(290px + 119.4px); */
-	right: calc(588px + 119.4px);
+	/* right: calc(588px + 119.4px); */
 }
 
 #upStone_3 {
 	position: absolute;
 	/* left: calc(207 + 327 + 327px); */
 	/* left: calc(290px + 119.4px); */
-	right: calc(588px + 119.4 * 2px);
+	/* right: calc(588px + 119.4 * 2px); */
 }
 
 .table_upStone {

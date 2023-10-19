@@ -48,8 +48,6 @@ body {
 	font-size: 0.001px;
 }
 
-
-
 /* 時鐘背景色 */
 #clock {
 	/* border: 1px solid red; */
@@ -57,8 +55,8 @@ body {
 	position: absolute;
 	bottom: 30%;
 	left: 64.4%;
-	left: 8.8%;
-	bottom: 31.3%;
+	left: 64.6%;
+	bottom: 43.8%;
 	/* transform: translate(0, -47.3%); */
 }
 

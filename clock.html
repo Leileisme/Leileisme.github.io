@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./CSS/number.css">
   <link rel="stylesheet" href="./CSS/downStone.css">
   <link rel="stylesheet" href="./CSS/mario.css">
+  <link rel="stylesheet" href="./CSS/animation.css">
 </head>
 
 
@@ -23,7 +24,7 @@
     <!-- 背景 -->
     <div id="background_content"></div>
 
-    <div id="clock">
+    <div id="clock" class=" clockMove">
       <!-- <img src="./clock參考/06.png" alt=""> -->
       <table id="table_clock"></table> <!-- 底色 -->
       <table id="hourHand"></table> <!-- 時針 -->
@@ -31,11 +32,20 @@
       <div id="secondHand"></div> <!-- 秒針 -->
     </div>
 
-
-    <!-- 對時鐘照格數用 -->
-    <!-- <div id="div01">
+    <!-- <div id="test">
+      對時鐘照格數用
+      <div id="div01">
     <table id="table01"></table>
+    </div>
+
+
+      對照馬力歐格子用
+      <div id="div_m">
+      <table id="table_m"></table>
+    </div>
     </div> -->
+
+
 
 
     <!-- 馬力歐 -->
@@ -49,10 +59,9 @@
 
     </div>
 
-    <!-- 對照馬力歐格子用 -->
-    <!-- <div id="div_m">
-      <table id="table_m"></table>
-    </div> -->
+    <!-- 水管 -->
+    <div id="pipe"></div>
+    <img src="./clock參考/水管.jpg" alt="" id="B">
 
 
     <!-- 地上石頭 -->
@@ -72,19 +81,6 @@
       <div id="tens_hour_content"></div>
       <div id="colon_content"></div>
     </div>
-
-    <!-- 數字 -->
-    <!-- <table id="zero"></table>
-    <table id="one"></table>
-    <table id="two"></table>
-    <table id="three"></table>
-    <table id="four"></table>
-    <table id="five"></table>
-    <table id="six"></table>
-    <table id="seven"></table>
-    <table id="eight"></table>
-    <table id="nine"></table> -->
-
 
     <!-- 數字時鐘 -->
     <div id="time">
@@ -111,7 +107,16 @@
       const seven = []
       const eight = []
       const nine = []
+
+      // const text = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
       for (let i = 1; i <= 6; i++) {
+        // for (let j = 0; j <= 9; j++) {
+        //   eval(`
+        //       ${text[j]}[i] = document.createElement('table')
+        //       ${text[j]}[i].classList.add('${text[j]}')
+        //       ${text[j]}[i].id = "zero_${i}"
+        //     `)
+        // }
         zero[i] = document.createElement('table')
         zero[i].classList.add('zero')
         zero[i].id = `zero_${i}`
@@ -395,7 +400,6 @@
         tens_hour_content.prepend(time_number.tens_hour[i])
       }
 
-
       const time = () => {
         const date = new Date()
         const second = date.getSeconds()
@@ -437,6 +441,8 @@
       // ones_second_content.prepend(time_number.ones[time_ones_second])
       // }
 
+
+      // 水管
 
 
       // 馬力歐
@@ -638,6 +644,28 @@
       // }
 
 
+      // 改td顏色
+      const aaa = document.querySelectorAll(`
+      .tr_eight_1 .td_eight_1,
+.tr_eight_1 .td_eight_2,
+.tr_eight_1 .td_eight_3,
+.tr_eight_1 .td_eight_4,
+.tr_eight_2 .td_eight_1,
+.tr_eight_2 .td_eight_4,
+.tr_eight_3 .td_eight_1,
+.tr_eight_3 .td_eight_2,
+.tr_eight_3 .td_eight_3,
+.tr_eight_3 .td_eight_4,
+.tr_eight_4 .td_eight_1,
+.tr_eight_4 .td_eight_4,
+.tr_eight_5 .td_eight_1,
+.tr_eight_5 .td_eight_2,
+.tr_eight_5 .td_eight_3,
+.tr_eight_5 .td_eight_4
+`)
+      for (const el of aaa) {
+        el.style.background = 'blue'
+      }
     </script>
 </body>
 
