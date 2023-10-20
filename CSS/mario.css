@@ -1,50 +1,5 @@
-/* 水管 pipe */
-#pipe {
-	/* border: 1px solid red; */
-	/* width: 670px; */
-	position: absolute;
-	bottom: 10.8%;
-	left: 60%;
-	/* transform: translate(0, -47.3%); */
-}
-
-.pipe {
-	position: relative;
-	list-style: none;
-	border: none;
-	table-layout: fixed;
-	border-collapse: collapse;
-	font-size: 0;
-}
-
-.tr_pipe {
-	list-style: none;
-	border: none;
-	height: 10px;
-	box-sizing: border-box;
-	color: blue;
-	/* margin: 0;
-	padding: 0; */
-}
-
-.td_pipe {
-	box-sizing: border-box;
-	display: inline-block;
-	width: 13px;
-	height: 13px;
-	/* background: rgb(218, 25, 25); */
-	margin-left: 0.2px;
-	margin-bottom: 0.2px;
-	/* border: 0.05px solid rgb(218, 218, 218); */
-	/* font-size: 0.001px; */
-}
-
-#B {
-	position: absolute;
-	bottom: 1.4%;
-	left: 69.5%;
-	opacity: 0.5;
-	width: 10%;
+#table_mario_back:hover {
+	cursor: pointer;
 }
 
 /*  馬力歐back*/
@@ -56,16 +11,20 @@
 }
 
 /* 馬力歐 */
-#mario {
+#position_mario {
+	height: 13px;
+	width: 13px;
+}
+#table_mario {
 	/* border: 1px solid red; */
 	/* width: 670px; */
 	position: absolute;
-	bottom: 10.8%;
+	bottom: 23.2%;
 	left: 70%;
-	opacity: 0;
-	/* transform: translate(0, -47.3%); */
+	display: none;
 }
 
+/* 樣式 */
 .mario {
 	position: relative;
 	list-style: none;
@@ -302,4 +261,213 @@
 #tr_mario_13 .td_mario_14 {
 	background: rgb(255, 166, 0);
 	border: 0.05px solid rgb(218, 218, 218);
+}
+
+/* 水管 pipe */
+#pipe_content {
+	/* border: 1px solid red; */
+	/* width: 670px; */
+	position: absolute;
+	top: 76.9%;
+	left: 70%;
+	/* transform: translate(0, -47.3%); */
+}
+
+.pipe {
+	position: relative;
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+.tr_pipe {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+	color: blue;
+}
+
+.td_pipe {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	/* background: rgb(218, 25, 25); */
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	/* border: 0.05px solid rgb(218, 218, 218); */
+	font-size: 13px;
+}
+
+#tr_pipe_2 .td_pipe_1,
+#tr_pipe_2 .td_pipe_3,
+#tr_pipe_2 .td_pipe_8,
+#tr_pipe_2 .td_pipe_9,
+#tr_pipe_2 .td_pipe_10,
+#tr_pipe_2 .td_pipe_11,
+#tr_pipe_2 .td_pipe_12,
+#tr_pipe_2 .td_pipe_13,
+#tr_pipe_2 .td_pipe_14,
+#tr_pipe_3 .td_pipe_1,
+#tr_pipe_3 .td_pipe_3,
+#tr_pipe_3 .td_pipe_8,
+#tr_pipe_3 .td_pipe_9,
+#tr_pipe_3 .td_pipe_10,
+#tr_pipe_3 .td_pipe_11,
+#tr_pipe_3 .td_pipe_12,
+#tr_pipe_3 .td_pipe_13,
+#tr_pipe_3 .td_pipe_14,
+#tr_pipe_4 .td_pipe_1,
+#tr_pipe_4 .td_pipe_3,
+#tr_pipe_4 .td_pipe_8,
+#tr_pipe_4 .td_pipe_9,
+#tr_pipe_4 .td_pipe_10,
+#tr_pipe_4 .td_pipe_11,
+#tr_pipe_4 .td_pipe_12,
+#tr_pipe_4 .td_pipe_13,
+#tr_pipe_4 .td_pipe_14,
+#tr_pipe_5 .td_pipe_1,
+#tr_pipe_5 .td_pipe_3,
+#tr_pipe_5 .td_pipe_8,
+#tr_pipe_5 .td_pipe_9,
+#tr_pipe_5 .td_pipe_10,
+#tr_pipe_5 .td_pipe_11,
+#tr_pipe_5 .td_pipe_12,
+#tr_pipe_5 .td_pipe_13,
+#tr_pipe_5 .td_pipe_14,
+#tr_pipe_6 .td_pipe_1,
+#tr_pipe_6 .td_pipe_3,
+#tr_pipe_6 .td_pipe_8,
+#tr_pipe_6 .td_pipe_9,
+#tr_pipe_6 .td_pipe_10,
+#tr_pipe_6 .td_pipe_11,
+#tr_pipe_6 .td_pipe_12,
+#tr_pipe_6 .td_pipe_13,
+#tr_pipe_6 .td_pipe_14,
+#tr_pipe_8 .td_pipe_2,
+#tr_pipe_8 .td_pipe_3,
+#tr_pipe_8 .td_pipe_4,
+#tr_pipe_8 .td_pipe_5,
+#tr_pipe_8 .td_pipe_6,
+#tr_pipe_8 .td_pipe_7,
+#tr_pipe_8 .td_pipe_8,
+#tr_pipe_8 .td_pipe_9,
+#tr_pipe_8 .td_pipe_10,
+#tr_pipe_8 .td_pipe_11,
+#tr_pipe_8 .td_pipe_12,
+#tr_pipe_8 .td_pipe_13,
+#tr_pipe_9 .td_pipe_2,
+#tr_pipe_9 .td_pipe_3,
+#tr_pipe_9 .td_pipe_4,
+#tr_pipe_9 .td_pipe_5,
+#tr_pipe_9 .td_pipe_6,
+#tr_pipe_9 .td_pipe_7,
+#tr_pipe_9 .td_pipe_8,
+#tr_pipe_9 .td_pipe_9,
+#tr_pipe_9 .td_pipe_10,
+#tr_pipe_9 .td_pipe_11,
+#tr_pipe_9 .td_pipe_12,
+#tr_pipe_9 .td_pipe_13 {
+	background: #64a631;
+	border: 0.05px solid rgb(218, 218, 218);
+}
+
+#tr_pipe_1 .td_pipe_1,
+#tr_pipe_1 .td_pipe_2,
+#tr_pipe_1 .td_pipe_3,
+#tr_pipe_1 .td_pipe_4,
+#tr_pipe_1 .td_pipe_5,
+#tr_pipe_1 .td_pipe_6,
+#tr_pipe_1 .td_pipe_7,
+#tr_pipe_1 .td_pipe_8,
+#tr_pipe_1 .td_pipe_9,
+#tr_pipe_1 .td_pipe_10,
+#tr_pipe_1 .td_pipe_11,
+#tr_pipe_1 .td_pipe_12,
+#tr_pipe_1 .td_pipe_13,
+#tr_pipe_1 .td_pipe_14,
+#tr_pipe_2 .td_pipe_1,
+#tr_pipe_2 .td_pipe_14,
+#tr_pipe_3 .td_pipe_1,
+#tr_pipe_3 .td_pipe_14,
+#tr_pipe_4 .td_pipe_1,
+#tr_pipe_4 .td_pipe_14,
+#tr_pipe_5 .td_pipe_1,
+#tr_pipe_5 .td_pipe_14,
+#tr_pipe_6 .td_pipe_1,
+#tr_pipe_6 .td_pipe_14,
+#tr_pipe_7 .td_pipe_1,
+#tr_pipe_7 .td_pipe_2,
+#tr_pipe_7 .td_pipe_3,
+#tr_pipe_7 .td_pipe_4,
+#tr_pipe_7 .td_pipe_5,
+#tr_pipe_7 .td_pipe_6,
+#tr_pipe_7 .td_pipe_7,
+#tr_pipe_7 .td_pipe_8,
+#tr_pipe_7 .td_pipe_9,
+#tr_pipe_7 .td_pipe_10,
+#tr_pipe_7 .td_pipe_11,
+#tr_pipe_7 .td_pipe_12,
+#tr_pipe_7 .td_pipe_13,
+#tr_pipe_7 .td_pipe_14,
+#tr_pipe_8 .td_pipe_2,
+#tr_pipe_8 .td_pipe_13,
+#tr_pipe_9 .td_pipe_2,
+#tr_pipe_9 .td_pipe_13 {
+	background: rgb(0, 0, 0);
+	border: 0.05px solid rgb(218, 218, 218);
+}
+
+#tr_pipe_2 .td_pipe_2,
+#tr_pipe_2 .td_pipe_4,
+#tr_pipe_2 .td_pipe_5,
+#tr_pipe_2 .td_pipe_6,
+#tr_pipe_2 .td_pipe_7,
+#tr_pipe_2 .td_pipe_13,
+#tr_pipe_3 .td_pipe_2,
+#tr_pipe_3 .td_pipe_4,
+#tr_pipe_3 .td_pipe_5,
+#tr_pipe_3 .td_pipe_6,
+#tr_pipe_3 .td_pipe_7,
+#tr_pipe_3 .td_pipe_13,
+#tr_pipe_4 .td_pipe_2,
+#tr_pipe_4 .td_pipe_4,
+#tr_pipe_4 .td_pipe_5,
+#tr_pipe_4 .td_pipe_6,
+#tr_pipe_4 .td_pipe_7,
+#tr_pipe_4 .td_pipe_13,
+#tr_pipe_5 .td_pipe_2,
+#tr_pipe_5 .td_pipe_4,
+#tr_pipe_5 .td_pipe_5,
+#tr_pipe_5 .td_pipe_6,
+#tr_pipe_5 .td_pipe_7,
+#tr_pipe_5 .td_pipe_13,
+#tr_pipe_6 .td_pipe_2,
+#tr_pipe_6 .td_pipe_4,
+#tr_pipe_6 .td_pipe_5,
+#tr_pipe_6 .td_pipe_6,
+#tr_pipe_6 .td_pipe_7,
+#tr_pipe_6 .td_pipe_13,
+#tr_pipe_8 .td_pipe_3,
+#tr_pipe_8 .td_pipe_5,
+#tr_pipe_8 .td_pipe_6,
+#tr_pipe_8 .td_pipe_7,
+#tr_pipe_8 .td_pipe_12,
+#tr_pipe_9 .td_pipe_3,
+#tr_pipe_9 .td_pipe_5,
+#tr_pipe_9 .td_pipe_6,
+#tr_pipe_9 .td_pipe_7,
+#tr_pipe_9 .td_pipe_12 {
+	background: #b8ca3b;
+	border: 0.05px solid rgb(218, 218, 218);
+}
+#B {
+	position: absolute;
+	bottom: 1.4%;
+	left: 69.5%;
+	opacity: 0;
+	width: 10%;
 }

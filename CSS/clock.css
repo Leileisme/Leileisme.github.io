@@ -2,6 +2,8 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	width: 1960px;
+	height: 960px;
 	/* width: 1920px; */
 	/* border: 1px solid red; */
 
@@ -18,7 +20,8 @@ body {
 	height: 92.9%; */
 	width: 1960px;
 	height: 960px;
-	position: fixed;
+	position: absolute;
+	/* position: fixed; */
 	/* top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);*/

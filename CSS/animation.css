@@ -1,5 +1,5 @@
 /* 動畫 */
-@keyframes marioMove {
+/* @keyframes marioMove {
 	0% {
 		transform: translate(0, 0);
 	}
@@ -37,4 +37,4 @@
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
 	animation-fill-mode: forwards;
-}
+} */
