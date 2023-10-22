@@ -1,0 +1,110 @@
+#btn_content input {
+	display: none;
+}
+
+#table_label_up {
+	box-sizing: border-box;
+	position: absolute;
+	top: 72.8%;
+	left: 82.1%;
+	cursor: pointer;
+}
+
+#table_label_down {
+	box-sizing: border-box;
+	position: absolute;
+	top: 81%;
+	left: 82.1%;
+	cursor: pointer;
+}
+
+.table_label {
+	position: relative;
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+}
+
+.tr_label {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+	/* color: blue; */
+	/* margin: 0;
+	padding: 0; */
+}
+
+.td_label {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: rgb(255, 255, 255);
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	border: 0.05px solid rgb(218, 218, 218);
+	font-size: 10px;
+}
+
+#tr_label_up_1 .td_label_up_3,
+#tr_label_up_2 .td_label_up_2,
+#tr_label_up_2 .td_label_up_3,
+#tr_label_up_2 .td_label_up_4,
+#tr_label_up_3 .td_label_up_1,
+#tr_label_up_3 .td_label_up_2,
+#tr_label_up_3 .td_label_up_3,
+#tr_label_up_3 .td_label_up_4,
+#tr_label_up_3 .td_label_up_5,
+#tr_label_up_4 .td_label_up_3,
+#tr_label_up_5 .td_label_up_3 {
+	background: #000000;
+}
+
+#tr_label_up_1 .td_label_up_5,
+#tr_label_up_2 .td_label_up_5,
+#tr_label_up_3 .td_label_up_5,
+#tr_label_up_4 .td_label_up_5,
+#tr_label_up_5 .td_label_up_5 {
+	border-right: 5px solid #aaa;
+}
+
+#tr_label_up_5 .td_label_up_1,
+#tr_label_up_5 .td_label_up_2,
+#tr_label_up_5 .td_label_up_3,
+#tr_label_up_5 .td_label_up_4,
+#tr_label_up_5 .td_label_up_5 {
+	border-bottom: 5px solid #aaa;
+}
+
+#tr_label_down_1 .td_label_down_3,
+#tr_label_down_2 .td_label_down_3,
+#tr_label_down_3 .td_label_down_1,
+#tr_label_down_3 .td_label_down_2,
+#tr_label_down_3 .td_label_down_3,
+#tr_label_down_3 .td_label_down_4,
+#tr_label_down_3 .td_label_down_5,
+#tr_label_down_4 .td_label_down_2,
+#tr_label_down_4 .td_label_down_3,
+#tr_label_down_4 .td_label_down_4,
+#tr_label_down_5 .td_label_down_3 {
+	background: #000;
+}
+
+#tr_label_down_1 .td_label_down_5,
+#tr_label_down_2 .td_label_down_5,
+#tr_label_down_3 .td_label_down_5,
+#tr_label_down_4 .td_label_down_5,
+#tr_label_down_5 .td_label_down_5 {
+	border-right: 5px solid #aaa;
+}
+
+#tr_label_down_5 .td_label_down_1,
+#tr_label_down_5 .td_label_down_2,
+#tr_label_down_5 .td_label_down_3,
+#tr_label_down_5 .td_label_down_4,
+#tr_label_down_5 .td_label_down_5 {
+	border-bottom: 5px solid #aaa;
+}

@@ -4,6 +4,8 @@ body {
 	padding: 0;
 	width: 1960px;
 	height: 960px;
+	background: rgb(218, 218, 218);
+	/* background: rgb(46, 46, 46); */
 	/* width: 1920px; */
 	/* border: 1px solid red; */
 
@@ -43,10 +45,14 @@ body {
 	width: 13px;
 	height: 13px;
 	background: rgb(255, 238, 208);
+	background: rgb(0, 0, 0);
+
 	/* background: rgb(158, 208, 255); */
 	margin-left: 0.2px;
 	margin-bottom: 0.2px;
 	border: 0.05px solid rgb(218, 218, 218);
+	/* border: 0.05px solid rgb(46, 46, 46); */
+
 	color: black;
 	font-size: 0.001px;
 }
@@ -56,10 +62,9 @@ body {
 	/* border: 1px solid red; */
 	/* width: 670px; */
 	position: absolute;
-	bottom: 30%;
-	left: 64.4%;
-	left: 64.6%;
-	bottom: 43.8%;
+
+	left: 64.58%;
+	bottom: 43.61%;
 	/* transform: translate(0, -47.3%); */
 }
 
@@ -92,7 +97,7 @@ body {
 	margin-bottom: 0.2px;
 	/* border: 0.05px solid rgb(218, 218, 218); */
 	color: black;
-	/* font-size: 0.001px; */
+	/* font-size: 12px; */
 }
 
 /* 參考圖像 */
@@ -461,8 +466,6 @@ body {
 #tr_clock_24 .td_clock_5,
 #tr_clock_24 .td_clock_6,
 #tr_clock_24 .td_clock_7,
-#tr_clock_24 .td_clock_24,
-#tr_clock_24 .td_clock_25,
 #tr_clock_24 .td_clock_26,
 #tr_clock_25 .td_clock_5,
 #tr_clock_25 .td_clock_6,

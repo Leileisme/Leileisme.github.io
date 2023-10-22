@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./CSS/downStone.css">
   <link rel="stylesheet" href="./CSS/mario.css">
   <link rel="stylesheet" href="./CSS/animation.css">
+  <link rel="stylesheet" href="./CSS/btn.css">
 </head>
 
 
@@ -24,7 +25,7 @@
     <!-- 背景 -->
     <div id="background_content"></div>
 
-    <div id="clock" class=" clockMove">
+    <div id="clock" class="clockMove">
       <!-- <img src="./clock參考/06.png" alt=""> -->
       <table id="table_clock"></table> <!-- 底色 -->
       <table id="hourHand"></table> <!-- 時針 -->
@@ -56,12 +57,24 @@
       </div>
 
       <div id="mario_back">
+        <!-- 對照用 -->
+        <div id="bad"></div>
         <table id="table_mario_back" class="mario marioMove"></table>
       </div>
     </div>
+
+
+    <!--  壞香菇-->
+    <div id="bad_mushroom_content" class="bad_mushroom_move">
+      <img src="./clock參考/壞香菇.jpg" id="mushroom_img">
+      <img src="./clock參考/壞香菇2.png" id="mushroom_img2">
+    </div>
+
     <!-- 水管 -->
     <div id="pipe_content"></div>
     <img src="./clock參考/水管.jpg" alt="" id="B">
+
+
 
 
     <!-- 地上石頭 -->
@@ -82,10 +95,18 @@
       <div id="colon_content"></div>
     </div>
 
+    <!-- 按鈕 -->
+    <!-- <div id="btn_content">
+      <label for="up" id="label_up"></label>
+      <label for="down" id="label_down"></label>
+      <input type="radio" id="up" name="marioBtn" checked>
+      <input type="radio" id="down" name="marioBtn">
+    </div> -->
+
+
     <script src="./JS/creat.js"></script>
+    <script src="./JS/change.js"></script>
     <script>
-
-
 
 
 
@@ -112,6 +133,9 @@
       for (const el of aaa) {
         el.style.background = 'blue'
       }
+
+
+      
     </script>
 </body>
 

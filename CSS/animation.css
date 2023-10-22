@@ -38,3 +38,23 @@
 	animation-timing-function: ease-out;
 	animation-fill-mode: forwards;
 } */
+
+@keyframes bad_mushroom_move {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(1213px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.bad_mushroom_move {
+	animation-name: bad_mushroom_move;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	animation-timing-function:ease-in-out;
+}

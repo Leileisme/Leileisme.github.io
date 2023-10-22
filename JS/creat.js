@@ -1,3 +1,326 @@
+// 按鈕
+
+// 壞香菇-R
+const bad_mushroom_content = document.getElementById('bad_mushroom_content')
+for (let i = 1; i >= 1; i--) {
+	const bad_mushroom_R = document.createElement('table')
+	bad_mushroom_R.classList.add('bad_mushroom')
+	bad_mushroom_R.classList.add('bad_mushroom_R')
+	bad_mushroom_R.id = `bad_mushroom_${i}`
+	bad_mushroom_R.id = `bad_mushroom_R_${i}`
+	bad_mushroom_R.id = `bad_mushroom_R`
+	bad_mushroom_content.prepend(bad_mushroom_R)
+	for (let j = 12; j >= 1; j--) {
+		const tr_bad_mushroom = document.createElement('tr')
+		tr_bad_mushroom.classList.add('tr_bad_mushroom')
+		tr_bad_mushroom.id = `tr_bad_mushroom_${j}`
+		tr_bad_mushroom.id = `tr_bad_mushroom_R_${j}`
+		bad_mushroom_R.prepend(tr_bad_mushroom)
+		for (let k = 12; k >= 1; k--) {
+			const td_bad_mushroom = document.createElement('td')
+			td_bad_mushroom.classList.add('td_bad_mushroom')
+			td_bad_mushroom.classList.add(`td_bad_mushroom_${k}`)
+			tr_bad_mushroom.prepend(td_bad_mushroom)
+			// td_bad_mushroom.innerText = k
+		}
+	}
+}
+
+// 壞香菇-L
+
+for (let i = 1; i >= 1; i--) {
+	const bad_mushroom_L = document.createElement('table')
+	bad_mushroom_L.classList.add('bad_mushroom')
+	bad_mushroom_L.classList.add('bad_mushroom_L')
+	bad_mushroom_L.id = `bad_mushroom_${i}`
+	bad_mushroom_L.id = `bad_mushroom_L_${i}`
+	bad_mushroom_L.id = `bad_mushroom_L`
+	bad_mushroom_content.prepend(bad_mushroom_L)
+	for (let j = 12; j >= 1; j--) {
+		const tr_bad_mushroom = document.createElement('tr')
+		tr_bad_mushroom.classList.add('tr_bad_mushroom')
+		tr_bad_mushroom.classList.add(`tr_bad_mushroom_${j}`)
+		tr_bad_mushroom.id = `tr_bad_mushroom_${j}`
+		tr_bad_mushroom.id = `tr_bad_mushroom_L_${j}`
+		bad_mushroom_L.prepend(tr_bad_mushroom)
+		for (let k = 12; k >= 1; k--) {
+			const td_bad_mushroom = document.createElement('td')
+			td_bad_mushroom.classList.add('td_bad_mushroom')
+			td_bad_mushroom.classList.add(`td_bad_mushroom_${k}`)
+			tr_bad_mushroom.prepend(td_bad_mushroom)
+			// td_bad_mushroom.innerText = k
+		}
+	}
+}
+const bad_mushroom_R = document.getElementById('bad_mushroom_R')
+const bad_mushroom_L = document.getElementById('bad_mushroom_L')
+
+const bad_mushroom_change = () => {
+	if (bad_mushroom_R.style.display === 'none') {
+		bad_mushroom_R.style.display = 'block'
+		bad_mushroom_L.style.display = 'none'
+	} else {
+		bad_mushroom_L.style.display = 'block'
+		bad_mushroom_R.style.display = 'none'
+	}
+}
+
+setInterval(bad_mushroom_change, 300)
+
+// const move = () => {
+// 	const random = () => {
+// 		return Math.ceil(Math.random() * 70) + '%'
+// 	}
+
+// 	bad_mushroom_content.animate(
+// 		{
+// 			left: random()
+// 		},
+// 		5000,
+// 		function () {
+// 			move()
+// 		}
+// 	)
+// }
+
+// move()
+
+// const bad_mushroom_move = () => {
+// 	const moveR = () => {
+// 		const targetL = '63%'
+// 		bad_mushroom_content.animate(
+// 			{
+// 				left: targetL
+// 			},
+// 			8000,
+// 			function () {
+// 				moveL()
+// 			}
+// 		)
+// 	}
+
+// 	const targetR = '63%'
+
+// 	const moveL = () => {
+// 		bad_mushroom_content.animate(
+// 			{
+// 				left: targetR
+// 			},
+// 			8000,
+// 			function () {
+// 				moveR()
+// 			}
+// 		)
+// 	}
+// 	moveR()
+// }
+
+// bad_mushroom_move()
+
+// 對照壞香菇用
+// const bad = document.getElementById('bad')
+// for (let i = 1; i >= 1; i--) {
+// 	const bad = document.createElement('table')
+// 	bad.classList.add('bad')
+// 	bad.id = `bad_${i}`
+// 	bad_mushroom_content.prepend(bad)
+// 	for (let j = 12; j >= 1; j--) {
+// 		const tr_bad = document.createElement('tr')
+// 		tr_bad.classList.add('tr_bad')
+// 		tr_bad.id = `tr_bad_${j}`
+
+// 		bad.prepend(tr_bad)
+// 		for (let k = 1; k >= 1; k--) {
+// 			const td_bad = document.createElement('td')
+// 			td_bad.classList.add('td_bad')
+// 			td_bad.classList.add(`td_bad_${k}`)
+// 			tr_bad.prepend(td_bad)
+// 			td_bad.innerText = j
+// 		}
+// 	}
+// }
+
+// 水管
+const pipe_content = document.getElementById('pipe_content')
+for (let i = 1; i >= 1; i--) {
+	const pipe = document.createElement('table')
+	pipe.classList.add('pipe')
+	pipe.id = `pipe_${i}`
+	pipe_content.prepend(pipe)
+	for (let j = 9; j >= 1; j--) {
+		const tr_pipe = document.createElement('tr')
+		tr_pipe.classList.add('tr_pipe')
+		tr_pipe.id = `tr_pipe_${j}`
+		pipe.prepend(tr_pipe)
+		for (let k = 14; k >= 1; k--) {
+			const td_pipe = document.createElement('td')
+			td_pipe.classList.add('td_pipe')
+			td_pipe.classList.add(`td_pipe_${k}`)
+			tr_pipe.prepend(td_pipe)
+			// td_pipe.innerText = k
+		}
+	}
+}
+
+// 馬力歐
+const table_mario = document.getElementById('table_mario')
+for (let i = 16; i >= 1; i--) {
+	const tr_mario = document.createElement('tr')
+	tr_mario.classList.add('tr_mario')
+	tr_mario.id = `tr_mario_${i}`
+	table_mario.prepend(tr_mario)
+
+	for (let j = 14; j >= 1; j--) {
+		const td_mario = document.createElement('td')
+		td_mario.classList.add('td_mario')
+		td_mario.classList.add(`td_mario_${j}`)
+		tr_mario.prepend(td_mario)
+		// td_mario.innerText = j
+	}
+}
+
+// 馬力歐back
+const table_mario_back = document.getElementById('table_mario_back')
+for (let i = 16; i >= 1; i--) {
+	const tr_mario_back = document.createElement('tr')
+	tr_mario_back.classList.add('tr_mario')
+	tr_mario_back.id = `tr_mario_${i}`
+	table_mario_back.prepend(tr_mario_back)
+
+	for (let j = 1; j <= 14; j++) {
+		const td_mario_back = document.createElement('td')
+		td_mario_back.classList.add('td_mario')
+		td_mario_back.classList.add(`td_mario_${j}`)
+		tr_mario_back.prepend(td_mario_back)
+	}
+}
+
+// 碰到馬力歐 轉向
+position_mario.addEventListener('mouseenter', () => {
+	if (table_mario_back.style.display === 'none') {
+		table_mario_back.style.display = 'block'
+		table_mario.style.display = 'none'
+	} else {
+		table_mario.style.display = 'block'
+		table_mario_back.style.display = 'none'
+	}
+})
+
+// 天上的石頭
+const upStone_content = document.getElementById('upStone_content')
+for (let i = 3; i >= 1; i--) {
+	const upStone = document.createElement('div')
+	upStone.classList.add('upStone')
+	upStone.id = `upStone_${i}`
+	upStone_content.prepend(upStone)
+	for (let j = 1; j >= 1; j--) {
+		const table_upStone = document.createElement('table')
+		table_upStone.classList.add('table_upStone')
+		table_upStone.id = `table_upStone_${j}`
+		upStone.prepend(table_upStone)
+		for (let k = 7; k >= 1; k--) {
+			const tr_upStone = document.createElement('tr')
+			tr_upStone.classList.add('tr_upStone')
+			tr_upStone.id = `tr_upStone_${k}`
+			table_upStone.prepend(tr_upStone)
+			for (let l = 9; l >= 1; l--) {
+				const td_upStone = document.createElement('td')
+				td_upStone.classList.add('td_upStone')
+				td_upStone.classList.add(`td_upStone_${l}`)
+				tr_upStone.prepend(td_upStone)
+				td_upStone.innerText = l
+			}
+		}
+	}
+}
+
+// 地上石頭
+const stone_content = document.getElementById('stone_content')
+for (let i = 42; i >= 1; i--) {
+	const stone = document.createElement('div')
+	stone.classList.add('stone')
+	stone.id = `stone_${i}`
+	stone_content.prepend(stone)
+	for (let j = 1; j >= 1; j--) {
+		const table_stone = document.createElement('table')
+		table_stone.classList.add('table_stone')
+		table_stone.id = `table_stone_${j}`
+		stone.prepend(table_stone)
+		for (let k = 6; k >= 1; k--) {
+			const tr_stone = document.createElement('tr')
+			tr_stone.classList.add('tr_stone')
+			tr_stone.id = `tr_stone_${k}`
+			table_stone.prepend(tr_stone)
+			for (let l = 7; l >= 1; l--) {
+				const td_stone = document.createElement('td')
+				td_stone.classList.add('td_stone')
+				td_stone.classList.add(`td_stone_${l}`)
+				tr_stone.prepend(td_stone)
+				td_stone.innerText = l
+			}
+		}
+	}
+}
+
+// 時鐘色
+const table_clock = document.getElementById('table_clock')
+for (let i = 30; i >= 1; i--) {
+	const tr = document.createElement('tr')
+	tr.classList.add('tr_clock')
+	tr.id = `tr_clock_${i}`
+	table_clock.prepend(tr)
+	for (let j = 30; j >= 1; j--) {
+		const td = document.createElement('td')
+		td.classList.add('td_clock')
+		td.classList.add(`td_clock_${j}`)
+		// let a = 1
+		// td.id = `td_clock_${j}`
+		td.innerText = `${j}`
+		tr.prepend(td)
+	}
+}
+
+// 時針
+const hourHand = document.getElementById('hourHand')
+for (let i = 5; i >= 1; i--) {
+	const tr_hour = document.createElement('tr')
+	tr_hour.classList.add('tr_hour')
+	hourHand.prepend(tr_hour)
+	for (let j = 1; j >= 1; j--) {
+		const td_hour = document.createElement('td')
+		td_hour.classList.add('td_hour')
+		tr_hour.prepend(td_hour)
+	}
+}
+
+// 分針
+const minuteHand = document.getElementById('minuteHand')
+for (let i = 9; i >= 1; i--) {
+	const tr_Minute = document.createElement('tr')
+	tr_Minute.classList.add('tr_Minute')
+	minuteHand.prepend(tr_Minute)
+	for (let j = 1; j >= 1; j--) {
+		const td_Minute = document.createElement('td')
+		td_Minute.classList.add('td_Minuter')
+		tr_Minute.prepend(td_Minute)
+	}
+}
+
+// 讓指針動起來
+const secondHand = document.getElementById('secondHand')
+const clock = () => {
+	const date = new Date()
+	const hour = date.getHours()
+	const minute = date.getMinutes()
+	const second = date.getSeconds()
+	hourHand.style.transform = `rotate(${hour * 30 + 180 + minute * 0.5}deg)`
+	minuteHand.style.transform = `rotate(${minute * 6 + 180}deg)`
+	secondHand.style.transform = `rotate(${second * 6 + 180}deg)`
+}
+
+setInterval(clock, 1000)
+clock()
+
 // 刻數字
 const zero = []
 const one = []
@@ -338,188 +661,6 @@ time()
 // if (time_number.ones[time_ones_second]) {
 // ones_second_content.prepend(time_number.ones[time_ones_second])
 // }
-
-// 水管
-const pipe_content = document.getElementById('pipe_content')
-for (let i = 1; i >= 1; i--) {
-	const pipe = document.createElement('table')
-	pipe.classList.add('pipe')
-	pipe.id = `pipe_${i}`
-	pipe_content.prepend(pipe)
-	for (let j = 9; j >= 1; j--) {
-		const tr_pipe = document.createElement('tr')
-		tr_pipe.classList.add('tr_pipe')
-		tr_pipe.id = `tr_pipe_${j}`
-		pipe.prepend(tr_pipe)
-		for (let k = 14; k >= 1; k--) {
-			const td_pipe = document.createElement('td')
-			td_pipe.classList.add('td_pipe')
-			td_pipe.classList.add(`td_pipe_${k}`)
-			tr_pipe.prepend(td_pipe)
-			// td_pipe.innerText = k
-		}
-	}
-}
-
-// 馬力歐
-const table_mario = document.getElementById('table_mario')
-for (let i = 16; i >= 1; i--) {
-	const tr_mario = document.createElement('tr')
-	tr_mario.classList.add('tr_mario')
-	tr_mario.id = `tr_mario_${i}`
-	table_mario.prepend(tr_mario)
-
-	for (let j = 14; j >= 1; j--) {
-		const td_mario = document.createElement('td')
-		td_mario.classList.add('td_mario')
-		td_mario.classList.add(`td_mario_${j}`)
-		tr_mario.prepend(td_mario)
-		// td_mario.innerText = j
-	}
-}
-
-// 馬力歐back
-const table_mario_back = document.getElementById('table_mario_back')
-for (let i = 16; i >= 1; i--) {
-	const tr_mario_back = document.createElement('tr')
-	tr_mario_back.classList.add('tr_mario')
-	tr_mario_back.id = `tr_mario_${i}`
-	table_mario_back.prepend(tr_mario_back)
-
-	for (let j = 1; j <= 14; j++) {
-		const td_mario_back = document.createElement('td')
-		td_mario_back.classList.add('td_mario')
-		td_mario_back.classList.add(`td_mario_${j}`)
-		tr_mario_back.prepend(td_mario_back)
-	}
-}
-
-// 碰到馬力歐 轉向
-position_mario.addEventListener('mouseenter', () => {
-	if (table_mario_back.style.display === 'none') {
-		table_mario_back.style.display = 'block'
-		table_mario.style.display = 'none'
-	} else {
-		table_mario.style.display = 'block'
-		table_mario_back.style.display = 'none'
-	}
-})
-
-
-// 天上的石頭
-const upStone_content = document.getElementById('upStone_content')
-for (let i = 3; i >= 1; i--) {
-	const upStone = document.createElement('div')
-	upStone.classList.add('upStone')
-	upStone.id = `upStone_${i}`
-	upStone_content.prepend(upStone)
-	for (let j = 1; j >= 1; j--) {
-		const table_upStone = document.createElement('table')
-		table_upStone.classList.add('table_upStone')
-		table_upStone.id = `table_upStone_${j}`
-		upStone.prepend(table_upStone)
-		for (let k = 7; k >= 1; k--) {
-			const tr_upStone = document.createElement('tr')
-			tr_upStone.classList.add('tr_upStone')
-			tr_upStone.id = `tr_upStone_${k}`
-			table_upStone.prepend(tr_upStone)
-			for (let l = 9; l >= 1; l--) {
-				const td_upStone = document.createElement('td')
-				td_upStone.classList.add('td_upStone')
-				td_upStone.classList.add(`td_upStone_${l}`)
-				tr_upStone.prepend(td_upStone)
-				td_upStone.innerText = l
-			}
-		}
-	}
-}
-
-// 地上石頭
-const stone_content = document.getElementById('stone_content')
-for (let i = 42; i >= 1; i--) {
-	const stone = document.createElement('div')
-	stone.classList.add('stone')
-	stone.id = `stone_${i}`
-	stone_content.prepend(stone)
-	for (let j = 1; j >= 1; j--) {
-		const table_stone = document.createElement('table')
-		table_stone.classList.add('table_stone')
-		table_stone.id = `table_stone_${j}`
-		stone.prepend(table_stone)
-		for (let k = 6; k >= 1; k--) {
-			const tr_stone = document.createElement('tr')
-			tr_stone.classList.add('tr_stone')
-			tr_stone.id = `tr_stone_${k}`
-			table_stone.prepend(tr_stone)
-			for (let l = 7; l >= 1; l--) {
-				const td_stone = document.createElement('td')
-				td_stone.classList.add('td_stone')
-				td_stone.classList.add(`td_stone_${l}`)
-				tr_stone.prepend(td_stone)
-				td_stone.innerText = l
-			}
-		}
-	}
-}
-
-// 時鐘色
-const table_clock = document.getElementById('table_clock')
-for (let i = 30; i >= 1; i--) {
-	const tr = document.createElement('tr')
-	tr.classList.add('tr_clock')
-	tr.id = `tr_clock_${i}`
-	table_clock.prepend(tr)
-	for (let j = 30; j >= 1; j--) {
-		const td = document.createElement('td')
-		td.classList.add('td_clock')
-		td.classList.add(`td_clock_${j}`)
-		// let a = 1
-		// td.id = `td_clock_${j}`
-		td.innerText = `${j}`
-		tr.prepend(td)
-	}
-}
-
-// 時針
-const hourHand = document.getElementById('hourHand')
-for (let i = 5; i >= 1; i--) {
-	const tr_hour = document.createElement('tr')
-	tr_hour.classList.add('tr_hour')
-	hourHand.prepend(tr_hour)
-	for (let j = 1; j >= 1; j--) {
-		const td_hour = document.createElement('td')
-		td_hour.classList.add('td_hour')
-		tr_hour.prepend(td_hour)
-	}
-}
-
-// 分針
-const minuteHand = document.getElementById('minuteHand')
-for (let i = 9; i >= 1; i--) {
-	const tr_Minute = document.createElement('tr')
-	tr_Minute.classList.add('tr_Minute')
-	minuteHand.prepend(tr_Minute)
-	for (let j = 1; j >= 1; j--) {
-		const td_Minute = document.createElement('td')
-		td_Minute.classList.add('td_Minuter')
-		tr_Minute.prepend(td_Minute)
-	}
-}
-
-// 讓指針動起來
-const secondHand = document.getElementById('secondHand')
-const clock = () => {
-	const date = new Date()
-	const hour = date.getHours()
-	const minute = date.getMinutes()
-	const second = date.getSeconds()
-	hourHand.style.transform = `rotate(${hour * 30 + 180 + minute * 0.5}deg)`
-	minuteHand.style.transform = `rotate(${minute * 6 + 180}deg)`
-	secondHand.style.transform = `rotate(${second * 6 + 180}deg)`
-}
-
-setInterval(clock, 1000)
-clock()
 
 // 背景格
 const background_content = document.getElementById('background_content')
