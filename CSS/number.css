@@ -549,6 +549,11 @@
 	border: 2px solid #f00; */
 }
 
+#time:hover {
+	cursor: pointer;
+	/* transform: rotate(10deg); */
+}
+
 #time {
 	/* width: 300px; */
 	position: absolute;

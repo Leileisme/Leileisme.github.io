@@ -58,6 +58,12 @@ body {
 }
 
 /* 時鐘背景色 */
+
+#clock:hover {
+	transform: scale(110%) translateY(-30px);
+	cursor: pointer;
+}
+
 #clock {
 	/* border: 1px solid red; */
 	/* width: 670px; */

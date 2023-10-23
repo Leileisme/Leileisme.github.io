@@ -55,6 +55,7 @@ for (let i = 1; i >= 1; i--) {
 const bad_mushroom_R = document.getElementById('bad_mushroom_R')
 const bad_mushroom_L = document.getElementById('bad_mushroom_L')
 
+// 壞香菇交換
 const bad_mushroom_change = () => {
 	if (bad_mushroom_R.style.display === 'none') {
 		bad_mushroom_R.style.display = 'block'
