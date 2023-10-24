@@ -6,8 +6,8 @@ const body = document.body
 // 畫面背景
 const background_color = document.querySelectorAll('.td_content')
 
-// 時鐘黑邊框
-const clock_side = document.querySelectorAll(
+// 時鐘黑邊
+const clock_black = document.querySelectorAll(
 	`#tr_clock_2 .td_clock_11,
   #tr_clock_2 .td_clock_12,
   #tr_clock_2 .td_clock_19,
@@ -164,6 +164,32 @@ const clock_side = document.querySelectorAll(
   #tr_clock_29 .td_clock_23,
   #tr_clock_29 .td_clock_24`
 )
+
+// 時鐘邊邊
+const clock_side = document.querySelectorAll(`
+	#tr_clock_2 .td_clock_11,
+  #tr_clock_2 .td_clock_12,
+  #tr_clock_2 .td_clock_13,
+  #tr_clock_2 .td_clock_14,
+  #tr_clock_2 .td_clock_15,
+  #tr_clock_2 .td_clock_16,
+  #tr_clock_2 .td_clock_17,
+  #tr_clock_2 .td_clock_18,
+  #tr_clock_2 .td_clock_19,
+  #tr_clock_2 .td_clock_20,
+  #tr_clock_3 .td_clock_7,
+  #tr_clock_3 .td_clock_8,
+  #tr_clock_3 .td_clock_9,
+  #tr_clock_3 .td_clock_10,
+  #tr_clock_3 .td_clock_21,
+  #tr_clock_3 .td_clock_22,
+  #tr_clock_3 .td_clock_23,
+  #tr_clock_3 .td_clock_24,
+  #tr_clock_5 .td_clock_5,
+  #tr_clock_5 .td_clock_6,
+  #tr_clock_5 .td_clock_25,
+  #tr_clock_5 .td_clock_26
+  `)
 
 //  時鐘本體紅色
 const clock_red = document.querySelectorAll(
@@ -1403,89 +1429,101 @@ const downStone_color = document.querySelectorAll(`
 
 const background_change = () => {
 	const date = new Date()
+	const hour = date.getHours()
 	const min = date.getMinutes()
-	const background_min = Math.floor(min / 10)
-	console.log(background_min)
+	const tens_min = Math.floor(min / 10)
+	const sec = date.getSeconds()
+	const ones_sec = sec % 10
 
-	if (background_min === 1) {
+	if (hour > 18 || hour < 6) {
+		body.style.background = 'rgb(46, 46, 46)'
 		for (const el of background_color) {
 			el.style.background = '#000'
 			el.style.border = '0.05px solid rgb(46, 46, 46)'
 		}
-
-		for (const el2 of clock_side) {
+		for (const el2 of clock_black) {
 			el2.style.border = '0.05px solid rgb(100, 100, 100)'
+			el2.style.background = '#000'
 		}
-
 		for (const el3 of clock_red) {
 			el3.style.border = '0.05px solid rgb(100, 100, 100)'
 		}
-
 		for (const el4 of clock_yellow) {
 			el4.style.border = '0.05px solid rgb(100, 100, 100)'
 		}
-
 		for (const el5 of clock_green) {
-			el5.style.border = '0.05px solid rgb(100, 100, 100)'
+			el5.style.border = '0.05px solid rgb(150, 150, 150)'
+			el5.style.background = 'rgb(25, 240, 255)'
 		}
-
 		for (const el6 of pipe_color) {
-			el6.style.border = '0.05px solid rgb(100, 100, 100)'
+			el6.style.border = '0.05px solid rgb(150, 150, 150)'
 		}
-
 		for (const el7 of mario_color) {
 			el7.style.border = '0.05px solid rgb(150, 150, 150)'
 		}
-
 		for (const el8 of number_color) {
 			el8.style.border = '0.05px solid rgb(46, 46, 46)'
 			el8.style.background = '#fff'
+			el8.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
 		}
+		// 壞香菇無法換色
+
+		// 每秒時鐘變色但不好看
+
+		// if (ones_sec === 0 || ones_sec === 5) {
+		// 	for (const el of clock_green) {
+		// 		el.style.background = 'rgb(25, 240, 255)'
+		// 	}
+		// } else if (ones_sec === 1 || ones_sec === 6) {
+		// 	for (const el of clock_green) {
+		// 		el.style.background = 'rgb(138, 189, 255)'
+		// 	}
+		// } else if (ones_sec === 2 || ones_sec === 7) {
+		// 	for (const el of clock_green) {
+		// 		el.style.background = 'rgb(116, 239, 255)'
+		// 	}
+		// } else if (ones_sec === 3 || ones_sec === 8) {
+		// 	for (const el of clock_green) {
+		// 		el.style.background = 'rgb(147,172,255)'
+		// 	}
+		// } else if (ones_sec === 4 || ones_sec === 9) {
+		// 	for (const el of clock_green) {
+		// 		green.style.background = 'rgb(104, 225, 255)'
+		// 	}
+		// }
 
 		// 天上石頭框框不能變色...
 		// for (const el9 of upStone_color) {
 		// 	el9.style.border = '0.05px solid rgb(46, 46, 46)'
 		// }
 
-		// for (const el10 of upSton_color_L) {
+		// for (const el10 of upStone_color_L) {
 		// 	el10.style.border_left = '6px solid #000;'
 		// }
-
-		// 壞香菇無法換色
-
-		body.style.background = 'rgb(46, 46, 46)'
-
-		console.log(body)
-	} else {
+	} else if (18 > hour > 6) {
 		for (const el of background_color) {
 			el.style.background = 'rgb(255, 238, 208)'
 			el.style.border = '0.05px solid rgb(218, 218, 218)'
 		}
-
 		for (const el2 of clock_side) {
 			el2.style.border = '0.05px solid  rgb(218, 218, 218)'
 		}
-
-		for (const el3 of clock_red) {
+		for (const el3 of clock_black) {
 			el3.style.border = '0.05px solid  rgb(218, 218, 218)'
 		}
-
 		for (const el4 of clock_yellow) {
 			el4.style.border = '0.05px solid  rgb(218, 218, 218)'
 		}
-
 		for (const el5 of clock_green) {
 			el5.style.border = '0.05px solid  rgb(218, 218, 218)'
+			el5.style.background = 'rgb(70, 156, 255)'
 		}
-
 		for (const el6 of pipe_color) {
 			el6.style.border = '0.05px solid rgb(218, 218, 218)'
 		}
-
 		for (const el7 of mario_color) {
 			el7.style.border = '0.05px solid rgb(218, 218, 218)'
 		}
-
 		for (const el8 of number_color) {
 			el8.style.border = '0.05px solid rgb(218, 218, 218)'
 			el8.style.background = '#000'
@@ -1494,6 +1532,7 @@ const background_change = () => {
 		body.style.background = ' rgb(218, 218, 218)'
 	}
 }
+
 background_change()
 setInterval(background_change, 1000)
 

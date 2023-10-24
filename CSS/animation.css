@@ -59,4 +59,47 @@
 	animation-timing-function: ease-in-out;
 }
 
+@keyframes bad_mushroom_die {
+	0% {
+		transform: translateY(0);
+	}
 
+	20% {
+		transform: translateY(0) rotate(180deg);
+	}
+
+	40% {
+		transform: translateY(10px) rotate(180deg);
+	}
+	100% {
+		transform: translateY(500px) rotate(180deg);
+	}
+}
+
+.bad_mushroom_die {
+	animation-name: bad_mushroom_die;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes Xx {
+	0% {
+		transform: translateY(0);
+	}
+
+	20% {
+		transform: translateY(20px) rotate(180deg);
+	}
+	100% {
+		transform: translateY(-500px);
+	}
+}
+
+.X {
+	animation-name: Xx;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+}

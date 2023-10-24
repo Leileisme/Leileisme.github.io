@@ -60,7 +60,7 @@ body {
 /* 時鐘背景色 */
 
 #clock:hover {
-	transform: scale(110%) translateY(-30px);
+	transform: scale(112%) translateY(-30px);
 	cursor: pointer;
 }
 
@@ -638,9 +638,20 @@ body {
 #tr_clock_26 .td_clock_21,
 #tr_clock_26 .td_clock_22,
 #tr_clock_26 .td_clock_23 {
-	background: rgb(70, 156, 255);
 	border: 0.05px solid rgb(218, 218, 218);
-	background: rgb(0, 170, 113);
+	background: rgb(70, 156, 255);
+	background: rgb(27, 209, 255);
+	background: rgb(47, 65, 124);
+	background: rgb(9, 110, 141);
+	background: rgb(20, 92, 201);
+	background: rgb(20, 38, 201);
+	background: rgb(56, 116, 196);
+	background: rgb(138, 189, 255);
+	background: rgb(116, 239, 255);
+	background: rgb(104, 225, 255);
+	background: rgb(147, 172, 255);
+	background: rgb(0, 168, 65);
+	background: rgb(25, 240, 255);
 }
 
 #tr_clock_8 .td_clock_10,

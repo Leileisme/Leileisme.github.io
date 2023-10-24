@@ -11,10 +11,16 @@
 
 #bad_mushroom_content {
 	position: absolute;
+
 	width: 160px;
 	top: 73%;
 	left: 0%;
 	/* border: #f00 1px solid; */
+
+	
+	/* position: relative;
+	top: -277px;
+	left: 0; */
 }
 
 #mushroom_img2 {

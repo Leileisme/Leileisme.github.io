@@ -68,6 +68,29 @@ const bad_mushroom_change = () => {
 
 setInterval(bad_mushroom_change, 300)
 
+// 壞香菇被擊落
+// bad_mushroom_content.addEventListener('click', (event) => {
+// 	const mouseX = event.clientX
+// 	console.log(mouseX)
+
+// 	bad_mushroom_content.classList.add('bad_mushroom_die')
+// 	setTimeout(() => {
+// 		bad_mushroom_content.classList.remove('bad_mushroom_die')
+// 	}, 4000)
+// })
+
+bad_mushroom_content.addEventListener('click', (event) => {
+	const mouseX = event.clientX
+	const mouseY = event.clientY
+
+	console.log(mouseX)
+	console.log(this)
+
+	bad_mushroom_content.style.transform = `translate(${mouseX},${mouseY + 100}px)`
+})
+
+//  失敗的隨機走路 速度會忽快忽慢
+
 // const move = () => {
 // 	const random = () => {
 // 		return Math.ceil(Math.random() * 70) + '%'
