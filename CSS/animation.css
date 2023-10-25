@@ -1,5 +1,5 @@
 /* 動畫 */
-/* @keyframes marioMove {
+@keyframes marioMove {
 	0% {
 		transform: translate(0, 0);
 	}
@@ -37,17 +37,22 @@
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
 	animation-fill-mode: forwards;
-} */
+}
 
 @keyframes bad_mushroom_move {
 	0% {
-		transform: translateX(0);
+		left: 0;
+		/* transform: translateX(0); */
 	}
 	50% {
-		transform: translateX(1213px);
+		left: 1213px;
+
+		/* transform: translateX(1213px); */
 	}
 	100% {
-		transform: translateX(0);
+		left: 0;
+
+		/* transform: translateX(0); */
 	}
 }
 
@@ -61,24 +66,27 @@
 
 @keyframes bad_mushroom_die {
 	0% {
-		transform: translateY(0);
-	}
-
-	20% {
-		transform: translateY(0) rotate(180deg);
+		/* transform: translateY(0) ; */
 	}
 
 	40% {
-		transform: translateY(10px) rotate(180deg);
+		top: calc(73% - 20px);
+		transform: rotate(180deg);
+	}
+
+	50% {
+		top: calc(73% - 40px);
+		transform: rotate(180deg);
 	}
 	100% {
-		transform: translateY(500px) rotate(180deg);
+		top: calc(73% + 500px);
+		transform: rotate(180deg);
 	}
 }
 
 .bad_mushroom_die {
 	animation-name: bad_mushroom_die;
-	animation-duration: 4s;
+	animation-duration: 3s;
 	animation-iteration-count: 1;
 	animation-fill-mode: backwards;
 	animation-timing-function: ease-in-out;

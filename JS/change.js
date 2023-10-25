@@ -165,32 +165,6 @@ const clock_black = document.querySelectorAll(
   #tr_clock_29 .td_clock_24`
 )
 
-// 時鐘邊邊
-const clock_side = document.querySelectorAll(`
-	#tr_clock_2 .td_clock_11,
-  #tr_clock_2 .td_clock_12,
-  #tr_clock_2 .td_clock_13,
-  #tr_clock_2 .td_clock_14,
-  #tr_clock_2 .td_clock_15,
-  #tr_clock_2 .td_clock_16,
-  #tr_clock_2 .td_clock_17,
-  #tr_clock_2 .td_clock_18,
-  #tr_clock_2 .td_clock_19,
-  #tr_clock_2 .td_clock_20,
-  #tr_clock_3 .td_clock_7,
-  #tr_clock_3 .td_clock_8,
-  #tr_clock_3 .td_clock_9,
-  #tr_clock_3 .td_clock_10,
-  #tr_clock_3 .td_clock_21,
-  #tr_clock_3 .td_clock_22,
-  #tr_clock_3 .td_clock_23,
-  #tr_clock_3 .td_clock_24,
-  #tr_clock_5 .td_clock_5,
-  #tr_clock_5 .td_clock_6,
-  #tr_clock_5 .td_clock_25,
-  #tr_clock_5 .td_clock_26
-  `)
-
 //  時鐘本體紅色
 const clock_red = document.querySelectorAll(
 	`#tr_clock_2 .td_clock_13,
@@ -1407,7 +1381,7 @@ const upStone_color = document.querySelectorAll(`
 `)
 
 // 天上石頭-L
-const upSton_color_L = document.querySelectorAll(`
+const upStone_color_L = document.querySelectorAll(`
 #tr_upStone_1 .td_upStone_1,
 #tr_upStone_2 .td_upStone_1,
 #tr_upStone_3 .td_upStone_1,
@@ -1430,13 +1404,17 @@ const downStone_color = document.querySelectorAll(`
 const background_change = () => {
 	const date = new Date()
 	const hour = date.getHours()
+	console.log(hour)
 	const min = date.getMinutes()
 	const tens_min = Math.floor(min / 10)
 	const sec = date.getSeconds()
 	const ones_sec = sec % 10
 
-	if (hour > 18 || hour < 6) {
+	if (hour === 14) {
 		body.style.background = 'rgb(46, 46, 46)'
+		// bad_mushroom_content.style.cursor = 'url(./images/cursor.png) 50 50, auto'
+		// bad_mushroom_content.style.cursor = 'pointer'
+
 		for (const el of background_color) {
 			el.style.background = '#000'
 			el.style.border = '0.05px solid rgb(46, 46, 46)'
@@ -1500,15 +1478,15 @@ const background_change = () => {
 		// for (const el10 of upStone_color_L) {
 		// 	el10.style.border_left = '6px solid #000;'
 		// }
-	} else if (18 > hour > 6) {
+	} else {
 		for (const el of background_color) {
 			el.style.background = 'rgb(255, 238, 208)'
 			el.style.border = '0.05px solid rgb(218, 218, 218)'
 		}
-		for (const el2 of clock_side) {
+		for (const el2 of clock_black) {
 			el2.style.border = '0.05px solid  rgb(218, 218, 218)'
 		}
-		for (const el3 of clock_black) {
+		for (const el3 of clock_red) {
 			el3.style.border = '0.05px solid  rgb(218, 218, 218)'
 		}
 		for (const el4 of clock_yellow) {
@@ -1527,6 +1505,7 @@ const background_change = () => {
 		for (const el8 of number_color) {
 			el8.style.border = '0.05px solid rgb(218, 218, 218)'
 			el8.style.background = '#000'
+			el8.style.boxShadow = ''
 		}
 
 		body.style.background = ' rgb(218, 218, 218)'

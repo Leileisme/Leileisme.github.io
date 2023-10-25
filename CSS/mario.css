@@ -13,11 +13,13 @@
 	position: absolute;
 
 	width: 160px;
+	height: 153px;
 	top: 73%;
-	left: 0%;
+
+	transform-origin: center;
+	cursor: url(../images/cursor_black.png) 50 50, auto;
 	/* border: #f00 1px solid; */
 
-	
 	/* position: relative;
 	top: -277px;
 	left: 0; */
@@ -644,7 +646,6 @@
 	position: absolute;
 	top: 76.98%;
 	left: 70%;
-	/* transform: translate(0, -47.3%); */
 }
 
 .pipe {
