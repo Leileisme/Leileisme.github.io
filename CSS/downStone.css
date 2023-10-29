@@ -9,6 +9,7 @@
 	opacity: 0;
 }
 
+
 .stone {
 	position: absolute;
 	bottom: 2.6%;
@@ -277,8 +278,6 @@
 	bottom: -55.5px;
 	left: calc(92.9 * 20px);
 }
-
-
 
 #tr_stone_1 .td_stone_3,
 #tr_stone_1 .td_stone_5,

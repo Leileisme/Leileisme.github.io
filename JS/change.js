@@ -1401,7 +1401,35 @@ const downStone_color = document.querySelectorAll(`
 .td_stone
 `)
 
+// 按鈕
+const btnOutside = document.querySelectorAll(
+	`  .tr_btn_1 .td_btn_1,
+  .tr_btn_1 .td_btn_2,
+  .tr_btn_1 .td_btn_3,
+  .tr_btn_2 .td_btn_1,
+  .tr_btn_2 .td_btn_2,
+  .tr_btn_2 .td_btn_3,
+  .tr_btn_3 .td_btn_1,
+  .tr_btn_3 .td_btn_2,
+  .tr_btn_3 .td_btn_3
+  `
+)
+
+const btn1_1 = document.querySelectorAll(`  .tr_btn_1 .td_btn_1 `)
+const btn1_2 = document.querySelectorAll(`  .tr_btn_1 .td_btn_2 `)
+const btn1_3 = document.querySelectorAll(`  .tr_btn_1 .td_btn_3 `)
+const btn2_1 = document.querySelectorAll(`  .tr_btn_2 .td_btn_1 `)
+const btn2_2 = document.querySelectorAll(`  .tr_btn_2 .td_btn_2 `)
+const btn2_3 = document.querySelectorAll(`  .tr_btn_2 .td_btn_3 `)
+const btn3_1 = document.querySelectorAll(`  .tr_btn_3 .td_btn_1 `)
+const btn3_2 = document.querySelectorAll(`  .tr_btn_3 .td_btn_2 `)
+const btn3_3 = document.querySelectorAll(`  .tr_btn_3 .td_btn_3 `)
+
 const background_change = () => {
+	if (isPaused === true) {
+		return
+	}
+
 	const date = new Date()
 	const hour = date.getHours()
 	console.log(hour)
@@ -1410,8 +1438,7 @@ const background_change = () => {
 	const sec = date.getSeconds()
 	const ones_sec = sec % 10
 
-	if (hour === 14) {
-		body.style.background = 'rgb(46, 46, 46)'
+	if (hour > 18 || hour < 6) {
 		// bad_mushroom_content.style.cursor = 'url(./images/cursor.png) 50 50, auto'
 		// bad_mushroom_content.style.cursor = 'pointer'
 
@@ -1444,40 +1471,13 @@ const background_change = () => {
 			el8.style.background = '#fff'
 			el8.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
 		}
+		for (const el9 of btnOutside) {
+			el9.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
+		}
+		body.style.background = 'rgb(46, 46, 46)'
 		// 壞香菇無法換色
 
 		// 每秒時鐘變色但不好看
-
-		// if (ones_sec === 0 || ones_sec === 5) {
-		// 	for (const el of clock_green) {
-		// 		el.style.background = 'rgb(25, 240, 255)'
-		// 	}
-		// } else if (ones_sec === 1 || ones_sec === 6) {
-		// 	for (const el of clock_green) {
-		// 		el.style.background = 'rgb(138, 189, 255)'
-		// 	}
-		// } else if (ones_sec === 2 || ones_sec === 7) {
-		// 	for (const el of clock_green) {
-		// 		el.style.background = 'rgb(116, 239, 255)'
-		// 	}
-		// } else if (ones_sec === 3 || ones_sec === 8) {
-		// 	for (const el of clock_green) {
-		// 		el.style.background = 'rgb(147,172,255)'
-		// 	}
-		// } else if (ones_sec === 4 || ones_sec === 9) {
-		// 	for (const el of clock_green) {
-		// 		green.style.background = 'rgb(104, 225, 255)'
-		// 	}
-		// }
-
-		// 天上石頭框框不能變色...
-		// for (const el9 of upStone_color) {
-		// 	el9.style.border = '0.05px solid rgb(46, 46, 46)'
-		// }
-
-		// for (const el10 of upStone_color_L) {
-		// 	el10.style.border_left = '6px solid #000;'
-		// }
 	} else {
 		for (const el of background_color) {
 			el.style.background = 'rgb(255, 238, 208)'
@@ -1506,6 +1506,34 @@ const background_change = () => {
 			el8.style.border = '0.05px solid rgb(218, 218, 218)'
 			el8.style.background = '#000'
 			el8.style.boxShadow = ''
+		}
+
+		for (const bt1 of btn1_1) {
+			bt1.style.boxShadow = ' -2.5px -2.5px 0px #000'
+		}
+		for (const bt2 of btn1_2) {
+			bt2.style.boxShadow = '0 -2.5px 0px #000'
+		}
+		for (const bt3 of btn1_3) {
+			bt3.style.boxShadow = '2.5px -2.5px 0px #000'
+		}
+		for (const bt4 of btn2_1) {
+			bt4.style.boxShadow = '-2.5px 0 0px #000'
+		}
+		for (const bt5 of btn2_2) {
+			bt5.style.boxShadow = ''
+		}
+		for (const bt6 of btn2_3) {
+			bt6.style.boxShadow = '2.5px 0 0px #000'
+		}
+		for (const bt7 of btn3_1) {
+			bt7.style.boxShadow = '-2.5px 2.5px 0px #000'
+		}
+		for (const bt8 of btn3_2) {
+			bt8.style.boxShadow = '0 2.5px 0px #000'
+		}
+		for (const bt9 of btn3_3) {
+			bt9.style.boxShadow = '2.5px 2.5px 0px #000'
 		}
 
 		body.style.background = ' rgb(218, 218, 218)'

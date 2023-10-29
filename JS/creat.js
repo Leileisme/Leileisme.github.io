@@ -1,5 +1,209 @@
 // 按鈕
+const btn_content = document.getElementById('btn_content')
+for (let i = 4; i >= 1; i--) {
+	const table_btn = document.createElement('table')
+	table_btn.classList.add(`table_btn_${i}`)
+	table_btn.classList.add('table_btn')
+	table_btn.id = `table_btn_${i}`
+	btn_content.prepend(table_btn)
+	for (let j = 3; j >= 1; j--) {
+		const tr_btn = document.createElement('tr')
+		tr_btn.classList.add('tr_btn')
+		tr_btn.classList.add(`tr_btn_${j}`)
+		tr_btn.id = `tr_btn_${j}`
+		table_btn.prepend(tr_btn)
+		for (let k = 3; k >= 1; k--) {
+			const td_btn = document.createElement('td')
+			td_btn.classList.add('td_btn')
+			td_btn.classList.add(`td_btn_${k}`)
+			tr_btn.prepend(td_btn)
+			// td_btn.innerText = k
+		}
+	}
+}
 
+const table_btn_1 = document.getElementById('table_btn_1')
+const table_btn_2 = document.getElementById('table_btn_2')
+const table_btn_3 = document.getElementById('table_btn_3')
+const table_btn_4 = document.getElementById('table_btn_4')
+const clock_id = document.getElementById('clock')
+
+// 按鈕動-下
+let ClockMoveDown = false
+const downMouseover = () => {
+	clock_id.style.transform = `scale(112%) translate(0,calc(20.6vh  - 55px)) `
+}
+const downMouseout = () => {
+	clock_id.style.transform = 'scale(100%) translate(0,calc(20.6vh))'
+}
+
+table_btn_1.addEventListener('click', () => {
+	if (ClockMoveDown === false) {
+		clock_id.classList.add('clockMove')
+		table_mario.classList.add('marioMove')
+		table_mario_back.classList.add('marioMove')
+
+		clock_id.addEventListener('mouseover', downMouseover)
+		clock_id.addEventListener('mouseout', downMouseout)
+
+		const clockMove_position = setTimeout(() => {
+			clock_id.style.transform = 'translate(0, 20.6vh)'
+			table_mario.style.transform = 'translate(0, 50vh)'
+			table_mario_back.style.transform = 'translate(0, 50vh)'
+			clock_id.classList.remove('clockMove')
+			table_mario.classList.remove('marioMove')
+			table_mario_back.classList.remove('marioMove')
+		}, 2500)
+		ClockMoveDown = true
+	} else {
+		Swal.fire('哎呀! 馬力歐已經躲在水管裡囉!')
+	}
+})
+
+// 按鈕動-上
+table_btn_2.addEventListener('click', () => {
+	if (ClockMoveDown !== false) {
+		clock_id.removeEventListener('mouseover', downMouseover)
+		clock_id.removeEventListener('mouseout', downMouseout)
+
+		clock_id.classList.add('clockMoveUp')
+		table_mario.classList.add('marioMoveUp')
+		table_mario_back.classList.add('marioMoveUp')
+		ClockMoveDown = false
+
+		const clockMove_positionUp = setTimeout(() => {
+			clock_id.style.transform = ''
+			table_mario.style.transform = ''
+			table_mario_back.style.transform = ''
+			clock_id.classList.remove('clockMoveUp')
+			table_mario.classList.remove('marioMoveUp')
+			table_mario_back.classList.remove('marioMoveUp')
+		}, 2500)
+
+		// clock_id.addEventListener('mouseover', () => {
+		// 	clock_id.style.transform = `scale(112%) translateY(-30px)) `
+		// })
+		// clock_id.addEventListener('mouseout', () => {
+		// 	clock_id.style.transform = 'scale(100%) translate(0)'
+		// })
+	} else {
+		Swal.fire('馬力歐已站在水管上勒~~~')
+	}
+})
+
+// 按鈕動-夜
+let isPaused = false
+
+table_btn_3.addEventListener('click', () => {
+	isPaused = true
+
+	body.style.background = 'rgb(46, 46, 46)'
+	for (const el of background_color) {
+		el.style.background = '#000'
+		el.style.border = '0.05px solid rgb(46, 46, 46)'
+	}
+	for (const el2 of clock_black) {
+		el2.style.border = '0.05px solid rgb(100, 100, 100)'
+		el2.style.background = '#000'
+	}
+	for (const el3 of clock_red) {
+		el3.style.border = '0.05px solid rgb(100, 100, 100)'
+	}
+	for (const el4 of clock_yellow) {
+		el4.style.border = '0.05px solid rgb(100, 100, 100)'
+	}
+	for (const el5 of clock_green) {
+		el5.style.border = '0.05px solid rgb(150, 150, 150)'
+		el5.style.background = 'rgb(25, 240, 255)'
+	}
+	for (const el6 of pipe_color) {
+		el6.style.border = '0.05px solid rgb(150, 150, 150)'
+	}
+	for (const el7 of mario_color) {
+		el7.style.border = '0.05px solid rgb(150, 150, 150)'
+	}
+	for (const el8 of number_color) {
+		el8.style.border = '0.05px solid rgb(46, 46, 46)'
+		el8.style.background = '#fff'
+		el8.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
+	}
+	for (const el9 of btnOutside) {
+		el9.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
+	}
+	setTimeout(() => {
+		isPaused = false
+		background_change()
+	}, 5000)
+})
+
+// 按鈕動-日
+table_btn_4.addEventListener('click', () => {
+	isPaused = true
+
+	for (const el of background_color) {
+		el.style.background = 'rgb(255, 238, 208)'
+		el.style.border = '0.05px solid rgb(218, 218, 218)'
+	}
+	for (const el2 of clock_black) {
+		el2.style.border = '0.05px solid  rgb(218, 218, 218)'
+	}
+	for (const el3 of clock_red) {
+		el3.style.border = '0.05px solid  rgb(218, 218, 218)'
+	}
+	for (const el4 of clock_yellow) {
+		el4.style.border = '0.05px solid  rgb(218, 218, 218)'
+	}
+	for (const el5 of clock_green) {
+		el5.style.border = '0.05px solid  rgb(218, 218, 218)'
+		el5.style.background = 'rgb(70, 156, 255)'
+	}
+	for (const el6 of pipe_color) {
+		el6.style.border = '0.05px solid rgb(218, 218, 218)'
+	}
+	for (const el7 of mario_color) {
+		el7.style.border = '0.05px solid rgb(218, 218, 218)'
+	}
+	for (const el8 of number_color) {
+		el8.style.border = '0.05px solid rgb(218, 218, 218)'
+		el8.style.background = '#000'
+		el8.style.boxShadow = ''
+	}
+
+	for (const bt1 of btn1_1) {
+		bt1.style.boxShadow = ' -2.5px -2.5px 0px #000'
+	}
+	for (const bt2 of btn1_2) {
+		bt2.style.boxShadow = '0 -2.5px 0px #000'
+	}
+	for (const bt3 of btn1_3) {
+		bt3.style.boxShadow = '2.5px -2.5px 0px #000'
+	}
+	for (const bt4 of btn2_1) {
+		bt4.style.boxShadow = '-2.5px 0 0px #000'
+	}
+	for (const bt5 of btn2_2) {
+		bt5.style.boxShadow = ''
+	}
+	for (const bt6 of btn2_3) {
+		bt6.style.boxShadow = '2.5px 0 0px #000'
+	}
+	for (const bt7 of btn3_1) {
+		bt7.style.boxShadow = '-2.5px 2.5px 0px #000'
+	}
+	for (const bt8 of btn3_2) {
+		bt8.style.boxShadow = '0 2.5px 0px #000'
+	}
+	for (const bt9 of btn3_3) {
+		bt9.style.boxShadow = '2.5px 2.5px 0px #000'
+	}
+
+	body.style.background = ' rgb(218, 218, 218)'
+
+	setTimeout(() => {
+		isPaused = false
+		background_change()
+	}, 5000)
+})
 
 // 壞香菇-R
 const bad_mushroom_content = document.getElementById('bad_mushroom_content')
@@ -83,7 +287,6 @@ bad_mushroom_content.addEventListener('click', (event) => {
 		bad_mushroom_content.classList.remove('bad_mushroom_die')
 	}, 3000)
 })
-
 
 //  失敗的隨機走路 速度會忽快忽慢
 

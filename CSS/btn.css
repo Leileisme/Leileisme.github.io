@@ -1,25 +1,10 @@
-#btn_content input {
-	display: none;
-}
-
-#table_label_up {
-	box-sizing: border-box;
+#btn_content {
 	position: absolute;
-	top: 72.8%;
-	left: 82.1%;
-	cursor: pointer;
+	top: 82.4%;
 }
 
-#table_label_down {
-	box-sizing: border-box;
-	position: absolute;
-	top: 81%;
-	left: 82.1%;
-	cursor: pointer;
-}
-
-.table_label {
-	position: relative;
+.table_btn {
+	/* position: relative; */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -27,7 +12,7 @@
 	font-size: 0;
 }
 
-.tr_label {
+.tr_btn {
 	list-style: none;
 	border: none;
 	height: 10px;
@@ -37,7 +22,7 @@
 	padding: 0; */
 }
 
-.td_label {
+.td_btn {
 	box-sizing: border-box;
 	display: inline-block;
 	width: 13px;
@@ -49,62 +34,186 @@
 	font-size: 10px;
 }
 
-#tr_label_up_1 .td_label_up_3,
-#tr_label_up_2 .td_label_up_2,
-#tr_label_up_2 .td_label_up_3,
-#tr_label_up_2 .td_label_up_4,
-#tr_label_up_3 .td_label_up_1,
-#tr_label_up_3 .td_label_up_2,
-#tr_label_up_3 .td_label_up_3,
-#tr_label_up_3 .td_label_up_4,
-#tr_label_up_3 .td_label_up_5,
-#tr_label_up_4 .td_label_up_3,
-#tr_label_up_5 .td_label_up_3 {
-	background: #000000;
+#table_btn_1 {
+	width: 42px;
+	/* border: 1px solid red; */
+	position: absolute;
+	left: 1608px;
+	cursor: pointer;
 }
 
-#tr_label_up_1 .td_label_up_5,
-#tr_label_up_2 .td_label_up_5,
-#tr_label_up_3 .td_label_up_5,
-#tr_label_up_4 .td_label_up_5,
-#tr_label_up_5 .td_label_up_5 {
-	border-right: 5px solid #aaa;
+#table_btn_2 {
+	width: 42px;
+	/* border: 1px solid red; */
+	position: absolute;
+	left: 1662px;
+	cursor: pointer;
 }
 
-#tr_label_up_5 .td_label_up_1,
-#tr_label_up_5 .td_label_up_2,
-#tr_label_up_5 .td_label_up_3,
-#tr_label_up_5 .td_label_up_4,
-#tr_label_up_5 .td_label_up_5 {
-	border-bottom: 5px solid #aaa;
+#table_btn_3 {
+	width: 42px;
+	/* border: 1px solid red; */
+	position: absolute;
+	left: 1716px;
+	cursor: pointer;
 }
 
-#tr_label_down_1 .td_label_down_3,
-#tr_label_down_2 .td_label_down_3,
-#tr_label_down_3 .td_label_down_1,
-#tr_label_down_3 .td_label_down_2,
-#tr_label_down_3 .td_label_down_3,
-#tr_label_down_3 .td_label_down_4,
-#tr_label_down_3 .td_label_down_5,
-#tr_label_down_4 .td_label_down_2,
-#tr_label_down_4 .td_label_down_3,
-#tr_label_down_4 .td_label_down_4,
-#tr_label_down_5 .td_label_down_3 {
-	background: #000;
+#table_btn_4 {
+	width: 42px;
+	/* border: 1px solid red; */
+	position: absolute;
+	left: 1770px;
+	cursor: pointer;
 }
 
-#tr_label_down_1 .td_label_down_5,
-#tr_label_down_2 .td_label_down_5,
-#tr_label_down_3 .td_label_down_5,
-#tr_label_down_4 .td_label_down_5,
-#tr_label_down_5 .td_label_down_5 {
-	border-right: 5px solid #aaa;
+#table_btn_1::before {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-35%, -54%);
+	content: '↓';
+	font-size: 45px;
+	font-family: 'Pixel';
 }
 
-#tr_label_down_5 .td_label_down_1,
-#tr_label_down_5 .td_label_down_2,
-#tr_label_down_5 .td_label_down_3,
-#tr_label_down_5 .td_label_down_4,
-#tr_label_down_5 .td_label_down_5 {
-	border-bottom: 5px solid #aaa;
+#table_btn_1:hover:after {
+	position: absolute;
+	left: 50%;
+	top: -85%;
+	width: 88px;
+	border-radius: 5px;
+	transform: translateX(-50%);
+	text-align: center;
+	content: 'Mario Down';
+	font-family: 'Pixel';
+	color: #fff;
+	padding: 5px;
+	background-color: #000;
+	opacity: 0.6;
+	font-size: 15px;
+}
+
+#table_btn_2::before {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-35%, -54%);
+	content: '↑';
+	font-size: 45px;
+	font-family: 'Pixel';
+}
+
+#table_btn_2:hover::after {
+	position: absolute;
+	left: 50%;
+	top: -85%;
+	width: 64px;
+	border-radius: 5px;
+	transform: translateX(-50%);
+	text-align: center;
+	content: 'Mario Up';
+	font-family: 'Pixel';
+	color: #fff;
+	padding: 5px;
+	background-color: #000;
+	opacity: 0.6;
+	font-size: 15px;
+}
+
+#table_btn_3::before {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-40%, -50%);
+	content: '夜';
+	font-size: 45px;
+	font-family: 'Pixel';
+}
+
+#table_btn_3:hover::after {
+	position: absolute;
+	left: 50%;
+	top: -85%;
+	width: 53px;
+	border-radius: 5px;
+	transform: translateX(-50%);
+	text-align: center;
+	content: '5秒的夜';
+	font-family: 'Pixel';
+	color: #fff;
+	padding: 5px;
+	background-color: #000;
+	opacity: 0.6;
+	font-size: 15px;
+}
+
+#table_btn_4::before {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-38%, -45%);
+	content: '日';
+	font-size: 40px;
+	font-family: 'Pixel';
+}
+
+#table_btn_4:hover::after {
+	position: absolute;
+	border-radius: 5px;
+	left: 50%;
+	top: -85%;
+	width: 53px;
+	transform: translateX(-50%);
+	text-align: center;
+	content: '5秒的日';
+	font-family: 'Pixel';
+	color: #fff;
+	padding: 5px;
+	background-color: #000;
+	opacity: 0.6;
+	font-size: 15px;
+}
+
+.tr_btn_1 .td_btn_3,
+.tr_btn_2 .td_btn_3,
+.tr_btn_3 .td_btn_3 {
+	border-right: 4px solid #b4b4b4;
+}
+
+.tr_btn_3 .td_btn_1,
+.tr_btn_3 .td_btn_2,
+.tr_btn_3 .td_btn_3 {
+	border-bottom: 4px solid #b4b4b4;
+}
+
+.tr_btn_1 .td_btn_1 {
+	box-shadow: -2.5px -2.5px 0px #000;
+}
+
+.tr_btn_1 .td_btn_2 {
+	box-shadow: 0 -2.5px 0px #000;
+}
+
+.tr_btn_1 .td_btn_3 {
+	box-shadow: 2.5px -2.5px 0px #000;
+}
+
+.tr_btn_2 .td_btn_1 {
+	box-shadow: -2.5px 0 0px #000;
+}
+
+.tr_btn_2 .td_btn_3 {
+	box-shadow: 2.5px -0 0px #000;
+}
+
+.tr_btn_3 .td_btn_1 {
+	box-shadow: -2.5px 2.5px 0px #000;
+}
+
+.tr_btn_3 .td_btn_2 {
+	box-shadow: 0 2.5px 0px #000;
+}
+
+.tr_btn_3 .td_btn_3 {
+	box-shadow: 2.5px 2.5px 0px #000;
 }

@@ -4,10 +4,22 @@
 		transform: translate(0, 0);
 	}
 	50% {
-		transform: translate(0, 21vh);
+		transform: translate(0, 22vh);
 	}
 	100% {
 		transform: translate(0, 50vh);
+	}
+}
+
+@keyframes marioMoveUp {
+	0% {
+		transform: translate(0, 50vh);
+	}
+	50% {
+		transform: translate(0, 22vh);
+	}
+	100% {
+		transform: translate(0, 0);
 	}
 }
 
@@ -19,20 +31,48 @@
 	animation-fill-mode: forwards;
 }
 
+.marioMoveUp {
+	animation-name: marioMoveUp;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
 @keyframes clockMove {
 	0% {
 		transform: translate(0, 0);
 	}
 	50% {
-		transform: translate(0, 21vh);
+		transform: translate(0, 22vh);
 	}
 	100% {
-		transform: translate(0, 21vh);
+		transform: translate(0, 20.6vh);
+	}
+}
+
+@keyframes clockMoveUp {
+	0% {
+		transform: translate(0, 20.6vh);
+	}
+	50% {
+		transform: translate(0, 22vh);
+	}
+	100% {
+		transform: translate(0, 0);
 	}
 }
 
 .clockMove {
 	animation-name: clockMove;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+.clockMoveUp {
+	animation-name: clockMoveUp;
 	animation-duration: 2.5s;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
