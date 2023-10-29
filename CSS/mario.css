@@ -9,8 +9,6 @@
 	display: none;
 }
 
-
-
 #bad_mushroom_content {
 	position: absolute;
 
@@ -19,7 +17,7 @@
 	top: 73%;
 
 	transform-origin: center;
-	cursor: url(../images/cursor_black.png) 50 50, auto;
+	cursor: url(../images/cursor_black.png) 50 50, pointer;
 	/* border: #f00 1px solid; */
 
 	/* position: relative;
