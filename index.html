@@ -23,6 +23,12 @@
       font-family: 'Pixel';
       src: url(./CSS/Pixel.ttf);
     }
+
+    @font-face {
+      font-family: '俐方體11號';
+      src: url('./CSS/Cubic_11_1.010_R.ttf');
+
+    }
   </style>
 </head>
 
@@ -35,6 +41,16 @@
 
     <!-- 背景 -->
     <div id="background_content"></div>
+
+
+    <div id="board_content">
+      <table id="table_board"> </table>
+      <table id="table_line"></table>
+      <span id="prompt">找不到彩蛋嗎？<br>
+        鍵盤直打「mario」得到提示!</span>
+    </div>
+
+
 
     <div id="clock">
       <table id="table_clock"></table> <!-- 底色 -->
@@ -113,49 +129,61 @@
     <script src="./JS/creat.js"></script>
     <script src="./JS/change.js"></script>
     <script>
-      Swal.fire(`
-      有很多小機關等你發現
-      輸入「mario」得到提示!
-      (推薦全視窗觀看)
-      `)
+
+      Swal.fire({
+        title: `小彩蛋！等你發現！`,
+        text: `用電腦版+全視窗，才能完整呈現效果喔`,
+        allowOutsideClick: false, // 允许用户点击弹窗外部关闭
+        allowEscapeKey: false
+      }).then((result) => {
+        if (result.isConfirmed) {
+          setTimeout(() => {
+            board_content.classList.add('board_content_move')
+          }, 8000)
+
+
+          // 為什模這邊不能出現第二次?
+          // maybe 提示出現也可以不收回 待確認 先改效果了
+          // 動畫 lag why?
+          setInterval(() => {
+            board_content.classList.remove('board_content_move')
+            board_content.classList.add('board_content_move')
+          }, 9000)
+
+        }
+      })
+
+
+
+
+      // 看板偶而出現一下
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Alt') {
+          setTimeout(() => {
+            board_content.classList.add('.board_content_move')
+          }, 1000)
+        }
+      })
+
+
+
+
+
+
 
       // 觸發提示
       let setKey = ''
       document.addEventListener('keydown', (e) => {
         setKey += e.key
         console.log(e.key)
-
-        if (setKey === 'mario') {
+        if (setKey.toLowerCase() === 'mario') {
           Swal.fire(`
-          小提示：
-          時鐘、馬力歐、走動的、按鈕們
+          彩蛋提示：
+          大時鐘、馬力歐、壞香菇、按鈕們
           `)
           setKey = ''
         }
       })
-
-      // 改td顏色
-      //       const aaa = document.querySelectorAll(`
-      //       .tr_eight_1 .td_eight_1,
-      //       .tr_eight_1 .td_eight_2,
-      //       .tr_eight_1 .td_eight_3,
-      //       .tr_eight_1 .td_eight_4,
-      //       .tr_eight_2 .td_eight_1,
-      //       .tr_eight_2 .td_eight_4,
-      //       .tr_eight_3 .td_eight_1,
-      //       .tr_eight_3 .td_eight_2,
-      //       .tr_eight_3 .td_eight_3,
-      //       .tr_eight_3 .td_eight_4,
-      //       .tr_eight_4 .td_eight_1,
-      //       .tr_eight_4 .td_eight_4,
-      //       .tr_eight_5 .td_eight_1,
-      //       .tr_eight_5 .td_eight_2,
-      //       .tr_eight_5 .td_eight_3,
-      //       .tr_eight_5 .td_eight_4
-      // `)
-      //       for (const el of aaa) {
-      //         el.style.background = 'blue'
-      //       }
 
     </script>
 </body>

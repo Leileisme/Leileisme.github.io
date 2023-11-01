@@ -23,7 +23,7 @@ body {
 	width: 1960px;
 	height: 960px;
 	position: absolute;
-	/* position: fixed; */
+	position: fixed;
 	/* top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);*/
@@ -55,6 +55,118 @@ body {
 
 	/* color: black;
 	font-size: 0.001px; */
+}
+
+/* 看板提示 */
+
+#board_content {
+	/* box-sizing: border-box; */
+	width: 600px;
+	/* height: 79px; */
+	/* background-color: #a00; */
+	position: absolute;
+	top: 70px;
+	top: -110px;
+	left: 145.3px;
+	transform: rotate(-5deg);
+}
+
+#prompt {
+	font-family: '俐方體11號';
+	position: absolute;
+	top: 13px;
+	left: 23px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	line-height: 26px;
+}
+
+#table_line {
+	position: absolute;
+	top: -105px;
+	left: 145px;
+}
+
+#table_board,
+#table_line {
+	position: absolute;
+	/* top: 100px;
+	left: 120px; */
+	list-style: none;
+	border: none;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0;
+	background-color: rgb(117, 75, 21);
+}
+
+.tr_board,
+.tr_line {
+	list-style: none;
+	border: none;
+	height: 10px;
+	box-sizing: border-box;
+	color: blue;
+}
+
+.td_board {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: rgb(117, 75, 21);
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	border: 0.05px solid rgb(46, 46, 46);
+	font-size: 13px;
+}
+
+.td_line {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: rgb(117, 75, 21);
+	margin-left: 0.2px;
+	margin-bottom: 0.2px;
+	border: 0.05px solid rgb(46, 46, 46);
+	font-size: 13px;
+	border-right: 5px solid rgb(153, 110, 67);
+}
+
+#tr_board_1 .td_board_22,
+#tr_board_2 .td_board_22,
+#tr_board_3 .td_board_22,
+#tr_board_4 .td_board_22,
+#tr_board_5 .td_board_22,
+#tr_board_6 .td_board_22 {
+	border-right: 5px solid rgb(153, 110, 67);
+}
+
+#tr_board_6 .td_board_1,
+#tr_board_6 .td_board_2,
+#tr_board_6 .td_board_3,
+#tr_board_6 .td_board_4,
+#tr_board_6 .td_board_5,
+#tr_board_6 .td_board_6,
+#tr_board_6 .td_board_7,
+#tr_board_6 .td_board_8,
+#tr_board_6 .td_board_9,
+#tr_board_6 .td_board_10,
+#tr_board_6 .td_board_11,
+#tr_board_6 .td_board_12,
+#tr_board_6 .td_board_13,
+#tr_board_6 .td_board_14,
+#tr_board_6 .td_board_15,
+#tr_board_6 .td_board_16,
+#tr_board_6 .td_board_17,
+#tr_board_6 .td_board_18,
+#tr_board_6 .td_board_19,
+#tr_board_6 .td_board_20,
+#tr_board_6 .td_board_21,
+#tr_board_6 .td_board_22 {
+	border-bottom: 5px solid rgb(153, 110, 67);
 }
 
 /* 時鐘背景色 */

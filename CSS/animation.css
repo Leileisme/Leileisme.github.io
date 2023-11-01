@@ -132,22 +132,25 @@
 	animation-timing-function: ease-in-out;
 }
 
-@keyframes Xx {
+@keyframes board_content_move {
 	0% {
-		transform: translateY(0);
+		top: -110px;
 	}
-
-	20% {
-		transform: translateY(20px) rotate(180deg);
+	15% {
+		top: 70px;
 	}
 	100% {
-		transform: translateY(-500px);
+		top: 70px;
 	}
+	/* 100% {
+		top: -110px;
+	} */
 }
 
-.X {
-	animation-name: Xx;
-	animation-duration: 5s;
+.board_content_move {
+	animation-name: board_content_move;
+	animation-duration: 20s;
 	animation-iteration-count: 1;
-	animation-fill-mode: backwards;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
 }

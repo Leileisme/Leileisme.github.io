@@ -1425,6 +1425,41 @@ const btn3_1 = document.querySelectorAll(`  .tr_btn_3 .td_btn_1 `)
 const btn3_2 = document.querySelectorAll(`  .tr_btn_3 .td_btn_2 `)
 const btn3_3 = document.querySelectorAll(`  .tr_btn_3 .td_btn_3 `)
 
+const td_board = document.querySelectorAll('.td_board')
+const td_line = document.querySelectorAll('.td_line')
+
+const board_right = document.querySelectorAll(`
+#tr_board_1 .td_board_22,
+#tr_board_2 .td_board_22,
+#tr_board_3 .td_board_22,
+#tr_board_4 .td_board_22,
+#tr_board_5 .td_board_22,
+#tr_board_6 .td_board_22`)
+
+const board_bottom = document.querySelectorAll(`
+#tr_board_6 .td_board_1,
+#tr_board_6 .td_board_2,
+#tr_board_6 .td_board_3,
+#tr_board_6 .td_board_4,
+#tr_board_6 .td_board_5,
+#tr_board_6 .td_board_6,
+#tr_board_6 .td_board_7,
+#tr_board_6 .td_board_8,
+#tr_board_6 .td_board_9,
+#tr_board_6 .td_board_10,
+#tr_board_6 .td_board_11,
+#tr_board_6 .td_board_12,
+#tr_board_6 .td_board_13,
+#tr_board_6 .td_board_14,
+#tr_board_6 .td_board_15,
+#tr_board_6 .td_board_16,
+#tr_board_6 .td_board_17,
+#tr_board_6 .td_board_18,
+#tr_board_6 .td_board_19,
+#tr_board_6 .td_board_20,
+#tr_board_6 .td_board_21,
+#tr_board_6 .td_board_22`)
+
 const background_change = () => {
 	if (isPaused === true) {
 		return
@@ -1438,7 +1473,9 @@ const background_change = () => {
 	const sec = date.getSeconds()
 	const ones_sec = sec % 10
 
-	if (hour > 18 || hour < 6) {
+	if (hour === 22) {
+		// if (hour > 18 || hour < 6) {
+
 		// bad_mushroom_content.style.cursor = 'url(./images/cursor.png) 50 50, auto'
 		// bad_mushroom_content.style.cursor = 'pointer'
 
@@ -1474,6 +1511,26 @@ const background_change = () => {
 		for (const el9 of btnOutside) {
 			el9.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
 		}
+
+		for (const el10 of td_board) {
+			el10.style.border = '0.05px solid  rgb(46, 46, 46)'
+			el10.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
+		}
+
+		for (const el11 of board_right) {
+			el11.style.borderRight = '5px solid rgb(153, 110, 67)'
+		}
+
+		for (const el12 of board_bottom) {
+			el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
+		}
+
+		for (const el13 of td_line) {
+			el13.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
+			el13.style.border = '0.05px solid  rgb(46, 46, 46)'
+			el13.style.borderRight = '5px solid rgb(153, 110, 67)'
+		}
+
 		body.style.background = 'rgb(46, 46, 46)'
 		// 壞香菇無法換色
 
@@ -1505,7 +1562,26 @@ const background_change = () => {
 		for (const el8 of number_color) {
 			el8.style.border = '0.05px solid rgb(218, 218, 218)'
 			el8.style.background = '#000'
-			el8.style.boxShadow = ''
+			el8.style.boxShadow = '0px 0px 0px rgb(148, 96, 54)'
+		}
+
+		for (const el10 of td_board) {
+			el10.style.border = '0.05px solid  rgb(46, 46, 46)'
+			el10.style.boxShadow = ' '
+		}
+
+		for (const el11 of board_right) {
+			el11.style.borderRight = '5px solid rgb(153, 110, 67)'
+		}
+
+		for (const el12 of board_bottom) {
+			el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
+		}
+
+		for (const el13 of td_line) {
+			el13.style.boxShadow = '0px 0px 0px rgb(148, 96, 54) '
+			el13.style.border = '0.05px solid  rgb(46, 46, 46)'
+			el13.style.borderRight = '5px solid rgb(153, 110, 67)'
 		}
 
 		for (const bt1 of btn1_1) {

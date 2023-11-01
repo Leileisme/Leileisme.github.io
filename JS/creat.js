@@ -1,3 +1,38 @@
+// 看板
+const board_content = document.getElementById('board_content')
+
+for (let j = 6; j >= 1; j--) {
+	const tr_board = document.createElement('tr')
+	tr_board.classList.add('tr_board')
+	tr_board.classList.add(`tr_board_${j}`)
+	tr_board.id = `tr_board_${j}`
+	table_board.prepend(tr_board)
+	for (let k = 22; k >= 1; k--) {
+		const td_board = document.createElement('td')
+		td_board.classList.add('td_board')
+		td_board.classList.add(`td_board_${k}`)
+		tr_board.prepend(td_board)
+		// td_board.innerText = k
+	}
+}
+
+// 看板線
+for (let j = 8; j >= 1; j--) {
+	const tr_line = document.createElement('tr')
+	tr_line.classList.add('tr_line')
+	tr_line.classList.add(`tr_line_${j}`)
+	tr_line.id = `tr_line_${j}`
+	table_line.prepend(tr_line)
+	for (let k = 1; k >= 1; k--) {
+		const td_line = document.createElement('td')
+		td_line.classList.add('td_line')
+		td_line.classList.add(`td_line_${k}`)
+		tr_line.prepend(td_line)
+	}
+}
+
+
+
 // 按鈕
 const btn_content = document.getElementById('btn_content')
 for (let i = 4; i >= 1; i--) {
@@ -97,7 +132,6 @@ let isPaused = false
 table_btn_3.addEventListener('click', () => {
 	isPaused = true
 
-	body.style.background = 'rgb(46, 46, 46)'
 	for (const el of background_color) {
 		el.style.background = '#000'
 		el.style.border = '0.05px solid rgb(46, 46, 46)'
@@ -130,6 +164,30 @@ table_btn_3.addEventListener('click', () => {
 	for (const el9 of btnOutside) {
 		el9.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
 	}
+
+	for (const el10 of td_board) {
+		el10.style.border = '0.05px solid  rgb(46, 46, 46)'
+		el10.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
+	}
+
+	for (const el11 of board_right) {
+		el11.style.borderRight = '5px solid rgb(153, 110, 67)'
+	}
+
+	for (const el12 of board_bottom) {
+		el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
+	}
+
+	for (const el13 of td_line) {
+		el13.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
+		el13.style.border = '0.05px solid  rgb(46, 46, 46)'
+		el13.style.borderRight = '5px solid rgb(153, 110, 67)'
+	}
+
+	body.style.background = 'rgb(46, 46, 46)'
+	// 壞香菇無法換色
+
+	// 每秒時鐘變色但不好看
 	setTimeout(() => {
 		isPaused = false
 		background_change()
@@ -169,6 +227,25 @@ table_btn_4.addEventListener('click', () => {
 		el8.style.boxShadow = ''
 	}
 
+	for (const el10 of td_board) {
+		el10.style.border = '0.05px solid  rgb(46, 46, 46)'
+		el10.style.boxShadow = '0px 0px 0px rgb(148, 96, 54)  '
+	}
+
+	for (const el11 of board_right) {
+		el11.style.borderRight = '5px solid rgb(153, 110, 67)'
+	}
+
+	for (const el12 of board_bottom) {
+		el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
+	}
+
+	for (const el13 of td_line) {
+		el13.style.boxShadow = '0px 0px 0px rgb(148, 96, 54)  '
+		el13.style.border = '0.05px solid  rgb(46, 46, 46)'
+		el13.style.borderRight = '5px solid rgb(153, 110, 67)'
+	}
+
 	for (const bt1 of btn1_1) {
 		bt1.style.boxShadow = ' -2.5px -2.5px 0px #000'
 	}
@@ -202,7 +279,7 @@ table_btn_4.addEventListener('click', () => {
 	setTimeout(() => {
 		isPaused = false
 		background_change()
-	}, 5000)
+	}, 50000)
 })
 
 // 壞香菇-R
