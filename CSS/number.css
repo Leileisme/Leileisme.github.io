@@ -549,11 +549,6 @@
 	border: 2px solid #f00; */
 }
 
-#time:hover {
-	cursor: pointer;
-	/* transform: rotate(10deg); */
-}
-
 #time {
 	/* width: 300px; */
 	position: absolute;
@@ -568,6 +563,7 @@
 	position: absolute;
 	width: 55.5px;
 	right: 0;
+	height: 68px;
 
 	/* border: 2px solid .f00; */
 
@@ -582,6 +578,7 @@
 	position: absolute;
 	right: 66px;
 	width: 55.5px;
+	height: 68px;
 	/* border: 2px solid #f00; */
 
 	list-style: none;
@@ -594,6 +591,7 @@
 	position: absolute;
 	right: 159px;
 	width: 55.5px;
+	height: 68px;
 	/* border: 2px solid #f00; */
 
 	list-style: none;
@@ -606,6 +604,7 @@
 	position: absolute;
 	right: 225px;
 	width: 55.5px;
+	height: 68px;
 	/* border: 2px solid #f00; */
 
 	list-style: none;
@@ -618,6 +617,7 @@
 	position: absolute;
 	right: 317.5px;
 	width: 55.5px;
+	height: 68px;
 	/* border: 2px solid #f00; */
 
 	list-style: none;
@@ -631,6 +631,7 @@
 	right: 383px;
 
 	width: 55.5px;
+	height: 68px;
 	/* border: 2px solid #f00; */
 
 	list-style: none;
@@ -638,3 +639,20 @@
 	border-collapse: collapse;
 	font-size: 0;
 }
+
+#ones_second_content :hover,
+#ones_min_content:hover,
+#ones_hour_content :hover {
+	cursor: pointer;
+	transform: rotate(-10deg);
+}
+
+#tens_hour_content :hover,
+#tens_min_content:hover,
+#tens_second_content:hover {
+	cursor: pointer;
+	transform: rotate(10deg);
+}
+
+/* transform: rotate3d(0, 0, 1, 360deg);
+transition: transform 1s; */

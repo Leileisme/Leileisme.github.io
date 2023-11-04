@@ -177,10 +177,10 @@
         setKey += e.key
         console.log(e.key)
         if (setKey.toLowerCase() === 'mario') {
-          Swal.fire(`
-          彩蛋提示：
-          大時鐘、馬力歐、壞香菇、按鈕們
-          `)
+          Swal.fire({
+            title: `  彩蛋提示：`,
+            text: `大時鐘、數字、磚頭、馬力歐、壞香菇、按鈕們`,
+          })
           setKey = ''
         }
       })

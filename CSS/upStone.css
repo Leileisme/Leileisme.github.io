@@ -16,6 +16,11 @@
 	bottom: 43.67%;
 }
 
+.td_upStone:hover {
+	cursor: pointer;
+	transform: rotate(20deg) scale(102%);
+}
+
 #upStone_1 {
 	position: absolute;
 	/* left: 290px; */

@@ -1473,7 +1473,7 @@ const background_change = () => {
 	const sec = date.getSeconds()
 	const ones_sec = sec % 10
 
-	if (hour === 22) {
+	if (hour > 18 || hour < 6) {
 		// if (hour > 18 || hour < 6) {
 
 		// bad_mushroom_content.style.cursor = 'url(./images/cursor.png) 50 50, auto'

@@ -31,8 +31,6 @@ for (let j = 8; j >= 1; j--) {
 	}
 }
 
-
-
 // 按鈕
 const btn_content = document.getElementById('btn_content')
 for (let i = 4; i >= 1; i--) {
@@ -534,6 +532,20 @@ for (let i = 3; i >= 1; i--) {
 	}
 }
 
+const upStone_1 = document.getElementById('upStone_1')
+const upStone_2 = document.getElementById('upStone_2')
+const upStone_3 = document.getElementById('upStone_3')
+
+const upStone_rotate = [upStone_1, upStone_2, upStone_3]
+upStone_rotate.forEach((element, index) => {
+	element.addEventListener('mouseover', () => {
+		element.classList.add('upStone_rotate')
+	})
+	element.addEventListener('mouseout', () => {
+		element.classList.remove('upStone_rotate')
+	})
+})
+
 // 地上石頭
 const stone_content = document.getElementById('stone_content')
 for (let i = 42; i >= 1; i--) {
@@ -961,6 +973,28 @@ time()
 // if (time_number.ones[time_ones_second]) {
 // ones_second_content.prepend(time_number.ones[time_ones_second])
 // }
+
+// 數字的轉動
+const number_rotate3d = [
+	ones_second_content,
+	tens_second_content,
+	ones_min_content,
+	tens_min_content,
+	ones_hour_content,
+	tens_hour_content
+]
+
+number_rotate3d.forEach((el, index) => {
+	el.addEventListener('mouseover', () => {
+		el.style.transform = 'rotate3d(0, 0, 1, 360deg)'
+		el.style.transition = 'transform 1.5s'
+	})
+
+	el.addEventListener('mouseout', () => {
+		el.style.transform = ''
+		el.style.transition = ''
+	})
+})
 
 // 背景格
 const background_content = document.getElementById('background_content')
