@@ -641,15 +641,15 @@
 }
 
 #ones_second_content :hover,
-#ones_min_content:hover,
+#ones_min_content :hover,
 #ones_hour_content :hover {
 	cursor: pointer;
 	transform: rotate(-10deg);
 }
 
 #tens_hour_content :hover,
-#tens_min_content:hover,
-#tens_second_content:hover {
+#tens_min_content :hover,
+#tens_second_content :hover {
 	cursor: pointer;
 	transform: rotate(10deg);
 }
