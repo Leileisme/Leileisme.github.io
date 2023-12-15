@@ -176,7 +176,7 @@
       document.addEventListener('keydown', (e) => {
         setKey += e.key
         console.log(e.key)
-        if (setKey.toLowerCase() === 'mario') {
+        if (setKey.toLowerCase().includes('mario')) {
           Swal.fire({
             title: `  彩蛋提示：`,
             text: `大時鐘、數字、磚頭、馬力歐、壞香菇、按鈕們`,
