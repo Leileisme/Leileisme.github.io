@@ -134,11 +134,11 @@
 	position: absolute;
 	left: 50%;
 	top: -85%;
-	width: 53px;
+	width: 63px;
 	border-radius: 5px;
 	transform: translateX(-50%);
 	text-align: center;
-	content: '5秒的夜';
+	content: '60秒的夜';
 	font-family: 'Pixel';
 	color: #fff;
 	padding: 5px;
@@ -162,10 +162,10 @@
 	border-radius: 5px;
 	left: 50%;
 	top: -85%;
-	width: 53px;
+	width: 63px;
 	transform: translateX(-50%);
 	text-align: center;
-	content: '5秒的日';
+	content: '60秒的日';
 	font-family: 'Pixel';
 	color: #fff;
 	padding: 5px;

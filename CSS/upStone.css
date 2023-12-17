@@ -1,14 +1,5 @@
 /* 天上石頭 */
 
-#upStone_img {
-	position: absolute;
-	bottom: 53.4%;
-	left: 350px;
-	/* z-index: 2; */
-	width: 160px;
-	opacity: 0;
-}
-
 #upStone_content {
 	width: 1000px;
 	position: absolute;
@@ -21,25 +12,27 @@
 	transform: rotate(20deg) scale(102%);
 }
 
+.upStone {
+	position: absolute;
+	/* bottom: 46.5%; */
+	bottom: 43.67%;
+}
+
 #upStone_1 {
 	position: absolute;
-	/* left: 290px; */
-	/* right: calc(150px); */
-	/* right: 588px; */
+	right: 588px;
 }
 
 #upStone_2 {
 	position: absolute;
-	/* left: calc(207 + 327 + 327px); */
-	/* left: calc(290px + 119.4px); */
-	/* right: calc(588px + 119.4px); */
+	right: calc(588px + 119.4px);
+
 }
 
 #upStone_3 {
 	position: absolute;
-	/* left: calc(207 + 327 + 327px); */
-	/* left: calc(290px + 119.4px); */
-	/* right: calc(588px + 119.4 * 2px); */
+	right: calc(588px + 119.4 * 2px);
+
 }
 
 .table_upStone {
@@ -57,8 +50,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-		padding: 0; */
 }
 
 .td_upStone {
@@ -71,7 +62,7 @@
 	margin-bottom: 0.2px;
 	border: 0.05px solid rgb(161, 161, 161);
 	color: black;
-	font-size: 1px;
+	font-size: 0px;
 }
 
 #tr_upStone_1 .td_upStone_1,
@@ -141,4 +132,14 @@
 #tr_upStone_4 .td_upStone_8,
 #tr_upStone_4 .td_upStone_9 {
 	border-top: 6px solid #000;
+}
+
+#tr_upStone_1 .td_upStone {
+	border-top: 6px solid #000;
+}
+
+#upStone_1 .tr_upStone:nth-child(3) .td_upStone_9,
+#upStone_1 .tr_upStone:nth-child(6) .td_upStone_9,
+#upStone_1 .tr_upStone:nth-child(7) .td_upStone_9 {
+	border-right: 6px solid #000;
 }

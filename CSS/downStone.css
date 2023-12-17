@@ -9,7 +9,6 @@
 	opacity: 0;
 }
 
-
 .stone {
 	position: absolute;
 	bottom: 2.6%;
@@ -44,7 +43,7 @@
 	margin-bottom: 0.2px;
 	border: 0.05px solid rgb(161, 161, 161);
 	color: black;
-	font-size: 1px;
+	font-size: 0px;
 }
 
 #stone_1 {
@@ -324,4 +323,24 @@
 #tr_stone_5 .td_stone_7,
 #tr_stone_6 .td_stone_4 {
 	border-top: 5px solid #000;
+}
+
+/* 把兩邊的 border 拿掉 */
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_42 .tr_stone .td_stone_7,
+#stone_42 .tr_stone .td_stone_7,
+#stone_42 .tr_stone .td_stone_7,
+#stone_42 .tr_stone .td_stone_7,
+#stone_42 .tr_stone .td_stone_7 {
+	border-right: 0px solid #000;
+}
+
+#stone_1 .tr_stone .td_stone_1 {
+	border-left: 0px solid #000;
 }

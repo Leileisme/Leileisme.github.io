@@ -1415,15 +1415,15 @@ const btnOutside = document.querySelectorAll(
   `
 )
 
-const btn1_1 = document.querySelectorAll(`  .tr_btn_1 .td_btn_1 `)
-const btn1_2 = document.querySelectorAll(`  .tr_btn_1 .td_btn_2 `)
-const btn1_3 = document.querySelectorAll(`  .tr_btn_1 .td_btn_3 `)
-const btn2_1 = document.querySelectorAll(`  .tr_btn_2 .td_btn_1 `)
-const btn2_2 = document.querySelectorAll(`  .tr_btn_2 .td_btn_2 `)
-const btn2_3 = document.querySelectorAll(`  .tr_btn_2 .td_btn_3 `)
-const btn3_1 = document.querySelectorAll(`  .tr_btn_3 .td_btn_1 `)
-const btn3_2 = document.querySelectorAll(`  .tr_btn_3 .td_btn_2 `)
-const btn3_3 = document.querySelectorAll(`  .tr_btn_3 .td_btn_3 `)
+const btn1_1 = document.querySelectorAll(`.tr_btn_1 .td_btn_1 `)
+const btn1_2 = document.querySelectorAll(`.tr_btn_1 .td_btn_2 `)
+const btn1_3 = document.querySelectorAll(`.tr_btn_1 .td_btn_3 `)
+const btn2_1 = document.querySelectorAll(`.tr_btn_2 .td_btn_1 `)
+const btn2_2 = document.querySelectorAll(`.tr_btn_2 .td_btn_2 `)
+const btn2_3 = document.querySelectorAll(`.tr_btn_2 .td_btn_3 `)
+const btn3_1 = document.querySelectorAll(`.tr_btn_3 .td_btn_1 `)
+const btn3_2 = document.querySelectorAll(`.tr_btn_3 .td_btn_2 `)
+const btn3_3 = document.querySelectorAll(`.tr_btn_3 .td_btn_3 `)
 
 const td_board = document.querySelectorAll('.td_board')
 const td_line = document.querySelectorAll('.td_line')
@@ -1460,359 +1460,151 @@ const board_bottom = document.querySelectorAll(`
 #tr_board_6 .td_board_21,
 #tr_board_6 .td_board_22`)
 
-const background_change = () => {
-	if (isPaused === true) {
-		return
+const date = new Date()
+const hour = date.getHours()
+const min = date.getMinutes()
+const tens_min = Math.floor(min / 10)
+const sec = date.getSeconds()
+const ones_sec = sec % 10
+
+const background_change_night = () => {
+	for (const el of background_color) {
+		el.style.background = '#000'
+		el.style.border = '0.05px solid rgb(46, 46, 46)'
+	}
+	for (const el2 of clock_black) {
+		el2.style.border = '0.05px solid rgb(100, 100, 100)'
+		el2.style.background = '#000'
+	}
+	for (const el3 of clock_red) {
+		el3.style.border = '0.05px solid rgb(100, 100, 100)'
+	}
+	for (const el4 of clock_yellow) {
+		el4.style.border = '0.05px solid rgb(100, 100, 100)'
+	}
+	for (const el5 of clock_green) {
+		el5.style.border = '0.05px solid rgb(150, 150, 150)'
+		el5.style.background = 'rgb(25, 240, 255)'
+	}
+	for (const el6 of pipe_color) {
+		el6.style.border = '0.05px solid rgb(150, 150, 150)'
+	}
+	for (const el7 of mario_color) {
+		el7.style.border = '0.05px solid rgb(150, 150, 150)'
+	}
+	for (const el8 of number_color) {
+		el8.style.border = '0.05px solid rgb(46, 46, 46)'
+		el8.style.background = '#fff'
+		el8.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
+	}
+	for (const el9 of btnOutside) {
+		el9.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
 	}
 
-	const date = new Date()
-	const hour = date.getHours()
-	console.log(hour)
-	const min = date.getMinutes()
-	const tens_min = Math.floor(min / 10)
-	const sec = date.getSeconds()
-	const ones_sec = sec % 10
-
-	if (hour > 18 || hour < 6) {
-		// if (hour > 18 || hour < 6) {
-
-		// bad_mushroom_content.style.cursor = 'url(./images/cursor.png) 50 50, auto'
-		// bad_mushroom_content.style.cursor = 'pointer'
-
-		for (const el of background_color) {
-			el.style.background = '#000'
-			el.style.border = '0.05px solid rgb(46, 46, 46)'
-		}
-		for (const el2 of clock_black) {
-			el2.style.border = '0.05px solid rgb(100, 100, 100)'
-			el2.style.background = '#000'
-		}
-		for (const el3 of clock_red) {
-			el3.style.border = '0.05px solid rgb(100, 100, 100)'
-		}
-		for (const el4 of clock_yellow) {
-			el4.style.border = '0.05px solid rgb(100, 100, 100)'
-		}
-		for (const el5 of clock_green) {
-			el5.style.border = '0.05px solid rgb(150, 150, 150)'
-			el5.style.background = 'rgb(25, 240, 255)'
-		}
-		for (const el6 of pipe_color) {
-			el6.style.border = '0.05px solid rgb(150, 150, 150)'
-		}
-		for (const el7 of mario_color) {
-			el7.style.border = '0.05px solid rgb(150, 150, 150)'
-		}
-		for (const el8 of number_color) {
-			el8.style.border = '0.05px solid rgb(46, 46, 46)'
-			el8.style.background = '#fff'
-			el8.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
-		}
-		for (const el9 of btnOutside) {
-			el9.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
-		}
-
-		for (const el10 of td_board) {
-			el10.style.border = '0.05px solid  rgb(46, 46, 46)'
-			el10.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
-		}
-
-		for (const el11 of board_right) {
-			el11.style.borderRight = '5px solid rgb(153, 110, 67)'
-		}
-
-		for (const el12 of board_bottom) {
-			el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
-		}
-
-		for (const el13 of td_line) {
-			el13.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
-			el13.style.border = '0.05px solid  rgb(46, 46, 46)'
-			el13.style.borderRight = '5px solid rgb(153, 110, 67)'
-		}
-
-		body.style.background = 'rgb(46, 46, 46)'
-		// 壞香菇無法換色
-
-		// 每秒時鐘變色但不好看
-	} else {
-		for (const el of background_color) {
-			el.style.background = 'rgb(255, 238, 208)'
-			el.style.border = '0.05px solid rgb(218, 218, 218)'
-		}
-		for (const el2 of clock_black) {
-			el2.style.border = '0.05px solid  rgb(218, 218, 218)'
-		}
-		for (const el3 of clock_red) {
-			el3.style.border = '0.05px solid  rgb(218, 218, 218)'
-		}
-		for (const el4 of clock_yellow) {
-			el4.style.border = '0.05px solid  rgb(218, 218, 218)'
-		}
-		for (const el5 of clock_green) {
-			el5.style.border = '0.05px solid  rgb(218, 218, 218)'
-			el5.style.background = 'rgb(70, 156, 255)'
-		}
-		for (const el6 of pipe_color) {
-			el6.style.border = '0.05px solid rgb(218, 218, 218)'
-		}
-		for (const el7 of mario_color) {
-			el7.style.border = '0.05px solid rgb(218, 218, 218)'
-		}
-		for (const el8 of number_color) {
-			el8.style.border = '0.05px solid rgb(218, 218, 218)'
-			el8.style.background = '#000'
-			el8.style.boxShadow = '0px 0px 0px rgb(148, 96, 54)'
-		}
-
-		for (const el10 of td_board) {
-			el10.style.border = '0.05px solid  rgb(46, 46, 46)'
-			el10.style.boxShadow = ' '
-		}
-
-		for (const el11 of board_right) {
-			el11.style.borderRight = '5px solid rgb(153, 110, 67)'
-		}
-
-		for (const el12 of board_bottom) {
-			el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
-		}
-
-		for (const el13 of td_line) {
-			el13.style.boxShadow = '0px 0px 0px rgb(148, 96, 54) '
-			el13.style.border = '0.05px solid  rgb(46, 46, 46)'
-			el13.style.borderRight = '5px solid rgb(153, 110, 67)'
-		}
-
-		for (const bt1 of btn1_1) {
-			bt1.style.boxShadow = ' -2.5px -2.5px 0px #000'
-		}
-		for (const bt2 of btn1_2) {
-			bt2.style.boxShadow = '0 -2.5px 0px #000'
-		}
-		for (const bt3 of btn1_3) {
-			bt3.style.boxShadow = '2.5px -2.5px 0px #000'
-		}
-		for (const bt4 of btn2_1) {
-			bt4.style.boxShadow = '-2.5px 0 0px #000'
-		}
-		for (const bt5 of btn2_2) {
-			bt5.style.boxShadow = ''
-		}
-		for (const bt6 of btn2_3) {
-			bt6.style.boxShadow = '2.5px 0 0px #000'
-		}
-		for (const bt7 of btn3_1) {
-			bt7.style.boxShadow = '-2.5px 2.5px 0px #000'
-		}
-		for (const bt8 of btn3_2) {
-			bt8.style.boxShadow = '0 2.5px 0px #000'
-		}
-		for (const bt9 of btn3_3) {
-			bt9.style.boxShadow = '2.5px 2.5px 0px #000'
-		}
-
-		body.style.background = ' rgb(218, 218, 218)'
+	for (const el10 of td_board) {
+		el10.style.border = '0.05px solid  rgb(46, 46, 46)'
+		el10.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
 	}
+
+	for (const el11 of board_right) {
+		el11.style.borderRight = '5px solid rgb(153, 110, 67)'
+	}
+
+	for (const el12 of board_bottom) {
+		el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
+	}
+
+	for (const el13 of td_line) {
+		el13.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
+		el13.style.border = '0.05px solid  rgb(46, 46, 46)'
+		el13.style.borderRight = '5px solid rgb(153, 110, 67)'
+	}
+
+	body.style.background = 'rgb(46, 46, 46)'
 }
 
-background_change()
-setInterval(background_change, 1000)
+const background_change_sun = () => {
+	for (const el of background_color) {
+		el.style.background = 'rgb(255, 238, 208)'
+		el.style.border = '0.05px solid rgb(218, 218, 218)'
+	}
+	for (const el2 of clock_black) {
+		el2.style.border = '0.05px solid  rgb(218, 218, 218)'
+	}
+	for (const el3 of clock_red) {
+		el3.style.border = '0.05px solid  rgb(218, 218, 218)'
+	}
+	for (const el4 of clock_yellow) {
+		el4.style.border = '0.05px solid  rgb(218, 218, 218)'
+	}
+	for (const el5 of clock_green) {
+		el5.style.border = '0.05px solid  rgb(218, 218, 218)'
+		el5.style.background = 'rgb(70, 156, 255)'
+	}
+	for (const el6 of pipe_color) {
+		el6.style.border = '0.05px solid rgb(218, 218, 218)'
+	}
+	for (const el7 of mario_color) {
+		el7.style.border = '0.05px solid rgb(218, 218, 218)'
+	}
+	for (const el8 of number_color) {
+		el8.style.border = '0.05px solid rgb(218, 218, 218)'
+		el8.style.background = '#000'
+		el8.style.boxShadow = '0px 0px 0px rgb(148, 96, 54)'
+	}
 
-// const bad_mushroom_color = document.querySelectorAll(`
-// #tr_bad_mushroom_R_1 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_1 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_2 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_2 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_2 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_2 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_3 .td_bad_mushroom_4,
-// #tr_bad_mushroom_R_3 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_3 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_3 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_3 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_3 .td_bad_mushroom_9,
-// #tr_bad_mushroom_R_4 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_4 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_4 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_4 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_5 .td_bad_mushroom_2,
-// #tr_bad_mushroom_R_5 .td_bad_mushroom_3,
-// #tr_bad_mushroom_R_5 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_5 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_5 .td_bad_mushroom_9,
-// #tr_bad_mushroom_R_5 .td_bad_mushroom_10,
-// #tr_bad_mushroom_R_5 .td_bad_mushroom_11,
-// #tr_bad_mushroom_R_6 .td_bad_mushroom_2,
-// #tr_bad_mushroom_R_6 .td_bad_mushroom_3,
-// #tr_bad_mushroom_R_6 .td_bad_mushroom_4,
-// #tr_bad_mushroom_R_6 .td_bad_mushroom_9,
-// #tr_bad_mushroom_R_6 .td_bad_mushroom_10,
-// #tr_bad_mushroom_R_6 .td_bad_mushroom_11,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_1,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_2,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_3,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_4,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_9,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_10,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_11,
-// #tr_bad_mushroom_R_7 .td_bad_mushroom_12,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_1,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_2,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_3,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_4,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_9,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_10,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_11,
-// #tr_bad_mushroom_R_8 .td_bad_mushroom_12,
-// #tr_bad_mushroom_R_9 .td_bad_mushroom_2,
-// #tr_bad_mushroom_R_9 .td_bad_mushroom_3,
-// #tr_bad_mushroom_R_9 .td_bad_mushroom_10,
-// #tr_bad_mushroom_R_9 .td_bad_mushroom_11,
-// #tr_bad_mushroom_R_9 .td_bad_mushroom_4,
-// #tr_bad_mushroom_R_9 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_9 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_9 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_9 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_9 .td_bad_mushroom_9,
-// #tr_bad_mushroom_R_10 .td_bad_mushroom_4,
-// #tr_bad_mushroom_R_10 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_10 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_10 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_10 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_10 .td_bad_mushroom_9,
-// #tr_bad_mushroom_R_11 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_11 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_11 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_11 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_12 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_12 .td_bad_mushroom_7
-// #tr_bad_mushroom_R_4 .td_bad_mushroom_3,
-// #tr_bad_mushroom_R_4 .td_bad_mushroom_4,
-// #tr_bad_mushroom_R_4 .td_bad_mushroom_9,
-// #tr_bad_mushroom_R_4 .td_bad_mushroom_10,
-// #tr_bad_mushroom_R_5 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_5 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_6 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_6 .td_bad_mushroom_6,
-// #tr_bad_mushroom_R_6 .td_bad_mushroom_7,
-// #tr_bad_mushroom_R_6 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_10 .td_bad_mushroom_10,
-// #tr_bad_mushroom_R_11 .td_bad_mushroom_3,
-// #tr_bad_mushroom_R_11 .td_bad_mushroom_4,
-// #tr_bad_mushroom_R_11 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_11 .td_bad_mushroom_9,
-// #tr_bad_mushroom_R_11 .td_bad_mushroom_10,
-// #tr_bad_mushroom_R_11 .td_bad_mushroom_11,
-// #tr_bad_mushroom_R_12 .td_bad_mushroom_4,
-// #tr_bad_mushroom_R_12 .td_bad_mushroom_5,
-// #tr_bad_mushroom_R_12 .td_bad_mushroom_8,
-// #tr_bad_mushroom_R_12 .td_bad_mushroom_9,
-// #tr_bad_mushroom_R_12 .td_bad_mushroom_10,
-// #tr_bad_mushroom_R_12 .td_bad_mushroom_11,
-// #tr_bad_mushroom_L_1 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_1 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_2 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_2 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_2 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_2 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_3 .td_bad_mushroom_4,
-// #tr_bad_mushroom_L_3 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_3 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_3 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_3 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_3 .td_bad_mushroom_9,
-// #tr_bad_mushroom_L_4 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_4 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_4 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_4 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_5 .td_bad_mushroom_2,
-// #tr_bad_mushroom_L_5 .td_bad_mushroom_3,
-// #tr_bad_mushroom_L_5 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_5 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_5 .td_bad_mushroom_9,
-// #tr_bad_mushroom_L_5 .td_bad_mushroom_10,
-// #tr_bad_mushroom_L_5 .td_bad_mushroom_11,
-// #tr_bad_mushroom_L_6 .td_bad_mushroom_2,
-// #tr_bad_mushroom_L_6 .td_bad_mushroom_3,
-// #tr_bad_mushroom_L_6 .td_bad_mushroom_4,
-// #tr_bad_mushroom_L_6 .td_bad_mushroom_9,
-// #tr_bad_mushroom_L_6 .td_bad_mushroom_10,
-// #tr_bad_mushroom_L_6 .td_bad_mushroom_11,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_1,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_2,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_3,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_4,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_9,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_10,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_11,
-// #tr_bad_mushroom_L_7 .td_bad_mushroom_12,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_1,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_2,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_3,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_4,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_9,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_10,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_11,
-// #tr_bad_mushroom_L_8 .td_bad_mushroom_12,
-// #tr_bad_mushroom_L_9 .td_bad_mushroom_2,
-// #tr_bad_mushroom_L_9 .td_bad_mushroom_3,
-// #tr_bad_mushroom_L_9 .td_bad_mushroom_10,
-// #tr_bad_mushroom_L_9 .td_bad_mushroom_11,
-// #tr_bad_mushroom_L_9 .td_bad_mushroom_4,
-// #tr_bad_mushroom_L_9 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_9 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_9 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_9 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_9 .td_bad_mushroom_9,
-// #tr_bad_mushroom_L_10 .td_bad_mushroom_4,
-// #tr_bad_mushroom_L_10 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_10 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_10 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_10 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_10 .td_bad_mushroom_9,
-// #tr_bad_mushroom_L_11 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_11 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_11 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_12 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_12 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_4 .td_bad_mushroom_3,
-// #tr_bad_mushroom_L_4 .td_bad_mushroom_4,
-// #tr_bad_mushroom_L_4 .td_bad_mushroom_9,
-// #tr_bad_mushroom_L_4 .td_bad_mushroom_10,
-// #tr_bad_mushroom_L_5 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_5 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_6 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_6 .td_bad_mushroom_6,
-// #tr_bad_mushroom_L_6 .td_bad_mushroom_7,
-// #tr_bad_mushroom_L_6 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_10 .td_bad_mushroom_3,
-// #tr_bad_mushroom_L_11 .td_bad_mushroom_2,
-// #tr_bad_mushroom_L_11 .td_bad_mushroom_3,
-// #tr_bad_mushroom_L_11 .td_bad_mushroom_4,
-// #tr_bad_mushroom_L_11 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_11 .td_bad_mushroom_9,
-// #tr_bad_mushroom_L_11 .td_bad_mushroom_10,
-// #tr_bad_mushroom_L_12 .td_bad_mushroom_2,
-// #tr_bad_mushroom_L_12 .td_bad_mushroom_3,
-// #tr_bad_mushroom_L_12 .td_bad_mushroom_4,
-// #tr_bad_mushroom_L_12 .td_bad_mushroom_5,
-// #tr_bad_mushroom_L_12 .td_bad_mushroom_8,
-// #tr_bad_mushroom_L_12 .td_bad_mushroom_9,
-// `)
+	for (const el10 of td_board) {
+		el10.style.border = '0.05px solid  rgb(46, 46, 46)'
+		el10.style.boxShadow = ' '
+	}
+
+	for (const el11 of board_right) {
+		el11.style.borderRight = '5px solid rgb(153, 110, 67)'
+	}
+
+	for (const el12 of board_bottom) {
+		el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
+	}
+
+	for (const el13 of td_line) {
+		el13.style.boxShadow = '0px 0px 0px rgb(148, 96, 54) '
+		el13.style.border = '0.05px solid  rgb(46, 46, 46)'
+		el13.style.borderRight = '5px solid rgb(153, 110, 67)'
+	}
+
+	for (const bt1 of btn1_1) {
+		bt1.style.boxShadow = ' -2.5px -2.5px 0px #000'
+	}
+	for (const bt2 of btn1_2) {
+		bt2.style.boxShadow = '0 -2.5px 0px #000'
+	}
+	for (const bt3 of btn1_3) {
+		bt3.style.boxShadow = '2.5px -2.5px 0px #000'
+	}
+	for (const bt4 of btn2_1) {
+		bt4.style.boxShadow = '-2.5px 0 0px #000'
+	}
+	for (const bt5 of btn2_2) {
+		bt5.style.boxShadow = ''
+	}
+	for (const bt6 of btn2_3) {
+		bt6.style.boxShadow = '2.5px 0 0px #000'
+	}
+	for (const bt7 of btn3_1) {
+		bt7.style.boxShadow = '-2.5px 2.5px 0px #000'
+	}
+	for (const bt8 of btn3_2) {
+		bt8.style.boxShadow = '0 2.5px 0px #000'
+	}
+	for (const bt9 of btn3_3) {
+		bt9.style.boxShadow = '2.5px 2.5px 0px #000'
+	}
+
+	body.style.background = ' rgb(218, 218, 218)'
+}
+
+if (hour > 18 || hour < 6) {
+	background_change_night()
+} else {
+	background_change_sun()
+}

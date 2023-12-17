@@ -1,4 +1,6 @@
 /* 動畫 */
+
+/* 馬力歐上下 */
 @keyframes marioMove {
 	0% {
 		transform: translate(0, 0);
@@ -39,6 +41,7 @@
 	animation-fill-mode: forwards;
 }
 
+/* 時鐘上下 */
 @keyframes clockMove {
 	0% {
 		transform: translate(0, 0);
@@ -79,20 +82,16 @@
 	animation-fill-mode: forwards;
 }
 
+/* 壞香菇走動 */
 @keyframes bad_mushroom_move {
 	0% {
 		left: 0;
-		/* transform: translateX(0); */
 	}
 	50% {
 		left: 1213px;
-
-		/* transform: translateX(1213px); */
 	}
 	100% {
 		left: 0;
-
-		/* transform: translateX(0); */
 	}
 }
 
@@ -104,16 +103,14 @@
 	animation-timing-function: ease-in-out;
 }
 
+/* 擊落壞香菇 */
 @keyframes bad_mushroom_die {
 	0% {
-		/* transform: translateY(0) ; */
 	}
-
 	40% {
 		top: calc(73% - 20px);
 		transform: rotate(180deg);
 	}
-
 	50% {
 		top: calc(73% - 40px);
 		transform: rotate(180deg);
@@ -132,6 +129,7 @@
 	animation-timing-function: ease-in-out;
 }
 
+/* 提示看板 */
 @keyframes board_content_move {
 	0% {
 		top: -110px;
@@ -142,9 +140,6 @@
 	100% {
 		top: 70px;
 	}
-	/* 100% {
-		top: -110px;
-	} */
 }
 
 .board_content_move {
@@ -155,6 +150,7 @@
 	animation-timing-function: linear;
 }
 
+/* 天上石頭轉動 */
 @keyframes upStone_rotate {
 	0% {
 		transform: rotate(-3deg) scale(101%);
@@ -173,19 +169,3 @@
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
-
-/* @keyframes rotate360 {
-	0% {
-		transform: rotate(0);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-.rotate360 {
-	animation-name: urotate360;
-	animation-duration: 1.5s;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-} */

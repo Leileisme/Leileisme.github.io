@@ -4,75 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>馬力歐 Clock</title>
+  <title>馬力歐-時鐘</title>
+  <link rel="icon" href="./images/mario_logo.png">
 
   <!-- 我的CSS -->
+  <link rel="stylesheet" href="./CSS/style.css">
   <link rel="stylesheet" href="./CSS/clock.css">
-  <link rel="stylesheet" href="./CSS/upStone.css">
-  <link rel="stylesheet" href="./CSS/reference.css">
   <link rel="stylesheet" href="./CSS/number.css">
-  <link rel="stylesheet" href="./CSS/downStone.css">
   <link rel="stylesheet" href="./CSS/mario.css">
-  <link rel="stylesheet" href="./CSS/animation.css">
+  <link rel="stylesheet" href="./CSS/pipe.css">
+  <link rel="stylesheet" href="./CSS/bad_mushroom.css">
+  <link rel="stylesheet" href="./CSS/upStone.css">
+  <link rel="stylesheet" href="./CSS/downStone.css">
   <link rel="stylesheet" href="./CSS/btn.css">
+  <link rel="stylesheet" href="./CSS/animation.css">
+  <!-- sweetalert2 -->
   <script src="
   https://cdn.jsdelivr.net/npm/sweetalert2@11.8.0/dist/sweetalert2.all.min.js
   "></script>
   <style>
     @font-face {
       font-family: 'Pixel';
-      src: url(./CSS/Pixel.ttf);
+      src: url('./font/Pixel.ttf');
     }
 
     @font-face {
       font-family: '俐方體11號';
-      src: url('./CSS/Cubic_11_1.010_R.ttf');
-
+      src: url('./font/Cubic_11_1.010_R.ttf');
     }
   </style>
 </head>
 
 
 <body>
-
-
-
   <div id="content">
 
     <!-- 背景 -->
     <div id="background_content"></div>
 
-
+    <!-- 左上提示看板 -->
     <div id="board_content">
       <table id="table_board"> </table>
       <table id="table_line"></table>
-      <span id="prompt">找不到彩蛋嗎？<br>
+      <span id="prompt">有發現彩蛋嗎？<br>
         鍵盤直打「mario」得到提示!</span>
     </div>
 
-
-
+    <!-- 大時鐘 -->
     <div id="clock">
       <table id="table_clock"></table> <!-- 底色 -->
       <table id="hourHand"></table> <!-- 時針 -->
       <table id="minuteHand"></table> <!-- 分針 -->
       <div id="secondHand"></div> <!-- 秒針 -->
     </div>
-    <!-- <div id="test">
-      對時鐘照格數用
-      <div id="div01">
-    <table id="table01"></table>
-    </div>
-
-
-      對照馬力歐格子用
-      <div id="div_m">
-      <table id="table_m"></table>
-    </div>
-    </div> -->
-
-
-
 
     <!-- 馬力歐 -->
     <div id="position_mario">
@@ -89,24 +73,16 @@
 
 
     <!--  壞香菇-->
-    <div id="bad_mushroom_content" class="bad_mushroom_move ">
-      <!-- <img src="./clock參考/壞香菇.jpg" id="mushroom_img"> -->
-      <!-- <img src="./clock參考/壞香菇2.png" id="mushroom_img2"> -->
-    </div>
+    <div id="bad_mushroom_content" class="bad_mushroom_move "> </div>
 
     <!-- 水管 -->
     <div id="pipe_content"></div>
-    <!-- <img src="./clock參考/水管.jpg" alt="" id="B"> -->
-
-
-
 
     <!-- 地上石頭 -->
     <div id="stone_content"></div>
 
     <!-- 天上石頭 -->
     <div id="upStone_content"></div>
-    <!-- <img src="./clock參考/upStone.jpg" alt="" id="upStone_img"> -->
 
     <!-- 數字時鐘 -->
     <div id="time_content">
@@ -121,55 +97,18 @@
       </div>
     </div>
 
-
     <!-- 按鈕 -->
     <div id="btn_content"></div>
 
-
+    <!-- JS -->
     <script src="./JS/creat.js"></script>
     <script src="./JS/change.js"></script>
     <script>
 
-      Swal.fire({
-        title: `小彩蛋！等你發現！`,
-        text: `用電腦版+全視窗，才能完整呈現效果喔`,
-        allowOutsideClick: false, // 允许用户点击弹窗外部关闭
-        allowEscapeKey: false
-      }).then((result) => {
-        if (result.isConfirmed) {
-          setTimeout(() => {
-            board_content.classList.add('board_content_move')
-          }, 8000)
-
-
-          // 為什模這邊不能出現第二次?
-          // maybe 提示出現也可以不收回 待確認 先改效果了
-          // 動畫 lag why?
-          setInterval(() => {
-            board_content.classList.remove('board_content_move')
-            board_content.classList.add('board_content_move')
-          }, 9000)
-
-        }
-      })
-
-
-
-
-      // 看板偶而出現一下
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Alt') {
-          setTimeout(() => {
-            board_content.classList.add('.board_content_move')
-          }, 1000)
-        }
-      })
-
-
-
-
-
-
+      // 提示看板出現
+      setTimeout(() => {
+        board_content.classList.add('board_content_move')
+      }, 8000)
 
       // 觸發提示
       let setKey = ''
@@ -178,8 +117,9 @@
         console.log(e.key)
         if (setKey.toLowerCase().includes('mario')) {
           Swal.fire({
-            title: `  彩蛋提示：`,
-            text: `大時鐘、數字、磚頭、馬力歐、壞香菇、按鈕們`,
+            title: `  小彩蛋!`,
+            html: `「大時鐘、數字鐘、磚頭、馬力歐、壞香菇、按鈕」<br>
+把滑鼠移過去看看^^`,
           })
           setKey = ''
         }

@@ -112,172 +112,27 @@ table_btn_2.addEventListener('click', () => {
 			table_mario.classList.remove('marioMoveUp')
 			table_mario_back.classList.remove('marioMoveUp')
 		}, 2500)
-
-		// clock_id.addEventListener('mouseover', () => {
-		// 	clock_id.style.transform = `scale(112%) translateY(-30px)) `
-		// })
-		// clock_id.addEventListener('mouseout', () => {
-		// 	clock_id.style.transform = 'scale(100%) translate(0)'
-		// })
 	} else {
 		Swal.fire('馬力歐已站在水管上勒~~~')
 	}
 })
 
 // 按鈕動-夜
-let isPaused = false
-
 table_btn_3.addEventListener('click', () => {
-	isPaused = true
+	background_change_night()
 
-	for (const el of background_color) {
-		el.style.background = '#000'
-		el.style.border = '0.05px solid rgb(46, 46, 46)'
-	}
-	for (const el2 of clock_black) {
-		el2.style.border = '0.05px solid rgb(100, 100, 100)'
-		el2.style.background = '#000'
-	}
-	for (const el3 of clock_red) {
-		el3.style.border = '0.05px solid rgb(100, 100, 100)'
-	}
-	for (const el4 of clock_yellow) {
-		el4.style.border = '0.05px solid rgb(100, 100, 100)'
-	}
-	for (const el5 of clock_green) {
-		el5.style.border = '0.05px solid rgb(150, 150, 150)'
-		el5.style.background = 'rgb(25, 240, 255)'
-	}
-	for (const el6 of pipe_color) {
-		el6.style.border = '0.05px solid rgb(150, 150, 150)'
-	}
-	for (const el7 of mario_color) {
-		el7.style.border = '0.05px solid rgb(150, 150, 150)'
-	}
-	for (const el8 of number_color) {
-		el8.style.border = '0.05px solid rgb(46, 46, 46)'
-		el8.style.background = '#fff'
-		el8.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
-	}
-	for (const el9 of btnOutside) {
-		el9.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
-	}
-
-	for (const el10 of td_board) {
-		el10.style.border = '0.05px solid  rgb(46, 46, 46)'
-		el10.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
-	}
-
-	for (const el11 of board_right) {
-		el11.style.borderRight = '5px solid rgb(153, 110, 67)'
-	}
-
-	for (const el12 of board_bottom) {
-		el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
-	}
-
-	for (const el13 of td_line) {
-		el13.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
-		el13.style.border = '0.05px solid  rgb(46, 46, 46)'
-		el13.style.borderRight = '5px solid rgb(153, 110, 67)'
-	}
-
-	body.style.background = 'rgb(46, 46, 46)'
-	// 壞香菇無法換色
-
-	// 每秒時鐘變色但不好看
 	setTimeout(() => {
-		isPaused = false
-		background_change()
-	}, 5000)
+		background_change_sun()
+	}, 60000)
 })
 
 // 按鈕動-日
 table_btn_4.addEventListener('click', () => {
-	isPaused = true
-
-	for (const el of background_color) {
-		el.style.background = 'rgb(255, 238, 208)'
-		el.style.border = '0.05px solid rgb(218, 218, 218)'
-	}
-	for (const el2 of clock_black) {
-		el2.style.border = '0.05px solid  rgb(218, 218, 218)'
-	}
-	for (const el3 of clock_red) {
-		el3.style.border = '0.05px solid  rgb(218, 218, 218)'
-	}
-	for (const el4 of clock_yellow) {
-		el4.style.border = '0.05px solid  rgb(218, 218, 218)'
-	}
-	for (const el5 of clock_green) {
-		el5.style.border = '0.05px solid  rgb(218, 218, 218)'
-		el5.style.background = 'rgb(70, 156, 255)'
-	}
-	for (const el6 of pipe_color) {
-		el6.style.border = '0.05px solid rgb(218, 218, 218)'
-	}
-	for (const el7 of mario_color) {
-		el7.style.border = '0.05px solid rgb(218, 218, 218)'
-	}
-	for (const el8 of number_color) {
-		el8.style.border = '0.05px solid rgb(218, 218, 218)'
-		el8.style.background = '#000'
-		el8.style.boxShadow = ''
-	}
-
-	for (const el10 of td_board) {
-		el10.style.border = '0.05px solid  rgb(46, 46, 46)'
-		el10.style.boxShadow = '0px 0px 0px rgb(148, 96, 54)  '
-	}
-
-	for (const el11 of board_right) {
-		el11.style.borderRight = '5px solid rgb(153, 110, 67)'
-	}
-
-	for (const el12 of board_bottom) {
-		el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
-	}
-
-	for (const el13 of td_line) {
-		el13.style.boxShadow = '0px 0px 0px rgb(148, 96, 54)  '
-		el13.style.border = '0.05px solid  rgb(46, 46, 46)'
-		el13.style.borderRight = '5px solid rgb(153, 110, 67)'
-	}
-
-	for (const bt1 of btn1_1) {
-		bt1.style.boxShadow = ' -2.5px -2.5px 0px #000'
-	}
-	for (const bt2 of btn1_2) {
-		bt2.style.boxShadow = '0 -2.5px 0px #000'
-	}
-	for (const bt3 of btn1_3) {
-		bt3.style.boxShadow = '2.5px -2.5px 0px #000'
-	}
-	for (const bt4 of btn2_1) {
-		bt4.style.boxShadow = '-2.5px 0 0px #000'
-	}
-	for (const bt5 of btn2_2) {
-		bt5.style.boxShadow = ''
-	}
-	for (const bt6 of btn2_3) {
-		bt6.style.boxShadow = '2.5px 0 0px #000'
-	}
-	for (const bt7 of btn3_1) {
-		bt7.style.boxShadow = '-2.5px 2.5px 0px #000'
-	}
-	for (const bt8 of btn3_2) {
-		bt8.style.boxShadow = '0 2.5px 0px #000'
-	}
-	for (const bt9 of btn3_3) {
-		bt9.style.boxShadow = '2.5px 2.5px 0px #000'
-	}
-
-	body.style.background = ' rgb(218, 218, 218)'
+	background_change_sun()
 
 	setTimeout(() => {
-		isPaused = false
-		background_change()
-	}, 50000)
+		background_change_night()
+	}, 60000)
 })
 
 // 壞香菇-R
@@ -307,7 +162,6 @@ for (let i = 1; i >= 1; i--) {
 }
 
 // 壞香菇-L
-
 for (let i = 1; i >= 1; i--) {
 	const bad_mushroom_L = document.createElement('table')
 	bad_mushroom_L.classList.add('bad_mushroom')
@@ -335,7 +189,7 @@ for (let i = 1; i >= 1; i--) {
 const bad_mushroom_R = document.getElementById('bad_mushroom_R')
 const bad_mushroom_L = document.getElementById('bad_mushroom_L')
 
-// 壞香菇交換
+// 壞香菇 L、R 交換
 const bad_mushroom_change = () => {
 	if (bad_mushroom_R.style.display === 'none') {
 		bad_mushroom_R.style.display = 'block'
@@ -351,69 +205,16 @@ setInterval(bad_mushroom_change, 300)
 // 壞香菇被擊落
 bad_mushroom_content.addEventListener('click', (event) => {
 	const mouseX = event.clientX
-	console.log(mouseX)
-
+	// console.log(mouseX)
 	const left = bad_mushroom_content.getBoundingClientRect().left
-	console.log(bad_mushroom_content.getBoundingClientRect())
-	console.log(left)
+	// console.log(bad_mushroom_content.getBoundingClientRect())
+	// console.log(left)
 	bad_mushroom_content.style.left = left + 'px'
 	bad_mushroom_content.classList.add('bad_mushroom_die')
 	setTimeout(() => {
 		bad_mushroom_content.classList.remove('bad_mushroom_die')
 	}, 3000)
 })
-
-//  失敗的隨機走路 速度會忽快忽慢
-
-// const move = () => {
-// 	const random = () => {
-// 		return Math.ceil(Math.random() * 70) + '%'
-// 	}
-
-// 	bad_mushroom_content.animate(
-// 		{
-// 			left: random()
-// 		},
-// 		5000,
-// 		function () {
-// 			move()
-// 		}
-// 	)
-// }
-
-// move()
-
-// const bad_mushroom_move = () => {
-// 	const moveR = () => {
-// 		const targetL = '63%'
-// 		bad_mushroom_content.animate(
-// 			{
-// 				left: targetL
-// 			},
-// 			8000,
-// 			function () {
-// 				moveL()
-// 			}
-// 		)
-// 	}
-
-// 	const targetR = '63%'
-
-// 	const moveL = () => {
-// 		bad_mushroom_content.animate(
-// 			{
-// 				left: targetR
-// 			},
-// 			8000,
-// 			function () {
-// 				moveR()
-// 			}
-// 		)
-// 	}
-// 	moveR()
-// }
-
-// bad_mushroom_move()
 
 // 對照壞香菇用
 // const bad = document.getElementById('bad')
@@ -647,6 +448,7 @@ const nine = []
 
 // const text = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
 for (let i = 1; i <= 6; i++) {
+	// 陣列的寫法
 	// for (let j = 0; j <= 9; j++) {
 	//   eval(`
 	//       ${text[j]}[i] = document.createElement('table')

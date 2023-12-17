@@ -1,7 +1,5 @@
 .zero {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px); */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -15,8 +13,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_zero {
@@ -46,8 +42,6 @@
 
 .one {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px + 79.3 * 1px); */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -61,8 +55,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_one {
@@ -86,15 +78,12 @@
 .tr_one_5 .td_one_2,
 .tr_one_5 .td_one_3,
 .tr_one_5 .td_one_4 {
-	/* background: .fff; */
 	background: #000;
 	border: 0.05px solid rgb(218, 218, 218);
 }
 
 .two {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px + 79.3 * 2px); */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -108,8 +97,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_two {
@@ -141,8 +128,6 @@
 
 .three {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px + 79.3 * 3px); */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -156,8 +141,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_three {
@@ -192,8 +175,6 @@
 
 .four {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px + 79.3 * 4px); */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -207,8 +188,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_four {
@@ -240,8 +219,6 @@
 
 .five {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px + 79.3 * 5px); */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -255,8 +232,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_five {
@@ -291,8 +266,6 @@
 
 .six {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px + 79.3 * 6px); */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -306,8 +279,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_six {
@@ -336,15 +307,12 @@
 .tr_six_5 .td_six_2,
 .tr_six_5 .td_six_3,
 .tr_six_5 .td_six_4 {
-	/* background: .fff; */
 	background: #000;
 	border: 0.05px solid rgb(218, 218, 218);
 }
 
 .seven {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px + 79.3 * 7px); */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -358,8 +326,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_seven {
@@ -388,8 +354,7 @@
 
 .eight {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px + 79.3 * 8px); */
+
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -403,8 +368,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_eight {
@@ -441,8 +404,6 @@
 
 .nine {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px + 79.3 * 9px); */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -456,8 +417,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_nine {
@@ -493,8 +452,6 @@
 
 .colon {
 	position: absolute;
-	/* top: 39.6px;
-	left: calc(52.6px + 79.3 * 9px); */
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -508,8 +465,6 @@
 	height: 10px;
 	box-sizing: border-box;
 	color: blue;
-	/* margin: 0;
-	padding: 0; */
 }
 
 .td_colon {
@@ -538,25 +493,18 @@
 #colon_1 {
 	position: absolute;
 	right: 135px;
-	/* width: 20px;
-	border: 2px solid #f00; */
 }
 
 #colon_2 {
 	position: absolute;
 	right: 294px;
-	/* width: 20px;
-	border: 2px solid #f00; */
 }
 
 #time {
-	/* width: 300px; */
 	position: absolute;
 	/* top: 39.4px; */
 	top: 343px;
-	/* right: 308px; */
 	left: 41.2%;
-	/* border: 2px solid #f00; */
 }
 
 #ones_second_content {
@@ -564,9 +512,6 @@
 	width: 55.5px;
 	right: 0;
 	height: 68px;
-
-	/* border: 2px solid .f00; */
-
 	list-style: none;
 	border: none;
 	table-layout: fixed;
@@ -580,7 +525,6 @@
 	width: 55.5px;
 	height: 68px;
 	/* border: 2px solid #f00; */
-
 	list-style: none;
 	table-layout: fixed;
 	border-collapse: collapse;
@@ -606,7 +550,6 @@
 	width: 55.5px;
 	height: 68px;
 	/* border: 2px solid #f00; */
-
 	list-style: none;
 	table-layout: fixed;
 	border-collapse: collapse;
@@ -619,7 +562,6 @@
 	width: 55.5px;
 	height: 68px;
 	/* border: 2px solid #f00; */
-
 	list-style: none;
 	table-layout: fixed;
 	border-collapse: collapse;
@@ -629,11 +571,9 @@
 #tens_hour_content {
 	position: absolute;
 	right: 383px;
-
 	width: 55.5px;
 	height: 68px;
 	/* border: 2px solid #f00; */
-
 	list-style: none;
 	table-layout: fixed;
 	border-collapse: collapse;
@@ -653,6 +593,3 @@
 	cursor: pointer;
 	transform: rotate(10deg);
 }
-
-/* transform: rotate3d(0, 0, 1, 360deg);
-transition: transform 1s; */
