@@ -8,7 +8,7 @@ const background_color = document.querySelectorAll('.td_content')
 
 // 時鐘黑邊
 const clock_black = document.querySelectorAll(
-	`#tr_clock_2 .td_clock_11,
+  `#tr_clock_2 .td_clock_11,
   #tr_clock_2 .td_clock_12,
   #tr_clock_2 .td_clock_19,
   #tr_clock_2 .td_clock_20,
@@ -167,7 +167,7 @@ const clock_black = document.querySelectorAll(
 
 //  時鐘本體紅色
 const clock_red = document.querySelectorAll(
-	`#tr_clock_2 .td_clock_13,
+  `#tr_clock_2 .td_clock_13,
   #tr_clock_2 .td_clock_14,
   #tr_clock_2 .td_clock_15,
   #tr_clock_2 .td_clock_18,
@@ -336,7 +336,7 @@ const clock_yellow = document.querySelectorAll(`
 
 //  時鐘中間白
 const clock_white = document.querySelectorAll(
-	`#tr_clock_8 .td_clock_10,
+  `#tr_clock_8 .td_clock_10,
   #tr_clock_8 .td_clock_13,
   #tr_clock_8 .td_clock_14,
   #tr_clock_8 .td_clock_15,
@@ -581,7 +581,7 @@ const clock_white = document.querySelectorAll(
 
 // 時鐘綠
 const clock_green = document.querySelectorAll(
-	`#tr_clock_6 .td_clock_10,
+  `#tr_clock_6 .td_clock_10,
   #tr_clock_6 .td_clock_11,
   #tr_clock_6 .td_clock_12,
   #tr_clock_6 .td_clock_13,
@@ -695,7 +695,7 @@ const clock_green = document.querySelectorAll(
 
 // 水管
 const pipe_color = document.querySelectorAll(
-	`#tr_pipe_2 .td_pipe_1,
+  `#tr_pipe_2 .td_pipe_1,
   #tr_pipe_2 .td_pipe_3,
   #tr_pipe_2 .td_pipe_8,
   #tr_pipe_2 .td_pipe_9,
@@ -851,7 +851,7 @@ const pipe_color = document.querySelectorAll(
 
 // 馬力歐
 const mario_color = document.querySelectorAll(
-	`#tr_mario_1 .td_mario_4,
+  `#tr_mario_1 .td_mario_4,
   #tr_mario_1 .td_mario_5,
   #tr_mario_1 .td_mario_6,
   #tr_mario_1 .td_mario_7,
@@ -1029,7 +1029,7 @@ const mario_color = document.querySelectorAll(
 // 壞香菇(還未用)
 
 if (bad_mushroom_R.style.display === 'block') {
-	const bad_mushroom_R_color = document.querySelectorAll(`
+  const bad_mushroom_R_color = document.querySelectorAll(`
   #tr_bad_mushroom_R_1 .td_bad_mushroom_6,
   #tr_bad_mushroom_R_1 .td_bad_mushroom_7,
   #tr_bad_mushroom_R_2 .td_bad_mushroom_5,
@@ -1133,8 +1133,8 @@ if (bad_mushroom_R.style.display === 'block') {
   `)
 }
 if (bad_mushroom_L.style.display === 'block') {
-	const bad_mushroom_R_color = document.querySelectorAll(
-		`#tr_bad_mushroom_L_1 .td_bad_mushroom_6,
+  const bad_mushroom_R_color = document.querySelectorAll(
+    `#tr_bad_mushroom_L_1 .td_bad_mushroom_6,
     #tr_bad_mushroom_L_1 .td_bad_mushroom_7,
     #tr_bad_mushroom_L_2 .td_bad_mushroom_5,
     #tr_bad_mushroom_L_2 .td_bad_mushroom_6,
@@ -1240,12 +1240,12 @@ if (bad_mushroom_L.style.display === 'block') {
 #tr_bad_mushroom_L_7 .td_bad_mushroom_8,
 #tr_bad_mushroom_L_7 .td_bad_mushroom_9
     `
-	)
+  )
 }
 
 // 數字
 const number_color = document.querySelectorAll(
-	`.tr_colon_2 .td_colon_1,
+  `.tr_colon_2 .td_colon_1,
   .tr_colon_4 .td_colon_1,
   .tr_zero_1 .td_zero_2,
   .tr_zero_1 .td_zero_3,
@@ -1403,7 +1403,7 @@ const downStone_color = document.querySelectorAll(`
 
 // 按鈕
 const btnOutside = document.querySelectorAll(
-	`  .tr_btn_1 .td_btn_1,
+  `  .tr_btn_1 .td_btn_1,
   .tr_btn_1 .td_btn_2,
   .tr_btn_1 .td_btn_3,
   .tr_btn_2 .td_btn_1,
@@ -1468,143 +1468,143 @@ const sec = date.getSeconds()
 const ones_sec = sec % 10
 
 const background_change_night = () => {
-	for (const el of background_color) {
-		el.style.background = '#000'
-		el.style.border = '0.05px solid rgb(46, 46, 46)'
-	}
-	for (const el2 of clock_black) {
-		el2.style.border = '0.05px solid rgb(100, 100, 100)'
-		el2.style.background = '#000'
-	}
-	for (const el3 of clock_red) {
-		el3.style.border = '0.05px solid rgb(100, 100, 100)'
-	}
-	for (const el4 of clock_yellow) {
-		el4.style.border = '0.05px solid rgb(100, 100, 100)'
-	}
-	for (const el5 of clock_green) {
-		el5.style.border = '0.05px solid rgb(150, 150, 150)'
-		el5.style.background = 'rgb(25, 240, 255)'
-	}
-	for (const el6 of pipe_color) {
-		el6.style.border = '0.05px solid rgb(150, 150, 150)'
-	}
-	for (const el7 of mario_color) {
-		el7.style.border = '0.05px solid rgb(150, 150, 150)'
-	}
-	for (const el8 of number_color) {
-		el8.style.border = '0.05px solid rgb(46, 46, 46)'
-		el8.style.background = '#fff'
-		el8.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
-	}
-	for (const el9 of btnOutside) {
-		el9.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
-	}
+  for (const el of background_color) {
+    el.style.background = '#000'
+    el.style.border = '0.05px solid rgb(46, 46, 46)'
+  }
+  for (const el2 of clock_black) {
+    el2.style.border = '0.05px solid rgb(100, 100, 100)'
+    el2.style.background = '#000'
+  }
+  for (const el3 of clock_red) {
+    el3.style.border = '0.05px solid rgb(100, 100, 100)'
+  }
+  for (const el4 of clock_yellow) {
+    el4.style.border = '0.05px solid rgb(100, 100, 100)'
+  }
+  for (const el5 of clock_green) {
+    el5.style.border = '0.05px solid rgb(150, 150, 150)'
+    el5.style.background = 'rgb(25, 240, 255)'
+  }
+  for (const el6 of pipe_color) {
+    el6.style.border = '0.05px solid rgb(150, 150, 150)'
+  }
+  for (const el7 of mario_color) {
+    el7.style.border = '0.05px solid rgb(150, 150, 150)'
+  }
+  for (const el8 of number_color) {
+    el8.style.border = '0.05px solid rgb(46, 46, 46)'
+    el8.style.background = '#fff'
+    el8.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
+  }
+  for (const el9 of btnOutside) {
+    el9.style.boxShadow = '0px 0px 10px rgb(25, 240, 255)'
+  }
 
-	for (const el10 of td_board) {
-		el10.style.border = '0.05px solid  rgb(46, 46, 46)'
-		el10.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
-	}
+  for (const el10 of td_board) {
+    el10.style.border = '0.05px solid  rgb(46, 46, 46)'
+    el10.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
+  }
 
-	for (const el11 of board_right) {
-		el11.style.borderRight = '5px solid rgb(153, 110, 67)'
-	}
+  for (const el11 of board_right) {
+    el11.style.borderRight = '5px solid rgb(153, 110, 67)'
+  }
 
-	for (const el12 of board_bottom) {
-		el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
-	}
+  for (const el12 of board_bottom) {
+    el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
+  }
 
-	for (const el13 of td_line) {
-		el13.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
-		el13.style.border = '0.05px solid  rgb(46, 46, 46)'
-		el13.style.borderRight = '5px solid rgb(153, 110, 67)'
-	}
+  for (const el13 of td_line) {
+    el13.style.boxShadow = '0px 0px 10px rgb(148, 96, 54)'
+    el13.style.border = '0.05px solid  rgb(46, 46, 46)'
+    el13.style.borderRight = '5px solid rgb(153, 110, 67)'
+  }
 
-	body.style.background = 'rgb(46, 46, 46)'
+  body.style.background = 'rgb(0,0,0)'
 }
 
 const background_change_sun = () => {
-	for (const el of background_color) {
-		el.style.background = 'rgb(255, 238, 208)'
-		el.style.border = '0.05px solid rgb(218, 218, 218)'
-	}
-	for (const el2 of clock_black) {
-		el2.style.border = '0.05px solid  rgb(218, 218, 218)'
-	}
-	for (const el3 of clock_red) {
-		el3.style.border = '0.05px solid  rgb(218, 218, 218)'
-	}
-	for (const el4 of clock_yellow) {
-		el4.style.border = '0.05px solid  rgb(218, 218, 218)'
-	}
-	for (const el5 of clock_green) {
-		el5.style.border = '0.05px solid  rgb(218, 218, 218)'
-		el5.style.background = 'rgb(70, 156, 255)'
-	}
-	for (const el6 of pipe_color) {
-		el6.style.border = '0.05px solid rgb(218, 218, 218)'
-	}
-	for (const el7 of mario_color) {
-		el7.style.border = '0.05px solid rgb(218, 218, 218)'
-	}
-	for (const el8 of number_color) {
-		el8.style.border = '0.05px solid rgb(218, 218, 218)'
-		el8.style.background = '#000'
-		el8.style.boxShadow = '0px 0px 0px rgb(148, 96, 54)'
-	}
+  for (const el of background_color) {
+    el.style.background = 'rgb(255, 238, 208)'
+    el.style.border = '0.05px solid rgb(218, 218, 218)'
+  }
+  for (const el2 of clock_black) {
+    el2.style.border = '0.05px solid  rgb(218, 218, 218)'
+  }
+  for (const el3 of clock_red) {
+    el3.style.border = '0.05px solid  rgb(218, 218, 218)'
+  }
+  for (const el4 of clock_yellow) {
+    el4.style.border = '0.05px solid  rgb(218, 218, 218)'
+  }
+  for (const el5 of clock_green) {
+    el5.style.border = '0.05px solid  rgb(218, 218, 218)'
+    el5.style.background = 'rgb(70, 156, 255)'
+  }
+  for (const el6 of pipe_color) {
+    el6.style.border = '0.05px solid rgb(218, 218, 218)'
+  }
+  for (const el7 of mario_color) {
+    el7.style.border = '0.05px solid rgb(218, 218, 218)'
+  }
+  for (const el8 of number_color) {
+    el8.style.border = '0.05px solid rgb(218, 218, 218)'
+    el8.style.background = '#000'
+    el8.style.boxShadow = '0px 0px 0px rgb(148, 96, 54)'
+  }
 
-	for (const el10 of td_board) {
-		el10.style.border = '0.05px solid  rgb(46, 46, 46)'
-		el10.style.boxShadow = ' '
-	}
+  for (const el10 of td_board) {
+    el10.style.border = '0.05px solid  rgb(46, 46, 46)'
+    el10.style.boxShadow = ' '
+  }
 
-	for (const el11 of board_right) {
-		el11.style.borderRight = '5px solid rgb(153, 110, 67)'
-	}
+  for (const el11 of board_right) {
+    el11.style.borderRight = '5px solid rgb(153, 110, 67)'
+  }
 
-	for (const el12 of board_bottom) {
-		el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
-	}
+  for (const el12 of board_bottom) {
+    el12.style.borderBottom = '5px solid rgb(153, 110, 67)'
+  }
 
-	for (const el13 of td_line) {
-		el13.style.boxShadow = '0px 0px 0px rgb(148, 96, 54) '
-		el13.style.border = '0.05px solid  rgb(46, 46, 46)'
-		el13.style.borderRight = '5px solid rgb(153, 110, 67)'
-	}
+  for (const el13 of td_line) {
+    el13.style.boxShadow = '0px 0px 0px rgb(148, 96, 54) '
+    el13.style.border = '0.05px solid  rgb(46, 46, 46)'
+    el13.style.borderRight = '5px solid rgb(153, 110, 67)'
+  }
 
-	for (const bt1 of btn1_1) {
-		bt1.style.boxShadow = ' -2.5px -2.5px 0px #000'
-	}
-	for (const bt2 of btn1_2) {
-		bt2.style.boxShadow = '0 -2.5px 0px #000'
-	}
-	for (const bt3 of btn1_3) {
-		bt3.style.boxShadow = '2.5px -2.5px 0px #000'
-	}
-	for (const bt4 of btn2_1) {
-		bt4.style.boxShadow = '-2.5px 0 0px #000'
-	}
-	for (const bt5 of btn2_2) {
-		bt5.style.boxShadow = ''
-	}
-	for (const bt6 of btn2_3) {
-		bt6.style.boxShadow = '2.5px 0 0px #000'
-	}
-	for (const bt7 of btn3_1) {
-		bt7.style.boxShadow = '-2.5px 2.5px 0px #000'
-	}
-	for (const bt8 of btn3_2) {
-		bt8.style.boxShadow = '0 2.5px 0px #000'
-	}
-	for (const bt9 of btn3_3) {
-		bt9.style.boxShadow = '2.5px 2.5px 0px #000'
-	}
+  for (const bt1 of btn1_1) {
+    bt1.style.boxShadow = ' -2.5px -2.5px 0px #000'
+  }
+  for (const bt2 of btn1_2) {
+    bt2.style.boxShadow = '0 -2.5px 0px #000'
+  }
+  for (const bt3 of btn1_3) {
+    bt3.style.boxShadow = '2.5px -2.5px 0px #000'
+  }
+  for (const bt4 of btn2_1) {
+    bt4.style.boxShadow = '-2.5px 0 0px #000'
+  }
+  for (const bt5 of btn2_2) {
+    bt5.style.boxShadow = ''
+  }
+  for (const bt6 of btn2_3) {
+    bt6.style.boxShadow = '2.5px 0 0px #000'
+  }
+  for (const bt7 of btn3_1) {
+    bt7.style.boxShadow = '-2.5px 2.5px 0px #000'
+  }
+  for (const bt8 of btn3_2) {
+    bt8.style.boxShadow = '0 2.5px 0px #000'
+  }
+  for (const bt9 of btn3_3) {
+    bt9.style.boxShadow = '2.5px 2.5px 0px #000'
+  }
 
-	body.style.background = ' rgb(218, 218, 218)'
+  body.style.background = ' rgb(46,46,46)'
 }
 
 if (hour > 18 || hour < 6) {
-	background_change_night()
+  background_change_night()
 } else {
-	background_change_sun()
+  background_change_sun()
 }

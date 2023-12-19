@@ -1,38 +1,38 @@
 /* 水管 pipe */
 #pipe_content {
-	/* border: 1px solid red; */
-	position: absolute;
-	top: 76.98%;
-	left: 70%;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 76.98%;
+  left: 69.96%;
 }
 
 .pipe {
-	position: relative;
-	list-style: none;
-	border: none;
-	table-layout: fixed;
-	border-collapse: collapse;
-	font-size: 0;
+  position: relative;
+  list-style: none;
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0;
 }
 
 .tr_pipe {
-	list-style: none;
-	border: none;
-	height: 10px;
-	box-sizing: border-box;
-	color: blue;
+  list-style: none;
+  border: none;
+  height: 10px;
+  box-sizing: border-box;
+  color: blue;
 }
 
 .td_pipe {
-	box-sizing: border-box;
-	display: inline-block;
-	width: 13px;
-	height: 13px;
-	/* background: rgb(218, 25, 25); */
-	margin-left: 0.2px;
-	margin-bottom: 0.2px;
-	/* border: 0.05px solid rgb(218, 218, 218); */
-	font-size: 13px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12.6px;
+  height: 12.6px;
+  /* background: rgb(218, 25, 25); */
+  /* margin-left: 0.2px; */
+  /* margin-bottom: 0.2px; */
+  /* border: 0.05px solid rgb(218, 218, 218); */
+  font-size: 12.6px;
 }
 
 #tr_pipe_2 .td_pipe_1,
@@ -104,8 +104,8 @@
 #tr_pipe_9 .td_pipe_11,
 #tr_pipe_9 .td_pipe_12,
 #tr_pipe_9 .td_pipe_13 {
-	background: #64a631;
-	border: 0.05px solid rgb(218, 218, 218);
+  background: #64a631;
+  border: 0.05px solid rgb(218, 218, 218);
 }
 
 #tr_pipe_1 .td_pipe_1,
@@ -150,8 +150,8 @@
 #tr_pipe_8 .td_pipe_13,
 #tr_pipe_9 .td_pipe_2,
 #tr_pipe_9 .td_pipe_13 {
-	background: rgb(0, 0, 0);
-	border: 0.05px solid rgb(218, 218, 218);
+  background: rgb(0, 0, 0);
+  border: 0.05px solid rgb(218, 218, 218);
 }
 
 #tr_pipe_2 .td_pipe_2,
@@ -194,6 +194,6 @@
 #tr_pipe_9 .td_pipe_6,
 #tr_pipe_9 .td_pipe_7,
 #tr_pipe_9 .td_pipe_12 {
-	background: #b8ca3b;
-	border: 0.05px solid rgb(218, 218, 218);
+  background: #b8ca3b;
+  border: 0.05px solid rgb(218, 218, 218);
 }

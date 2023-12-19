@@ -3,26 +3,56 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
   /* width: 1960px;
   height: 960px; */
   /* background: rgb(218, 218, 218); */
+  background-color: #333;
+}
+
+.content_big {
+  /* border: 1px red solid; */
+  /* display: flex;
+  justify-content: center; */
+  /* position: absolute; */
 }
 
 /* 背景色 */
 #content {
   box-sizing: border-box;
   /* border: 1px solid red; */
-  /* width: 1960px; */
-  width: 1952px;
-  height: 960px;
+  width: 1890px;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
+}
+
+/* 背景測試 */
+/* #background {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(90deg, rgb(218, 218, 218) 1px, transparent 1px),
+    linear-gradient(180deg, rgb(218, 218, 218) 1px, transparent 1px);
+  background-size: 12.6px 12.6px;
+  background-position: center center;
+  background-repeat: repeat;
+  background-color: rgb(255, 238, 208);
+  display: none;
+} */
+
+/* 背景 */
+#background_content {
+  /* overflow: hidden; */
+  /* display: none; */
 }
 
 .tr_content {
   list-style: none;
   border: none;
-  height: 10px;
+  /* height: 10px; */
   box-sizing: border-box;
   color: blue;
   margin: 0;
@@ -31,15 +61,15 @@ body {
 
 .td_content {
   box-sizing: border-box;
-  display: inline-block;
-  width: 13px;
-  height: 13px;
+  /* display: inline-block; */
+  width: 12.6px;
+  height: 12.6px;
   background: rgb(255, 238, 208);
   /* background: rgb(0, 0, 0); */
 
   /* background: rgb(158, 208, 255); */
-  margin-left: 0.2px;
-  margin-bottom: 0.2px;
+  /* margin-left: 0.2px; */
+  /* margin-bottom: 0.2px; */
   border: 0.05px solid rgb(218, 218, 218);
   /* border: 0.05px solid rgb(46, 46, 46); */
 
@@ -62,7 +92,7 @@ body {
 #prompt {
   font-family: '俐方體11號';
   position: absolute;
-  top: 13px;
+  top: 12.6px;
   left: 23px;
   color: #fff;
   font-size: 18px;
@@ -73,8 +103,8 @@ body {
 
 #table_line {
   position: absolute;
-  top: -105px;
-  left: 145px;
+  top: -100px;
+  left: 135px;
 }
 
 #table_board,
@@ -102,25 +132,25 @@ body {
 .td_board {
   box-sizing: border-box;
   display: inline-block;
-  width: 13px;
-  height: 13px;
+  width: 12.6px;
+  height: 12.6px;
   background: rgb(117, 75, 21);
-  margin-left: 0.2px;
-  margin-bottom: 0.2px;
+  /* margin-left: 0.2px; */
+  /* margin-bottom: 0.2px; */
   border: 0.05px solid rgb(46, 46, 46);
-  font-size: 13px;
+  font-size: 12.6px;
 }
 
 .td_line {
   box-sizing: border-box;
   display: inline-block;
-  width: 13px;
-  height: 13px;
+  width: 12.6px;
+  height: 12.6px;
   background: rgb(117, 75, 21);
-  margin-left: 0.2px;
-  margin-bottom: 0.2px;
+  /* margin-left: 0.2px; */
+  /* margin-bottom: 0.2px; */
   border: 0.05px solid rgb(46, 46, 46);
-  font-size: 13px;
+  font-size: 12.6px;
   border-right: 5px solid rgb(153, 110, 67);
 }
 

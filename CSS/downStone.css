@@ -1,281 +1,279 @@
 /* 地上石頭 */
-
-#stone img {
-	position: absolute;
-	bottom: 0%;
-	left: 0%;
-	z-index: 1;
-	width: 130px;
-	opacity: 0;
+#stone_background {
+  position: absolute;
+  background-color: rgb(182, 52, 0);
+  bottom: 0;
+  width: 1879.5px;
+  height: 99px;
 }
 
 .stone {
-	position: absolute;
-	bottom: 2.6%;
+  position: absolute;
+  bottom: 2.6%;
 }
 
 .table_stone {
-	position: relative;
-	list-style: none;
-	border: none;
-	table-layout: fixed;
-	border-collapse: collapse;
-	font-size: 0;
+  position: relative;
+  list-style: none;
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0;
 }
 
 .tr_stone {
-	list-style: none;
-	border: none;
-	height: 10px;
-	box-sizing: border-box;
-	color: blue;
-	/* margin: 0;
+  list-style: none;
+  border: none;
+  /* height: 10px; */
+  box-sizing: border-box;
+  color: blue;
+  /* margin: 0;
 	padding: 0; */
 }
 
 .td_stone {
-	box-sizing: border-box;
-	display: inline-block;
-	width: 13px;
-	height: 13px;
-	background: rgb(182, 52, 0);
-	margin-left: 0.2px;
-	margin-bottom: 0.2px;
-	border: 0.05px solid rgb(161, 161, 161);
-	color: black;
-	font-size: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12.6px;
+  height: 12.6px;
+  background: rgb(182, 52, 0);
+  /* margin-left: 0.2px; */
+  /* margin-bottom: 0.2px; */
+  border: 0.05px solid rgb(161, 161, 161);
+  color: black;
+  font-size: 0px;
 }
 
 #stone_1 {
-	position: absolute;
-	left: 0;
+  position: absolute;
+  left: 0;
 }
 
 #stone_2 {
-	position: absolute;
-	left: 92.9px;
+  position: absolute;
+  left: 90px;
 }
 
 #stone_3 {
-	position: absolute;
-	left: calc(92.9 * 2px);
+  position: absolute;
+  left: calc(90 * 2px);
 }
 
 #stone_4 {
-	position: absolute;
-	left: calc(92.9 * 3px);
+  position: absolute;
+  left: calc(90 * 3px);
 }
 
 #stone_5 {
-	position: absolute;
-	left: calc(92.9 * 4px);
+  position: absolute;
+  left: calc(90 * 4px);
 }
 
 #stone_6 {
-	position: absolute;
-	left: calc(92.9 * 5px);
+  position: absolute;
+  left: calc(90 * 5px);
 }
 
 #stone_7 {
-	position: absolute;
-	left: calc(92.9 * 6px);
+  position: absolute;
+  left: calc(90 * 6px);
 }
 
 #stone_8 {
-	position: absolute;
-	left: calc(92.9 * 7px);
+  position: absolute;
+  left: calc(90 * 7px);
 }
 
 #stone_9 {
-	position: absolute;
-	left: calc(92.9 * 8px);
+  position: absolute;
+  left: calc(90 * 8px);
 }
 
 #stone_10 {
-	position: absolute;
-	left: calc(92.9 * 9px);
+  position: absolute;
+  left: calc(90 * 9px);
 }
 
 #stone_11 {
-	position: absolute;
-	left: calc(92.9 * 10px);
+  position: absolute;
+  left: calc(90 * 10px);
 }
 
 #stone_12 {
-	position: absolute;
-	left: calc(92.9 * 11px);
+  position: absolute;
+  left: calc(90 * 11px);
 }
 
 #stone_13 {
-	position: absolute;
-	left: calc(92.9 * 12px);
+  position: absolute;
+  left: calc(90 * 12px);
 }
 
 #stone_14 {
-	position: absolute;
-	left: calc(92.9 * 13px);
+  position: absolute;
+  left: calc(90 * 13px);
 }
 
 #stone_15 {
-	position: absolute;
-	left: calc(92.9 * 14px);
+  position: absolute;
+  left: calc(90 * 14px);
 }
 
 #stone_16 {
-	position: absolute;
-	left: calc(92.9 * 15px);
+  position: absolute;
+  left: calc(90 * 15px);
 }
 
 #stone_17 {
-	position: absolute;
-	left: calc(92.9 * 16px);
+  position: absolute;
+  left: calc(90 * 16px);
 }
 
 #stone_18 {
-	position: absolute;
-	left: calc(92.9 * 17px);
+  position: absolute;
+  left: calc(90 * 17px);
 }
 
 #stone_19 {
-	position: absolute;
-	left: calc(92.9 * 18px);
+  position: absolute;
+  left: calc(90 * 18px);
 }
 
 #stone_20 {
-	position: absolute;
-	left: calc(92.9 * 19px);
+  position: absolute;
+  left: calc(90 * 19px);
 }
 
 #stone_21 {
-	position: absolute;
-	left: calc(92.9 * 20px);
+  position: absolute;
+  left: calc(90 * 20px);
 }
 
 #stone_22 {
-	position: absolute;
-	bottom: -55.5px;
-	/* left: calc(92.9 * 20px); */
-	left: 0;
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 20px);
+  left: 0;
 }
 
 #stone_23 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90px);
 }
 
 #stone_24 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 2px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 2px);
 }
 
 #stone_25 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 3px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 3px);
 }
 
 #stone_26 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 4px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 4px);
 }
 
 #stone_27 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 5px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 5px);
 }
 
 #stone_28 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 6px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 6px);
 }
 
 #stone_29 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 7px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 7px);
 }
 
 #stone_30 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 8px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 8px);
 }
 
 #stone_31 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 9px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 9px);
 }
 
 #stone_32 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 10px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 10px);
 }
 
 #stone_33 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 11px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 11px);
 }
 
 #stone_34 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 12px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 12px);
 }
 
 #stone_35 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 13px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 13px);
 }
 
 #stone_36 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 14px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 14px);
 }
 
 #stone_37 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 15px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 15px);
 }
 
 #stone_38 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 16px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 16px);
 }
 
 #stone_39 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 17px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 17px);
 }
 
 #stone_40 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 18px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 18px);
 }
 
 #stone_41 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 19px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 19px);
 }
 
 #stone_42 {
-	position: absolute;
-	bottom: -55.5px;
-	left: calc(92.9 * 20px);
+  position: absolute;
+  bottom: 0px;
+  left: calc(90 * 20px);
 }
 
 #tr_stone_1 .td_stone_3,
@@ -289,7 +287,7 @@
 #tr_stone_5 .td_stone_5,
 #tr_stone_6 .td_stone_3,
 #tr_stone_6 .td_stone_5 {
-	border-left: 5px solid #000;
+  border-left: 5px solid #000;
 }
 
 #tr_stone_2 .td_stone_3,
@@ -302,7 +300,7 @@
 #tr_stone_3 .td_stone_7,
 #tr_stone_5 .td_stone_7,
 #tr_stone_6 .td_stone_7 {
-	border-right: 5px solid #000;
+  border-right: 5px solid #000;
 }
 
 #tr_stone_2 .td_stone_4,
@@ -311,7 +309,7 @@
 #tr_stone_3 .td_stone_7,
 #tr_stone_4 .td_stone_1,
 #tr_stone_4 .td_stone_3 {
-	border-bottom: 5px solid #000;
+  border-bottom: 5px solid #000;
 }
 
 #tr_stone_2 .td_stone_3,
@@ -322,7 +320,7 @@
 #tr_stone_5 .td_stone_6,
 #tr_stone_5 .td_stone_7,
 #tr_stone_6 .td_stone_4 {
-	border-top: 5px solid #000;
+  border-top: 5px solid #000;
 }
 
 /* 把兩邊的 border 拿掉 */
@@ -338,9 +336,9 @@
 #stone_42 .tr_stone .td_stone_7,
 #stone_42 .tr_stone .td_stone_7,
 #stone_42 .tr_stone .td_stone_7 {
-	border-right: 0px solid #000;
+  border-right: 0px solid #000;
 }
 
 #stone_1 .tr_stone .td_stone_1 {
-	border-left: 0px solid #000;
+  border-left: 0px solid #000;
 }

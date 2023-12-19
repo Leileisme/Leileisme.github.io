@@ -37,68 +37,73 @@
 
 
 <body>
-  <div id="content">
 
-    <!-- 背景 -->
-    <div id="background_content"></div>
+  <div class="content_big">
+    <div id="content">
 
-    <!-- 左上提示看板 -->
-    <div id="board_content">
-      <table id="table_board"> </table>
-      <table id="table_line"></table>
-      <span id="prompt">有發現彩蛋嗎？<br>
-        鍵盤直打「mario」得到提示!</span>
-    </div>
+      <!-- 背景 -->
+      <div id="background_content"></div>
+      <div id="background"></div>
 
-    <!-- 大時鐘 -->
-    <div id="clock">
-      <table id="table_clock"></table> <!-- 底色 -->
-      <table id="hourHand"></table> <!-- 時針 -->
-      <table id="minuteHand"></table> <!-- 分針 -->
-      <div id="secondHand"></div> <!-- 秒針 -->
-    </div>
-
-    <!-- 馬力歐 -->
-    <div id="position_mario">
-      <div id="mario">
-        <table id="table_mario" class="mario"></table>
+      <!-- 左上提示看板 -->
+      <div id="board_content">
+        <table id="table_board"> </table>
+        <table id="table_line"></table>
+        <span id="prompt">有發現彩蛋嗎？<br>
+          鍵盤直打「mario」得到提示!</span>
       </div>
 
-      <div id="mario_back">
-        <!-- 對照用 -->
-        <div id="bad"></div>
-        <table id="table_mario_back" class="mario "></table>
+      <!-- 大時鐘 -->
+      <div id="clock">
+        <table id="table_clock"></table> <!-- 底色 -->
+        <table id="hourHand"></table> <!-- 時針 -->
+        <table id="minuteHand"></table> <!-- 分針 -->
+        <div id="secondHand"></div> <!-- 秒針 -->
       </div>
-    </div>
 
+      <!-- 馬力歐 -->
+      <div id="position_mario">
+        <div id="mario">
+          <table id="table_mario" class="mario"></table>
+        </div>
 
-    <!--  壞香菇-->
-    <div id="bad_mushroom_content" class="bad_mushroom_move "> </div>
-
-    <!-- 水管 -->
-    <div id="pipe_content"></div>
-
-    <!-- 地上石頭 -->
-    <div id="stone_content"></div>
-
-    <!-- 天上石頭 -->
-    <div id="upStone_content"></div>
-
-    <!-- 數字時鐘 -->
-    <div id="time_content">
-      <div id="time">
-        <div id="ones_second_content"></div>
-        <div id="tens_second_content"></div>
-        <div id="ones_min_content"></div>
-        <div id="tens_min_content"></div>
-        <div id="ones_hour_content"></div>
-        <div id="tens_hour_content"></div>
-        <div id="colon_content"></div>
+        <div id="mario_back">
+          <!-- 對照用 -->
+          <div id="bad"></div>
+          <table id="table_mario_back" class="mario "></table>
+        </div>
       </div>
-    </div>
 
-    <!-- 按鈕 -->
-    <div id="btn_content"></div>
+
+      <!--  壞香菇-->
+      <div id="bad_mushroom_content" class="bad_mushroom_move "> </div>
+
+      <!-- 水管 -->
+      <div id="pipe_content"></div>
+
+      <!-- 地上石頭 -->
+      <div id="stone_background"></div>
+      <div id="stone_content"></div>
+
+      <!-- 天上石頭 -->
+      <div id="upStone_content"></div>
+
+      <!-- 數字時鐘 -->
+      <div id="time_content">
+        <div id="time">
+          <div id="ones_second_content"></div>
+          <div id="tens_second_content"></div>
+          <div id="ones_min_content"></div>
+          <div id="tens_min_content"></div>
+          <div id="ones_hour_content"></div>
+          <div id="tens_hour_content"></div>
+          <div id="colon_content"></div>
+        </div>
+      </div>
+
+      <!-- 按鈕 -->
+      <div id="btn_content"></div>
+    </div>
 
     <!-- JS -->
     <script src="./JS/creat.js"></script>

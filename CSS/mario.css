@@ -1,58 +1,58 @@
 /* 馬力歐 */
 #table_mario_back:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /*  馬力歐back*/
 #table_mario_back {
-	position: absolute;
-	bottom: 23%;
-	left: 70%;
+  position: absolute;
+  bottom: 23.07%;
+  left: 69.96%;
 }
 
 /* 馬力歐 */
 #position_mario {
-	height: 13px;
-	width: 13px;
+  height: 12.6px;
+  width: 12.6px;
 }
 #table_mario {
-	/* border: 1px solid red; */
-	/* width: 670px; */
-	position: absolute;
-	bottom: 23%;
-	left: 70%;
-	display: none;
+  /* border: 1px solid red; */
+  /* width: 670px; */
+  position: absolute;
+  bottom: 23.07%;
+  left: 69.96%;
+  display: none;
 }
 
 /* 樣式 */
 .mario {
-	position: relative;
-	list-style: none;
-	border: none;
-	table-layout: fixed;
-	border-collapse: collapse;
-	font-size: 0;
+  position: relative;
+  list-style: none;
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0;
 }
 
 .tr_mario {
-	list-style: none;
-	border: none;
-	height: 10px;
-	box-sizing: border-box;
-	color: blue;
-	/* margin: 0;
+  list-style: none;
+  border: none;
+  height: 10px;
+  box-sizing: border-box;
+  color: blue;
+  /* margin: 0;
 	padding: 0; */
 }
 
 .td_mario {
-	box-sizing: border-box;
-	display: inline-block;
-	width: 13px;
-	height: 13px;
-	/* background: rgb(218, 25, 25); */
-	margin-left: 0.2px;
-	margin-bottom: 0.2px;
-	/* border: 0.05px solid rgb(218, 218, 218); */
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12.6px;
+  height: 12.6px;
+  /* background: rgb(218, 25, 25); */
+  /* margin-left: 0.2px; */
+  /* margin-bottom: 0.2px; */
+  /* border: 0.05px solid rgb(218, 218, 218); */
 }
 
 /* 馬力歐色 */
@@ -108,8 +108,8 @@
 #tr_mario_14 .td_mario_10,
 #tr_mario_14 .td_mario_11,
 #tr_mario_14 .td_mario_12 {
-	background: #f00;
-	border: 0.05px solid rgb(218, 218, 218);
+  background: #f00;
+  border: 0.05px solid rgb(218, 218, 218);
 }
 
 #tr_mario_3 .td_mario_3,
@@ -182,8 +182,8 @@
 #tr_mario_16 .td_mario_12,
 #tr_mario_16 .td_mario_13,
 #tr_mario_16 .td_mario_14 {
-	background: rgb(107, 69, 11);
-	border: 0.05px solid rgb(218, 218, 218);
+  background: rgb(107, 69, 11);
+  border: 0.05px solid rgb(218, 218, 218);
 }
 
 #tr_mario_3 .td_mario_7,
@@ -236,6 +236,6 @@
 #tr_mario_13 .td_mario_2,
 #tr_mario_13 .td_mario_13,
 #tr_mario_13 .td_mario_14 {
-	background: rgb(255, 166, 0);
-	border: 0.05px solid rgb(218, 218, 218);
+  background: rgb(255, 166, 0);
+  border: 0.05px solid rgb(218, 218, 218);
 }
