@@ -4,4 +4,4 @@
 
 ## 遊戲畫面
 
-[馬力歐時鐘 gif](https://github.com/Leileisme/MarioClock-JS/blob/main/images/README/mario.gif)
+![馬力歐時鐘 gif](https://github.com/Leileisme/MarioClock-JS/blob/main/images/README/mario.gif)
