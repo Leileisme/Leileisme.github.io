@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>馬力歐-時鐘</title>
+  <title>馬力歐時鐘</title>
   <link rel="icon" href="./images/mario_logo.png">
 
   <!-- 我的CSS -->
@@ -73,7 +73,6 @@
       </div>
     </div>
 
-
     <!--  壞香菇-->
     <div id="bad_mushroom_content" class="bad_mushroom_move "> </div>
 
@@ -102,33 +101,38 @@
       <!-- 按鈕 -->
       <div id="btn_content"></div>
     </div>
+  </div>
+  <!-- copyright -->
+  <div id="copyright">
+    <p>Copyright © 2023 Leilei Hsu</p>
+  </div>
 
-    <!-- JS -->
-    <script src="./JS/creat.js"></script>
-    <script src="./JS/change.js"></script>
-    <script>
+  <!-- JS -->
+  <script src="./JS/creat.js"></script>
+  <script src="./JS/change.js"></script>
+  <script>
 
-      // 提示看板出現
-      setTimeout(() => {
-        board_content.classList.add('board_content_move')
-      }, 8000)
+    // 提示看板出現
+    setTimeout(() => {
+      board_content.classList.add('board_content_move')
+    }, 8000)
 
-      // 觸發提示
-      let setKey = ''
-      document.addEventListener('keydown', (e) => {
-        setKey += e.key
-        console.log(e.key)
-        if (setKey.toLowerCase().includes('mario')) {
-          Swal.fire({
-            title: `  小彩蛋!`,
-            html: `「大時鐘、數字鐘、磚頭、馬力歐、壞香菇、按鈕」<br>
-把滑鼠移過去看看^^`,
-          })
-          setKey = ''
-        }
-      })
+    // 觸發提示
+    let setKey = ''
+    document.addEventListener('keydown', (e) => {
+      setKey += e.key
+      console.log(e.key)
+      if (setKey.toLowerCase().includes('mario')) {
+        Swal.fire({
+          title: `  小彩蛋!`,
+          html: `「大時鐘、數字鐘、磚頭、馬力歐、壞香菇、按鈕」<br>
+          把滑鼠移過去看看^^`,
+        })
+        setKey = ''
+      }
+    })
 
-    </script>
+  </script>
 </body>
 
 </html>
