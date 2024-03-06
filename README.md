@@ -8,6 +8,8 @@
 - 此版本為網頁版，手機呈現有限
 - 尚未做 RWD，若畫面過大小，可將瀏覽器畫面比例調整
 - 使用之字體「o」在 mac 版會黏在一起
+
+[馬上前往]https://leileisme.github.io/MarioClock-JS/
 </pre>
 
 ![馬力歐時鐘 gif](https://github.com/Leileisme/MarioClock-JS/blob/main/images/README/mario.gif)
