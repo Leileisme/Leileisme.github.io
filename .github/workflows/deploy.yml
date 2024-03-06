@@ -1,0 +1,24 @@
+# Action 名稱
+name: Deploy
+# 觸發時機，當推送到分支 main 時(看你的預設分支)
+on:
+  push:
+    branches: [main]
+# 執行的工作
+jobs:
+  # 工作名稱
+  deploy:
+    # 執行工作的虛擬機作業系統
+    runs-on: ubuntu-latest
+    # 工作步驟
+    steps:
+      # 步驟一：複製程式碼
+      - name: checkout
+        # 使用的 actions/checkout 複製程式碼
+        uses: actions/checkout@v3
+      # 步驟二：部署
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: .
