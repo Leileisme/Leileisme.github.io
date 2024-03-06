@@ -1,0 +1,344 @@
+/* 地上石頭 */
+#stone_background {
+  position: absolute;
+  background-color: rgb(182, 52, 0);
+  bottom: 0;
+  width: 1879.5px;
+  height: 99px;
+}
+
+.stone {
+  position: absolute;
+  bottom: 2.6%;
+}
+
+.table_stone {
+  position: relative;
+  list-style: none;
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0;
+}
+
+.tr_stone {
+  list-style: none;
+  border: none;
+  /* height: 10px; */
+  box-sizing: border-box;
+  color: blue;
+  /* margin: 0;
+	padding: 0; */
+}
+
+.td_stone {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12.6px;
+  height: 12.6px;
+  background: rgb(182, 52, 0);
+  /* margin-left: 0.2px; */
+  /* margin-bottom: 0.2px; */
+  border: 0.05px solid rgb(161, 161, 161);
+  color: black;
+  font-size: 0px;
+}
+
+#stone_1 {
+  position: absolute;
+  left: 0;
+}
+
+#stone_2 {
+  position: absolute;
+  left: 90.02px;
+}
+
+#stone_3 {
+  position: absolute;
+  left: calc(90.02 * 2px);
+}
+
+#stone_4 {
+  position: absolute;
+  left: calc(90.02 * 3px);
+}
+
+#stone_5 {
+  position: absolute;
+  left: calc(90.02 * 4px);
+}
+
+#stone_6 {
+  position: absolute;
+  left: calc(90.02 * 5px);
+}
+
+#stone_7 {
+  position: absolute;
+  left: calc(90.02 * 6px);
+}
+
+#stone_8 {
+  position: absolute;
+  left: calc(90.02 * 7px);
+}
+
+#stone_9 {
+  position: absolute;
+  left: calc(90.02 * 8px);
+}
+
+#stone_10 {
+  position: absolute;
+  left: calc(90.02 * 9px);
+}
+
+#stone_11 {
+  position: absolute;
+  left: calc(90.02 * 10px);
+}
+
+#stone_12 {
+  position: absolute;
+  left: calc(90.02 * 11px);
+}
+
+#stone_13 {
+  position: absolute;
+  left: calc(90.02 * 12px);
+}
+
+#stone_14 {
+  position: absolute;
+  left: calc(90.02 * 13px);
+}
+
+#stone_15 {
+  position: absolute;
+  left: calc(90.02 * 14px);
+}
+
+#stone_16 {
+  position: absolute;
+  left: calc(90.02 * 15px);
+}
+
+#stone_17 {
+  position: absolute;
+  left: calc(90.02 * 16px);
+}
+
+#stone_18 {
+  position: absolute;
+  left: calc(90.02 * 17px);
+}
+
+#stone_19 {
+  position: absolute;
+  left: calc(90.02 * 18px);
+}
+
+#stone_20 {
+  position: absolute;
+  left: calc(90.02 * 19px);
+}
+
+#stone_21 {
+  position: absolute;
+  left: calc(90.02 * 20px);
+}
+
+#stone_22 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 20px);
+  left: 0;
+}
+
+#stone_23 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02px);
+}
+
+#stone_24 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 2px);
+}
+
+#stone_25 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 3px);
+}
+
+#stone_26 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 4px);
+}
+
+#stone_27 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 5px);
+}
+
+#stone_28 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 6px);
+}
+
+#stone_29 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 7px);
+}
+
+#stone_30 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 8px);
+}
+
+#stone_31 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 9px);
+}
+
+#stone_32 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 10px);
+}
+
+#stone_33 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 11px);
+}
+
+#stone_34 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 12px);
+}
+
+#stone_35 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 13px);
+}
+
+#stone_36 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 14px);
+}
+
+#stone_37 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 15px);
+}
+
+#stone_38 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 16px);
+}
+
+#stone_39 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 17px);
+}
+
+#stone_40 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 18px);
+}
+
+#stone_41 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 19px);
+}
+
+#stone_42 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(90.02 * 20px);
+}
+
+#tr_stone_1 .td_stone_3,
+#tr_stone_1 .td_stone_5,
+#tr_stone_2 .td_stone_3,
+#tr_stone_2 .td_stone_5,
+#tr_stone_3 .td_stone_3,
+#tr_stone_3 .td_stone_5,
+#tr_stone_4 .td_stone_1,
+#tr_stone_5 .td_stone_3,
+#tr_stone_5 .td_stone_5,
+#tr_stone_6 .td_stone_3,
+#tr_stone_6 .td_stone_5 {
+  border-left: 5px solid #000;
+}
+
+#tr_stone_2 .td_stone_3,
+#tr_stone_4 .td_stone_2,
+#tr_stone_4 .td_stone_4,
+#tr_stone_4 .td_stone_6,
+#tr_stone_5 .td_stone_3,
+#tr_stone_1 .td_stone_7,
+#tr_stone_2 .td_stone_7,
+#tr_stone_3 .td_stone_7,
+#tr_stone_5 .td_stone_7,
+#tr_stone_6 .td_stone_7 {
+  border-right: 5px solid #000;
+}
+
+#tr_stone_2 .td_stone_4,
+#tr_stone_3 .td_stone_1,
+#tr_stone_3 .td_stone_5,
+#tr_stone_3 .td_stone_7,
+#tr_stone_4 .td_stone_1,
+#tr_stone_4 .td_stone_3 {
+  border-bottom: 5px solid #000;
+}
+
+#tr_stone_2 .td_stone_3,
+#tr_stone_4 .td_stone_2,
+#tr_stone_4 .td_stone_6,
+#tr_stone_5 .td_stone_2,
+#tr_stone_5 .td_stone_5,
+#tr_stone_5 .td_stone_6,
+#tr_stone_5 .td_stone_7,
+#tr_stone_6 .td_stone_4 {
+  border-top: 5px solid #000;
+}
+
+/* 把兩邊的 border 拿掉 */
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_21 .tr_stone .td_stone_7,
+#stone_42 .tr_stone .td_stone_7,
+#stone_42 .tr_stone .td_stone_7,
+#stone_42 .tr_stone .td_stone_7,
+#stone_42 .tr_stone .td_stone_7,
+#stone_42 .tr_stone .td_stone_7 {
+  border-right: 0px solid #000;
+}
+
+#stone_1 .tr_stone .td_stone_1 {
+  border-left: 0px solid #000;
+}

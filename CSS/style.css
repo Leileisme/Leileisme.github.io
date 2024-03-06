@@ -1,0 +1,177 @@
+/* 背景與提示看板 */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #333;
+}
+
+#copyright {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+/* 背景色 */
+#content {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  width: 1890px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+/* 背景測試其他寫法，#background已從HTML移除 */
+/* #background {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(90deg, rgb(218, 218, 218) 1px, transparent 1px),
+    linear-gradient(180deg, rgb(218, 218, 218) 1px, transparent 1px);
+  background-size: 12.6px 12.6px;
+  background-position: center center;
+  background-repeat: repeat;
+  background-color: rgb(255, 238, 208);
+  display: none;
+} */
+
+/* 背景 */
+
+.tr_content {
+  list-style: none;
+  border: none;
+  /* height: 10px; */
+  box-sizing: border-box;
+  color: blue;
+  margin: 0;
+  font-size: 0;
+}
+
+.td_content {
+  box-sizing: border-box;
+  /* display: inline-block; */
+  width: 12.6px;
+  height: 12.6px;
+  background: rgb(255, 238, 208);
+  /* background: rgb(0, 0, 0); */
+
+  /* background: rgb(158, 208, 255); */
+  border: 0.05px solid rgb(218, 218, 218);
+  /* border: 0.05px solid rgb(46, 46, 46); */
+
+  /* color: black;
+	font-size: 0.001px; */
+}
+
+/* 看板提示 */
+#board_content {
+  width: 600px;
+  /* height: 79px; */
+  /* background-color: #a00; */
+  position: absolute;
+  top: 70px;
+  top: -110px;
+  left: 145.3px;
+  transform: rotate(-5deg);
+}
+
+#prompt {
+  font-family: '俐方體11號';
+  position: absolute;
+  top: 12.6px;
+  left: 23px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 26px;
+  user-select: none;
+}
+
+#table_line {
+  position: absolute;
+  top: -100px;
+  left: 135px;
+}
+
+#table_board,
+#table_line {
+  position: absolute;
+  /* top: 100px;
+	left: 120px; */
+  list-style: none;
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0;
+  background-color: rgb(117, 75, 21);
+}
+
+.tr_board,
+.tr_line {
+  list-style: none;
+  border: none;
+  height: 10px;
+  box-sizing: border-box;
+  color: blue;
+}
+
+.td_board {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12.6px;
+  height: 12.6px;
+  background: rgb(117, 75, 21);
+  border: 0.05px solid rgb(46, 46, 46);
+  font-size: 12.6px;
+}
+
+.td_line {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12.6px;
+  height: 12.6px;
+  background: rgb(117, 75, 21);
+  border: 0.05px solid rgb(46, 46, 46);
+  font-size: 12.6px;
+  border-right: 5px solid rgb(153, 110, 67);
+}
+
+#tr_board_1 .td_board_22,
+#tr_board_2 .td_board_22,
+#tr_board_3 .td_board_22,
+#tr_board_4 .td_board_22,
+#tr_board_5 .td_board_22,
+#tr_board_6 .td_board_22 {
+  border-right: 5px solid rgb(153, 110, 67);
+}
+
+#tr_board_6 .td_board_1,
+#tr_board_6 .td_board_2,
+#tr_board_6 .td_board_3,
+#tr_board_6 .td_board_4,
+#tr_board_6 .td_board_5,
+#tr_board_6 .td_board_6,
+#tr_board_6 .td_board_7,
+#tr_board_6 .td_board_8,
+#tr_board_6 .td_board_9,
+#tr_board_6 .td_board_10,
+#tr_board_6 .td_board_11,
+#tr_board_6 .td_board_12,
+#tr_board_6 .td_board_13,
+#tr_board_6 .td_board_14,
+#tr_board_6 .td_board_15,
+#tr_board_6 .td_board_16,
+#tr_board_6 .td_board_17,
+#tr_board_6 .td_board_18,
+#tr_board_6 .td_board_19,
+#tr_board_6 .td_board_20,
+#tr_board_6 .td_board_21,
+#tr_board_6 .td_board_22 {
+  border-bottom: 5px solid rgb(153, 110, 67);
+}

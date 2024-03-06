@@ -1,0 +1,172 @@
+/* 動畫 */
+
+/* 馬力歐上下 */
+@keyframes marioMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 22vh);
+  }
+  100% {
+    transform: translate(0, 50vh);
+  }
+}
+
+@keyframes marioMoveUp {
+  0% {
+    transform: translate(0, 50vh);
+  }
+  50% {
+    transform: translate(0, 22vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.marioMove {
+  animation-name: marioMove;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.marioMoveUp {
+  animation-name: marioMoveUp;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* 時鐘上下 */
+@keyframes clockMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 22vh);
+  }
+  100% {
+    transform: translate(0, 20.6vh);
+  }
+}
+
+@keyframes clockMoveUp {
+  0% {
+    transform: translate(0, 20.6vh);
+  }
+  50% {
+    transform: translate(0, 22vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.clockMove {
+  animation-name: clockMove;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.clockMoveUp {
+  animation-name: clockMoveUp;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* 壞香菇走動 */
+@keyframes bad_mushroom_move {
+  0% {
+    left: 0;
+  }
+  50% {
+    /* left: 1167px; */
+    left: 61.82%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.bad_mushroom_move {
+  animation-name: bad_mushroom_move;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+/* 擊落壞香菇 */
+@keyframes bad_mushroom_die {
+  0% {
+  }
+  40% {
+    top: calc(73% - 20px);
+    transform: rotate(180deg);
+  }
+  50% {
+    top: calc(73% - 40px);
+    transform: rotate(180deg);
+  }
+  100% {
+    top: calc(73% + 500px);
+    transform: rotate(180deg);
+  }
+}
+
+.bad_mushroom_die {
+  animation-name: bad_mushroom_die;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* 提示看板 */
+@keyframes board_content_move {
+  0% {
+    top: -110px;
+  }
+  15% {
+    top: 70px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+
+.board_content_move {
+  animation-name: board_content_move;
+  animation-duration: 20s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+/* 天上石頭轉動 */
+@keyframes upStone_rotate {
+  0% {
+    transform: rotate(-3deg) scale(101%);
+  }
+  50% {
+    transform: rotate(deg) scale(101%);
+  }
+  100% {
+    transform: rotate(3deg) scale(101%);
+  }
+}
+
+.upStone_rotate {
+  animation-name: upStone_rotate;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

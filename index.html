@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>馬力歐時鐘</title>
+  <link rel="icon" href="./images/mario_logo.png">
+
+  <!-- 我的CSS -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/clock.css">
+  <link rel="stylesheet" href="./CSS/number.css">
+  <link rel="stylesheet" href="./CSS/mario.css">
+  <link rel="stylesheet" href="./CSS/pipe.css">
+  <link rel="stylesheet" href="./CSS/bad_mushroom.css">
+  <link rel="stylesheet" href="./CSS/upStone.css">
+  <link rel="stylesheet" href="./CSS/downStone.css">
+  <link rel="stylesheet" href="./CSS/btn.css">
+  <link rel="stylesheet" href="./CSS/animation.css">
+  <!-- sweetalert2 -->
+  <script src="
+  https://cdn.jsdelivr.net/npm/sweetalert2@11.8.0/dist/sweetalert2.all.min.js
+  "></script>
+  <style>
+    @font-face {
+      font-family: 'Pixel';
+      src: url('./font/Pixel.ttf');
+    }
+
+    @font-face {
+      font-family: '俐方體11號';
+      src: url('./font/Cubic_11_1.010_R.ttf');
+    }
+  </style>
+</head>
+
+
+<body>
+
+
+  <div id="content">
+
+    <!-- 背景 -->
+    <div id="background_content"></div>
+
+    <!-- 左上提示看板 -->
+    <div id="board_content">
+      <table id="table_board"> </table>
+      <table id="table_line"></table>
+      <span id="prompt">有發現彩蛋嗎？<br>
+        鍵盤直打「mario」得到提示!</span>
+    </div>
+
+    <!-- 大時鐘 -->
+    <div id="clock">
+      <table id="table_clock"></table> <!-- 底色 -->
+      <table id="hourHand"></table> <!-- 時針 -->
+      <table id="minuteHand"></table> <!-- 分針 -->
+      <div id="secondHand"></div> <!-- 秒針 -->
+    </div>
+
+    <!-- 馬力歐 -->
+    <div id="position_mario">
+      <div id="mario">
+        <table id="table_mario" class="mario"></table>
+      </div>
+
+      <div id="mario_back">
+        <!-- 對照用 -->
+        <div id="bad"></div>
+        <table id="table_mario_back" class="mario "></table>
+      </div>
+    </div>
+
+    <!--  壞香菇-->
+    <div id="bad_mushroom_content" class="bad_mushroom_move "> </div>
+
+    <!-- 水管 -->
+    <div id="pipe_content"></div>
+
+    <!-- 地上石頭 -->
+    <div id="stone_background"></div>
+    <div id="stone_content"></div>
+
+    <!-- 天上石頭 -->
+    <div id="upStone_content"></div>
+
+    <!-- 數字時鐘 -->
+    <div id="time_content">
+      <div id="time">
+        <div id="ones_second_content"></div>
+        <div id="tens_second_content"></div>
+        <div id="ones_min_content"></div>
+        <div id="tens_min_content"></div>
+        <div id="ones_hour_content"></div>
+        <div id="tens_hour_content"></div>
+        <div id="colon_content"></div>
+      </div>
+
+      <!-- 按鈕 -->
+      <div id="btn_content"></div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div id="copyright">
+    <p>Copyright © 2023 Leilei Hsu</p>
+  </div>
+
+  <!-- JS -->
+  <script src="./JS/creat.js"></script>
+  <script src="./JS/change.js"></script>
+  <script>
+
+    // 提示看板出現
+    setTimeout(() => {
+      board_content.classList.add('board_content_move')
+    }, 8000)
+
+    // 觸發提示
+    let setKey = ''
+    document.addEventListener('keydown', (e) => {
+      setKey += e.key
+      console.log(e.key)
+      if (setKey.toLowerCase().includes('mario')) {
+        Swal.fire({
+          title: `  小彩蛋!`,
+          html: `「大時鐘、數字鐘、磚頭、馬力歐、壞香菇、按鈕」<br>
+          把滑鼠移過去看看^^`,
+        })
+        setKey = ''
+      }
+    })
+
+  </script>
+</body>
+
+</html>

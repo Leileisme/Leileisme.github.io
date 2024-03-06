@@ -1,0 +1,219 @@
+#btn_content {
+  position: absolute;
+  top: 82.4%;
+}
+
+.table_btn {
+  /* position: relative; */
+  list-style: none;
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0;
+}
+
+.tr_btn {
+  list-style: none;
+  border: none;
+  height: 10px;
+  box-sizing: border-box;
+  /* color: blue; */
+  /* margin: 0;
+	padding: 0; */
+}
+
+.td_btn {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12.6px;
+  height: 12.6px;
+  background: rgb(255, 255, 255);
+  /* margin-left: 0.2px; */
+  margin-bottom: 0.2px;
+  border: 0.05px solid rgb(218, 218, 218);
+  font-size: 10px;
+}
+
+#table_btn_1 {
+  width: 42px;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 1562px;
+  cursor: pointer;
+}
+
+#table_btn_2 {
+  width: 42px;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 1625.2px;
+  cursor: pointer;
+}
+
+#table_btn_3 {
+  width: 42px;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 1687px;
+  cursor: pointer;
+}
+
+#table_btn_4 {
+  width: 42px;
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 1750px;
+  cursor: pointer;
+}
+
+#table_btn_1::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -54%);
+  content: '↓';
+  font-size: 45px;
+  font-family: 'Pixel';
+}
+
+#table_btn_1:hover:after {
+  position: absolute;
+  left: 50%;
+  top: -85%;
+  width: 88px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  text-align: center;
+  content: 'Mario Down';
+  font-family: 'Pixel';
+  color: #fff;
+  padding: 5px;
+  background-color: #000;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+#table_btn_2::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -54%);
+  content: '↑';
+  font-size: 45px;
+  font-family: 'Pixel';
+}
+
+#table_btn_2:hover::after {
+  position: absolute;
+  left: 50%;
+  top: -85%;
+  width: 64px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  text-align: center;
+  content: 'Mario Up';
+  font-family: 'Pixel';
+  color: #fff;
+  padding: 5px;
+  background-color: #000;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+#table_btn_3::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-43%, -50%);
+  content: '夜';
+  font-size: 45px;
+  font-family: 'Pixel';
+}
+
+#table_btn_3:hover::after {
+  position: absolute;
+  left: 50%;
+  top: -85%;
+  width: 63px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  text-align: center;
+  content: '60秒的夜';
+  font-family: 'Pixel';
+  color: #fff;
+  padding: 5px;
+  background-color: #000;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+#table_btn_4::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-41%, -50%);
+  content: '日';
+  font-size: 40px;
+  font-family: 'Pixel';
+}
+
+#table_btn_4:hover::after {
+  position: absolute;
+  border-radius: 5px;
+  left: 50%;
+  top: -85%;
+  width: 63px;
+  transform: translateX(-50%);
+  text-align: center;
+  content: '60秒的日';
+  font-family: 'Pixel';
+  color: #fff;
+  padding: 5px;
+  background-color: #000;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.tr_btn_1 .td_btn_3,
+.tr_btn_2 .td_btn_3,
+.tr_btn_3 .td_btn_3 {
+  border-right: 4px solid #b4b4b4;
+}
+
+.tr_btn_3 .td_btn_1,
+.tr_btn_3 .td_btn_2,
+.tr_btn_3 .td_btn_3 {
+  border-bottom: 4px solid #b4b4b4;
+}
+
+.tr_btn_1 .td_btn_1 {
+  box-shadow: -2.5px -2.5px 0px #000;
+}
+
+.tr_btn_1 .td_btn_2 {
+  box-shadow: 0 -2.5px 0px #000;
+}
+
+.tr_btn_1 .td_btn_3 {
+  box-shadow: 2.5px -2.5px 0px #000;
+}
+
+.tr_btn_2 .td_btn_1 {
+  box-shadow: -2.5px 0 0px #000;
+}
+
+.tr_btn_2 .td_btn_3 {
+  box-shadow: 2.5px -0 0px #000;
+}
+
+.tr_btn_3 .td_btn_1 {
+  box-shadow: -2.5px 2.5px 0px #000;
+}
+
+.tr_btn_3 .td_btn_2 {
+  box-shadow: 0 2.5px 0px #000;
+}
+
+.tr_btn_3 .td_btn_3 {
+  box-shadow: 2.5px 2.5px 0px #000;
+}

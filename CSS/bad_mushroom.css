@@ -1,0 +1,344 @@
+/* 壞蘑菇 */
+#bad_mushroom_content {
+  position: absolute;
+  width: 160px;
+  height: 153px;
+  top: 72.94%;
+  transform-origin: center;
+  cursor: url(../images/cursor_black.png) 50 50, pointer;
+}
+
+/* 壞香菇樣式 */
+.bad_mushroom_L {
+  position: relative;
+  list-style: none;
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0;
+  position: absolute;
+  /* top: 72.8%;
+	left: 30.3%; */
+  display: none;
+}
+
+.bad_mushroom_R {
+  position: relative;
+  list-style: none;
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0;
+  position: absolute;
+  /* top: 72.8%;
+	left: 30.3%; */
+}
+
+.tr_bad_mushroom {
+  list-style: none;
+  border: none;
+  height: 10px;
+  box-sizing: border-box;
+  /* color: blue; */
+  /* margin: 0;
+	padding: 0; */
+}
+
+.td_bad_mushroom {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12.6px;
+  height: 12.6px;
+  /* background: rgb(218, 25, 25); */
+  margin-left: 0.2px;
+  margin-bottom: 0.2px;
+  /* border: 0.05px solid rgb(218, 218, 218); */
+  font-size: 10px;
+}
+
+#tr_bad_mushroom_R_1 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_1 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_2 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_2 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_2 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_2 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_3 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_3 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_3 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_3 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_3 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_3 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_4 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_4 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_4 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_4 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_5 .td_bad_mushroom_2,
+#tr_bad_mushroom_R_5 .td_bad_mushroom_3,
+#tr_bad_mushroom_R_5 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_5 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_5 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_5 .td_bad_mushroom_10,
+#tr_bad_mushroom_R_5 .td_bad_mushroom_11,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_2,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_3,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_10,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_11,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_1,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_2,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_3,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_10,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_11,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_12,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_1,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_2,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_3,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_10,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_11,
+#tr_bad_mushroom_R_8 .td_bad_mushroom_12,
+#tr_bad_mushroom_R_9 .td_bad_mushroom_2,
+#tr_bad_mushroom_R_9 .td_bad_mushroom_3,
+#tr_bad_mushroom_R_9 .td_bad_mushroom_10,
+#tr_bad_mushroom_R_9 .td_bad_mushroom_11 {
+  background: #d64f00;
+  border: 0.05px solid rgb(218, 218, 218);
+}
+
+#tr_bad_mushroom_R_9 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_9 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_9 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_9 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_9 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_9 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_10 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_10 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_10 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_10 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_10 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_10 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_11 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_11 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_11 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_11 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_12 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_12 .td_bad_mushroom_7 {
+  background: #ffc57a;
+  border: 0.05px solid rgb(218, 218, 218);
+}
+
+#tr_bad_mushroom_R_4 .td_bad_mushroom_3,
+#tr_bad_mushroom_R_4 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_4 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_4 .td_bad_mushroom_10,
+#tr_bad_mushroom_R_5 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_5 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_6,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_7,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_10 .td_bad_mushroom_10,
+#tr_bad_mushroom_R_11 .td_bad_mushroom_3,
+#tr_bad_mushroom_R_11 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_11 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_11 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_11 .td_bad_mushroom_10,
+#tr_bad_mushroom_R_11 .td_bad_mushroom_11,
+#tr_bad_mushroom_R_12 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_12 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_12 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_12 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_12 .td_bad_mushroom_10,
+#tr_bad_mushroom_R_12 .td_bad_mushroom_11 {
+  background: #000000;
+  border: 0.05px solid rgb(218, 218, 218);
+}
+
+#tr_bad_mushroom_R_7 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_8 {
+  box-sizing: border-box;
+  border-top: 9px solid #000;
+}
+
+#tr_bad_mushroom_R_5 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_5 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_6 .td_bad_mushroom_9,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_4,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_5,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_8,
+#tr_bad_mushroom_R_7 .td_bad_mushroom_9 {
+  background: #ffffff;
+  /* border: 0.05px solid rgb(218, 218, 218); */
+}
+
+/* L */
+#tr_bad_mushroom_L_1 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_1 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_2 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_2 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_2 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_2 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_3 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_3 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_3 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_3 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_3 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_3 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_4 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_4 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_4 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_4 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_5 .td_bad_mushroom_2,
+#tr_bad_mushroom_L_5 .td_bad_mushroom_3,
+#tr_bad_mushroom_L_5 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_5 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_5 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_5 .td_bad_mushroom_10,
+#tr_bad_mushroom_L_5 .td_bad_mushroom_11,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_2,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_3,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_10,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_11,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_1,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_2,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_3,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_10,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_11,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_12,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_1,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_2,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_3,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_10,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_11,
+#tr_bad_mushroom_L_8 .td_bad_mushroom_12,
+#tr_bad_mushroom_L_9 .td_bad_mushroom_2,
+#tr_bad_mushroom_L_9 .td_bad_mushroom_3,
+#tr_bad_mushroom_L_9 .td_bad_mushroom_10,
+#tr_bad_mushroom_L_9 .td_bad_mushroom_11 {
+  background: #d64f00;
+  border: 0.05px solid rgb(218, 218, 218);
+}
+
+#tr_bad_mushroom_L_9 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_9 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_9 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_9 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_9 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_9 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_10 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_10 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_10 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_10 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_10 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_10 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_11 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_11 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_11 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_12 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_12 .td_bad_mushroom_7 {
+  background: #ffc57a;
+  border: 0.05px solid rgb(218, 218, 218);
+}
+
+#tr_bad_mushroom_L_4 .td_bad_mushroom_3,
+#tr_bad_mushroom_L_4 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_4 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_4 .td_bad_mushroom_10,
+#tr_bad_mushroom_L_5 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_5 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_6,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_7,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_10 .td_bad_mushroom_3,
+#tr_bad_mushroom_L_11 .td_bad_mushroom_2,
+#tr_bad_mushroom_L_11 .td_bad_mushroom_3,
+#tr_bad_mushroom_L_11 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_11 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_11 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_11 .td_bad_mushroom_10,
+#tr_bad_mushroom_L_12 .td_bad_mushroom_2,
+#tr_bad_mushroom_L_12 .td_bad_mushroom_3,
+#tr_bad_mushroom_L_12 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_12 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_12 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_12 .td_bad_mushroom_9 {
+  background: #000000;
+  border: 0.05px solid rgb(218, 218, 218);
+}
+
+#tr_bad_mushroom_L_7 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_8 {
+  box-sizing: border-box;
+  border-top: 9px solid #000;
+}
+
+#tr_bad_mushroom_L_5 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_5 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_6 .td_bad_mushroom_9,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_4,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_5,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_8,
+#tr_bad_mushroom_L_7 .td_bad_mushroom_9 {
+  background: #ffffff;
+}
+
+/* 對照壞香菇 */
+.bad {
+  position: relative;
+  list-style: none;
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0;
+  position: absolute;
+  top: 72.8%;
+  left: 29%;
+}
+
+.tr_bad {
+  list-style: none;
+  border: none;
+  height: 10px;
+  box-sizing: border-box;
+  color: blue;
+}
+
+.td_bad {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12.6px;
+  height: 12.6px;
+  /* margin-left: 0.2px; */
+  /* margin-bottom: 0.2px; */
+  border: 0.05px solid rgb(255, 0, 0);
+  font-size: 10px;
+}
